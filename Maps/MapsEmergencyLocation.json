@@ -1,0 +1,1 @@
+{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"type":{"@id":"https://www.datalinker.org/context/MapsEmergencyLocation-Type","@type":"xsd:string","type":"string","dldescription":"First Aid Point, Evacuation Point, Emergency Vehicle Access Point, Ingress Point, Sign-in Point, Aerodrome Area"}}}

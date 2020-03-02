@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@id": {
+      "@id": "https://www.datalinker.org/context/MapsHolding-@Id",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dldescription": "Unique identifier in the source system"
+    },
+    "id": {
+      "@id": "https://www.datalinker.org/context/MapsHolding-Id",
+      "@type": "@id",
+      "type": "string",
+      "dldescription": "Unique identifier in the source system"
+    },
+    "identifiers": {
+      "@id": "https://www.datalinker.org/context/MapsHolding-Identifiers",
+      "@container": "@set",
+      "@type": "xsd:string",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "dldescription": "One or more globally unique holding identifiers"
+    },
+    "name": {
+      "@id": "https://www.datalinker.org/context/MapsHolding-Name",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Display name for the holding"
+    },
+    "sites": {
+      "@id": "https://www.datalinker.org/context/MapsSite",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsSite.jsonld",
+      "type": "array",
+      "items": {
+        "type": "object"
+      },
+      "@container": "@set",
+      "dldescription": "Array of sites that belongs to holding"
+    },
+    "dateModified": {
+      "@id": "http://schema.org/dateModified",
+      "@type": "xsd:dateTime",
+      "type": "string",
+      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date when details were last modified. Bubles up from Sites"
+    }
+  }
+}

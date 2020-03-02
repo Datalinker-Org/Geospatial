@@ -1,0 +1,138 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "paddock": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsPaddock.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/Paddock"
+    },
+    "riparianZone": {
+      "@id": "https://www.datalinker.org/context/MapsRiparianZone",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsRiparianZone.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/RiparianZone"
+    },
+    "fence": {
+      "@id": "https://www.datalinker.org/context/MapsFence",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsFence.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/Fence"
+    },
+    "gate": {
+      "@id": "https://www.datalinker.org/context/MapsGate",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsGate.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/Gate"
+    },
+    "emergencyLocation": {
+      "@id": "https://www.datalinker.org/context/MapsEmergencyLocation",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsEmergencyLocation.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/EmergencyLocation"
+    },
+    "cadastralParcel": {
+      "@id": "https://www.datalinker.org/context/MapsCadastralParcel",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsCadastralParcel.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/CadastralParcel"
+    },
+    "propertyUnit": {
+      "@id": "https://www.datalinker.org/context/MapsPropertyUnit",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsPropertyUnit.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/PropertyUnit"
+    },
+    "plot": {
+      "@id": "https://www.datalinker.org/context/MapsPlot",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsPlot.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/Plot"
+    },
+    "drainageBasin": {
+      "@id": "https://www.datalinker.org/context/MapsDrainageBasin",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsDrainageBasin.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/DrainageBasin"
+    },
+    "managementZone": {
+      "@id": "https://www.datalinker.org/context/MapsManagementZone",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsManagementZone.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/ManagementZone"
+    },
+    "watercourse": {
+      "@id": "https://www.datalinker.org/context/MapsWatercourse",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsWatercourse.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/Watercourse"
+    },
+    "crossing": {
+      "@id": "https://www.datalinker.org/context/MapsCrossing",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsCrossing.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/Crossing"
+    },
+    "utilityNetwork": {
+      "@id": "https://www.datalinker.org/context/MapsUtilityNetwork",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsUtilityNetwork.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/UtilityNetwork"
+    },
+    "tower": {
+      "@id": "https://www.datalinker.org/context/MapsTower",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsTower.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/Tower"
+    },
+    "pole": {
+      "@id": "https://www.datalinker.org/context/MapsPole",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsPole.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/Pole"
+    },
+    "pipe": {
+      "@id": "https://www.datalinker.org/context/MapsPipe",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsPipe.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/Pipe"
+    },
+    "duct": {
+      "@id": "https://www.datalinker.org/context/MapsDuct",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsDuct.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/Duct"
+    },
+    "aerodromeArea": {
+      "@id": "https://www.datalinker.org/context/MapsAerodromeArea",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsAerodromeArea.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/AerodromeArea"
+    },
+    "agriBuilding": {
+      "@id": "https://www.datalinker.org/context/MapsAgriBuilding",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsAgriBuilding.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/AgriBuilding"
+    },
+    "waterManagementInstallation": {
+      "@id": "https://www.datalinker.org/context/MapsWaterInstallation",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsWaterInstallation.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/WaterManagementInstallation"
+    },
+    "contourLine": {
+      "@id": "https://www.datalinker.org/context/MapsContourLine",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsContourLine.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/ContourLine"
+    },
+    "hazardArea": {
+      "@id": "https://www.datalinker.org/context/MapsHazardArea",
+      "@type": "https://www.datalinker.org/contexts/2.0/MapsHazardArea.jsonld",
+      "type": "object",
+      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/HazardArea"
+    }
+  }
+}

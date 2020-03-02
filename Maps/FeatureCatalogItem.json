@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "@id": {
+      "@id": "https://www.datalinker.org/context/MapsSite-@Id",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dldescription": "Unique identifier in the source system"
+    },
+    "id": {
+      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Id",
+      "@type": "@id",
+      "type": "string",
+      "dldescription": "Unique identifier in the source system"
+    },
+    "type": {
+      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Type",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dldescription": "Unique feature type id. Refer to https://www.datalinker.org/context/MapsFeatureCatalog"
+    },
+    "name": {
+      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Name",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Name for feature e.g. Paddock, Hazzard, Water Way"
+    },
+    "description": {
+      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Description",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Notes for feature"
+    },
+    "crs": {
+      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-CRS",
+      "@type": "xsd:object",
+      "type": "string",
+      "dldescription": "Coordinate reference system as per GeoJSON"
+    },
+    "resolution": {
+      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Resolution",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "E.g. 25000 indicates 1:25000 scale of a map"
+    },
+    "bbox": {
+      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Bbox",
+      "@type": "xsd:decimal",
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "@container": "@set",
+      "dldescription": "Array that is the bounding box coordinates as per GeoJSON"
+    },
+    "origin": {
+      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Origin",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": ""
+    },
+    "dateCreated": {
+      "@id": "http://schema.org/dateCreated",
+      "@type": "xsd:dateTime",
+      "type": "string",
+      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date when object was created"
+    },
+    "dateModified": {
+      "@id": "http://schema.org/dateModified",
+      "@type": "xsd:dateTime",
+      "type": "string",
+      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date when details were last modified"
+    },
+    "datePublished": {
+      "@id": "http://schema.org/datePublished",
+      "@type": "xsd:dateTime",
+      "type": "string",
+      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date when details became published"
+    },
+    "responsibleOrganization": {
+      "@id": "http://schema.org/Organization",
+      "@type": "http://schema.org/Organization.jsonld",
+      "type": "object",
+      "dldescription": ""
+    },
+    "language": {
+      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Language",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "E.g english"
+    },
+    "spatialContent": {
+      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-SpatialContent",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dldescription": "URL to get GeoJSON format"
+    },
+    "contentType": {
+      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-ContentType",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "E.g. application/vnd.geo+json indicates GeoJSON"
+    },
+    "nonSpatialContent": {
+      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-NonSpatialContent",
+      "@type": "@id",
+      "type": "string",
+      "format": "uri",
+      "dldescription": "URL to get attribute data related to specified type"
+    }
+  }
+}

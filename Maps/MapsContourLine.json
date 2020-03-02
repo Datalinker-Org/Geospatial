@@ -1,0 +1,1 @@
+{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"type":{"@id":"https://www.datalinker.org/context/MapsContourLine-Type","@type":"xsd:string","type":"string","dldescription":"master, ordinary, auxiliary"},"downRight":{"@id":"https://www.datalinker.org/context/MapsContourLine-DownRight","@type":"xsd:boolean","type":"boolean","dldescription":""}}}

@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "@id": "https://www.datalinker.org/context/MapsHazardArea-Id",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Internal system identifier"
+    },
+    "method": {
+      "@id": "https://www.datalinker.org/context/MapsHazardArea-Method",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Can be 'modeling' or 'indirect determation'"
+    },
+    "type": {
+      "@id": "https://www.datalinker.org/context/MapsHazardArea-Type",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Modelled with a ― NaturalHazardClassification data type"
+    },
+    "validFrom": {
+      "@id": "https://www.datalinker.org/context/MapsHazardArea-ValidFrom",
+      "@type": "xsd:dateTime",
+      "type": "string",
+      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Indicates start date for period of validity"
+    },
+    "validTo": {
+      "@id": "https://www.datalinker.org/context/MapsHazardArea-ValidTo",
+      "@type": "xsd:dateTime",
+      "type": "string",
+      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Indicates end date for period of validity"
+    },
+    "assessmentMethod": {
+      "@id": "https://www.datalinker.org/context/MapsHazardArea-AssessmentMethod",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Describes method used to express the likelihood of a hazard event"
+    },
+    "qualitativeLikelihood": {
+      "@id": "https://www.datalinker.org/context/MapsHazardArea-QualitativeLikelihood",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Describes in narrative form the assessment of the likelihood of occurrence of a hazard event"
+    },
+    "quantitativeLikelihood": {
+      "@id": "https://www.datalinker.org/context/MapsHazardArea-QuantitativeLikelihood",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Probability of occurrence, or a return period"
+    },
+    "returnPeriod": {
+      "@id": "https://www.datalinker.org/context/MapsHazardArea-ReturnPeriod",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "long-term average interval of time or number of years within which an event will be equaled or exceeded"
+    },
+    "probabilityOfOccurrence": {
+      "@id": "https://www.datalinker.org/context/MapsHazardArea-ProbabilityOfOccurrence",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "The probability of occurrence is the inverse value of the return period"
+    },
+    "levelOrIntensity": {
+      "@id": "https://www.datalinker.org/context/MapsHazardArea-LevelOrIntensity",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "A magnitude, or intensity, can be expressed either qualitatively, or quantitatively"
+    }
+  }
+}

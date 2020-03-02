@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "waterQuantity": {
+      "@id": "https://www.datalinker.org/context/MapsWaterInstallation-WaterQuantity",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "The quantity of water given by the water source in m3"
+    },
+    "typeOfWaterSource": {
+      "@id": "https://www.datalinker.org/context/MapsWaterInstallation-TypeOfWaterSource",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "onFarmGroundWater, onFarmSurfaceWater, offFarmSurfaceWater, offFarmWaterFromCommonWaterSupplyNetworks, otherSources"
+    }
+  }
+}

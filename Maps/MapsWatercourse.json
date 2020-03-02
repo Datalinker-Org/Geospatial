@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "length": {
+      "@id": "https://www.datalinker.org/context/MapsWatercourse-Length",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "Length of watercourse in m"
+    },
+    "widthRangeUpper": {
+      "@id": "https://www.datalinker.org/context/MapsWatercourse-widthRangeUpper",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "The upper bound of width along its length"
+    },
+    "widthRangeLower": {
+      "@id": "https://www.datalinker.org/context/MapsWatercourse-widthRangeLower",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "The lower bound of width along its length"
+    }
+  }
+}

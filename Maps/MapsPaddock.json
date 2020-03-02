@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-Id",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Unique identifier in provider system"
+    },
+    "identifiers": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-Identifiers",
+      "@type": "xsd:string",
+      "type": "string",
+      "@contaner": "@set",
+      "dldescription": "Array of unique URN identifiers"
+    },
+    "name": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-Name",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Display name for the paddock"
+    },
+    "activity": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-Activity",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Enumeration: the type of vegetation grown here: e.g. permanent  grassland"
+    },
+    "secondaryActivity": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-SecondaryActivity",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Description of any secondary values relevant to the paddock, i.e. fodder beet section on grazing paddock"
+    },
+    "pastureType": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-PastureType",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Enumeration: Ryegrass/white clover, Browntop, Unimproved/tussock grasslands, Summer C4 (paspalum) pastures, C4 (kikuyu) pastures, Lucerne, Grass only (enumeration defined by Overseer)"
+    },
+    "pastureUtilisation": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-PastureUtilisation",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "%"
+    },
+    "averagePastureNConcentration": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-AveragePastureNConcentration",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "%"
+    },
+    "organic": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-Organic",
+      "@type": "xsd:boolean",
+      "type": "boolean",
+      "dldescription": "Indicates whether paddock is organic"
+    },
+    "totalArea": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-TotalArea",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "Total paddock area expressed in m2"
+    },
+    "effectiveArea": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-effectiveArea",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "Paddock effective area in m2"
+    },
+    "cultivableArea": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-cultivableArea",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "Effective area of the farm for cultivation (cropping) purposes"
+    },
+    "grazeableArea": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-grazeableArea",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "Paddock grazeable area in m2"
+    },
+    "croppingArea": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-croppingArea",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "Area planted in crop. In m2"
+    },
+    "drainageArea": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-DrainageArea",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": ""
+    },
+    "irrigationArea": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-IrrigationArea",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": ""
+    },
+    "irrigationMethod": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-IrrigationMethod",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": ""
+    },
+    "ownership": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-Ownership",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Owned, Leased"
+    },
+    "topography": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-Topography",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Values can be Flat,Rolling,Easy hill, Steep hill"
+    },
+    "validFrom": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-ValidFrom",
+      "@type": "xsd:dateTime",
+      "type": "string",
+      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date started operating for specific paddock type"
+    },
+    "validTo": {
+      "@id": "https://www.datalinker.org/context/MapsPaddock-ValidTo",
+      "@type": "xsd:dateTime",
+      "type": "string",
+      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date ended(ceased) operating for specific paddock type"
+    }
+  }
+}
