@@ -1,1 +1,18 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"type":{"@id":"https://www.datalinker.org/context/MapsAerodromeArea-Type","@type":"xsd:string","type":"string","dldescription":"aerodromeHeliport, aerodromeOnly, heliportOnly, LandingSite"},"surface":{"@id":"https://www.datalinker.org/context/MapsAerodromeArea-Surface","@type":"xsd:string","type":"string","dldescription":"asphalt, concrete, grass"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "type": {
+      "@id": "[Type](#Type)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "aerodromeHeliport, aerodromeOnly, heliportOnly, LandingSite"
+    },
+    "surface": {
+      "@id": "[Surface](#Surface)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "asphalt, concrete, grass"
+    }
+  }
+}

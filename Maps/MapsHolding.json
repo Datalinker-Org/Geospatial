@@ -3,20 +3,20 @@
   "type": "object",
   "properties": {
     "@id": {
-      "@id": "https://www.datalinker.org/context/MapsHolding-@Id",
+      "@id": "[@Id](#@Id)",
       "@type": "@id",
       "type": "string",
       "format": "uri",
       "dldescription": "Unique identifier in the source system"
     },
     "id": {
-      "@id": "https://www.datalinker.org/context/MapsHolding-Id",
+      "@id": "[Id](#Id)",
       "@type": "@id",
       "type": "string",
       "dldescription": "Unique identifier in the source system"
     },
     "identifiers": {
-      "@id": "https://www.datalinker.org/context/MapsHolding-Identifiers",
+      "@id": "[Id](#Id)entifiers",
       "@container": "@set",
       "@type": "xsd:string",
       "type": "array",
@@ -26,14 +26,14 @@
       "dldescription": "One or more globally unique holding identifiers"
     },
     "name": {
-      "@id": "https://www.datalinker.org/context/MapsHolding-Name",
+      "@id": "[Name](#Name)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Display name for the holding"
     },
     "sites": {
-      "@id": "https://www.datalinker.org/context/MapsSite",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsSite.jsonld",
+      "@id": "[MapsSite](MapsSite.md)",
+      "@type": "@id",
       "type": "array",
       "items": {
         "type": "object"

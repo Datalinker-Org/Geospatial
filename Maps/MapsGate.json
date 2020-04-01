@@ -1,1 +1,18 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"type":{"@id":"https://www.datalinker.org/context/MapsGate-Type","@type":"xsd:string","type":"string","dldescription":"Metal, Wooden, other"},"latchType":{"@id":"https://www.datalinker.org/context/MapsGate-LatchType","@type":"xsd:string","type":"string","dldescription":""}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "type": {
+      "@id": "[Type](#Type)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Metal, Wooden, other"
+    },
+    "latchType": {
+      "@id": "[LatchType](#LatchType)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": ""
+    }
+  }
+}

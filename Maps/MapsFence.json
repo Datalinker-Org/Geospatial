@@ -1,1 +1,42 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"type":{"@id":"https://www.datalinker.org/context/MapsFence-Type","@type":"xsd:string","type":"string","dldescription":"Wire, Post and rail, other"},"battenDistance":{"@id":"https://www.datalinker.org/context/MapsFence-BattenDistance","@type":"xsd:decimal","type":"number","dldescription":"Distance between battens in m"},"wiresDistance":{"@id":"https://www.datalinker.org/context/MapsFence-WiresDistance","@type":"xsd:decimal","type":"number","dldescription":"Distance between wires or rails in m"},"wiresNumber":{"@id":"https://www.datalinker.org/context/MapsFence-WiresNumber","@type":"xsd:number","type":"integer","dldescription":"Number of wires"},"electricWireNumber":{"@id":"https://www.datalinker.org/context/MapsFence-ElectricWireNumber","@type":"xsd:number","type":"integer","dldescription":"Number of wires electrified"},"plannedLife":{"@id":"https://www.datalinker.org/context/MapsFence-PlannedLife","@type":"xsd:string","type":"string","dldescription":"Permanent, temporary, moveable"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "type": {
+      "@id": "[Type](#Type)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Wire, Post and rail, other"
+    },
+    "battenDistance": {
+      "@id": "[BattenDistance](#BattenDistance)",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "Distance between battens in m"
+    },
+    "wiresDistance": {
+      "@id": "[WiresDistance](#WiresDistance)",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "Distance between wires or rails in m"
+    },
+    "wiresNumber": {
+      "@id": "[WiresNumber](#WiresNumber)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Number of wires"
+    },
+    "electricWireNumber": {
+      "@id": "[ElectricWireNumber](#ElectricWireNumber)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Number of wires electrified"
+    },
+    "plannedLife": {
+      "@id": "[PlannedLife](#PlannedLife)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Permanent, temporary, moveable"
+    }
+  }
+}

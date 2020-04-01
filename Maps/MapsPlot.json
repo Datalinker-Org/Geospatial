@@ -3,110 +3,110 @@
   "type": "object",
   "properties": {
     "id": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-Id",
+      "@id": "[Id](#Id)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Unique identifier in provider system"
     },
     "identifiers": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-Identifiers",
+      "@id": "[Id](#Id)entifiers",
       "@type": "xsd:string",
       "type": "string",
       "@contaner": "@set",
       "dldescription": "Array of unique URN identifiers"
     },
     "name": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-Name",
+      "@id": "[Name](#Name)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Display name for the plot"
     },
     "activity": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-Activity",
+      "@id": "[Activity](#Activity)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Enumeration: the type of vegetation grown here: e.g. permanent  grassland"
     },
     "secondaryActivity": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-SecondaryActivity",
+      "@id": "[SecondaryActivity](#SecondaryActivity)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Description of any secondary values relevant to the plot, i.e. fodder beet section on grazing plot"
     },
     "organic": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-Organic",
+      "@id": "[Organic](#Organic)",
       "@type": "xsd:boolean",
       "type": "boolean",
       "dldescription": "Indicates whether plot is organic"
     },
     "area": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-Area",
+      "@id": "[Area](#Area)",
       "@type": "xsd:decimal",
       "type": "number",
       "dldescription": "Total paddock area expressed in m2"
     },
     "effectiveArea": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-effectiveArea",
+      "@id": "[effectiveArea](#effectiveArea)",
       "@type": "xsd:decimal",
       "type": "number",
       "dldescription": "Plot effective area in m2"
     },
     "cultivableArea": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-cultivableArea",
+      "@id": "[cultivableArea](#cultivableArea)",
       "@type": "xsd:decimal",
       "type": "number",
       "dldescription": "Effective area of the farm for cultivation (cropping) purposes"
     },
     "grazeableArea": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-grazeableArea",
+      "@id": "[grazeableArea](#grazeableArea)",
       "@type": "xsd:decimal",
       "type": "number",
       "dldescription": "Plot grazeable area in m2"
     },
     "croppingArea": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-croppingArea",
+      "@id": "[croppingArea](#croppingArea)",
       "@type": "xsd:decimal",
       "type": "number",
       "dldescription": "Area planted in crop. In m2"
     },
     "drainageArea": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-DrainageArea",
+      "@id": "[DrainageArea](#DrainageArea)",
       "@type": "xsd:decimal",
       "type": "number",
       "dldescription": ""
     },
     "irrigationArea": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-IrrigationArea",
+      "@id": "[IrrigationArea](#IrrigationArea)",
       "@type": "xsd:decimal",
       "type": "number",
       "dldescription": ""
     },
     "irrigationMethod": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-IrrigationMethod",
+      "@id": "[IrrigationMethod](#IrrigationMethod)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": ""
     },
     "ownership": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-Ownership",
+      "@id": "[Ownership](#Ownership)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Owned, Leased"
     },
     "topography": {
-      "@id": "https://www.datalinker.org/context/MapsPlot-Topography",
+      "@id": "[Topography](#Topography)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Values can be Flat, Rolling, Easy hill, Steep hill"
     },
     "validFrom": {
-      "@id": "https://www.datalinker.org/context/PastureCoversFarm-ValidFrom",
+      "@id": "[PastureCoversFarm-ValidFrom](https://github.com/Datalinker-Org/Pasture-Management/blob/master/Pasture-Cover/PastureCoversFarm.md)",
       "@type": "xsd:dateTime",
       "type": "string",
       "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date started operating for specific plot type"
     },
     "validTo": {
-      "@id": "https://www.datalinker.org/context/PastureCoversFarm-ValidTo",
+      "@id": "[PastureCoversFarm-ValidTo](https://github.com/Datalinker-Org/Pasture-Management/blob/master/Pasture-Cover/PastureCoversFarm.md)",
       "@type": "xsd:dateTime",
       "type": "string",
       "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date ended(ceased) operating for specific plot type"

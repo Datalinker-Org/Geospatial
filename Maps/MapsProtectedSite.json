@@ -1,1 +1,24 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"legalFoundationDate":{"@id":"https://www.datalinker.org/context/MapsProtectedSite-LegalFoundationDate","@type":"xsd:dateTime","type":"string","dldescription":"The date that the protected site was legally created"},"designation":{"@id":"https://www.datalinker.org/context/MapsProtectedSite-Designation","@type":"xsd:string","type":"string","dldescription":""},"protectionClassification":{"@id":"https://www.datalinker.org/context/MapsProtectedSite-ProtectionClassification","@type":"xsd:string","type":"string","dldescription":"natureConservation, archaeological, cultural, ecological, landscape, environment, geological"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "legalFoundationDate": {
+      "@id": "[LegalFoundationDate](#LegalFoundationDate)",
+      "@type": "xsd:dateTime",
+      "type": "string",
+      "dldescription": "The date that the protected site was legally created"
+    },
+    "designation": {
+      "@id": "[Designation](#Designation)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": ""
+    },
+    "protectionClassification": {
+      "@id": "[ProtectionClassification](#ProtectionClassification)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "natureConservation, archaeological, cultural, ecological, landscape, environment, geological"
+    }
+  }
+}

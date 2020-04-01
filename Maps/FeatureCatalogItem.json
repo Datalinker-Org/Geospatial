@@ -3,51 +3,51 @@
   "type": "object",
   "properties": {
     "@id": {
-      "@id": "https://www.datalinker.org/context/MapsSite-@Id",
+      "@id": "[MapSite-@Id](MapSite.md)",
       "@type": "@id",
       "type": "string",
       "format": "uri",
       "dldescription": "Unique identifier in the source system"
     },
     "id": {
-      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Id",
+      "@id": "[Id](#Id)",
       "@type": "@id",
       "type": "string",
       "dldescription": "Unique identifier in the source system"
     },
     "type": {
-      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Type",
+      "@id": "[Type](#Type)",
       "@type": "@id",
       "type": "string",
       "format": "uri",
-      "dldescription": "Unique feature type id. Refer to https://www.datalinker.org/context/MapsFeatureCatalog"
+      "dldescription": "Unique feature type id. Refer to [MapsFeatureCatalog](MapsFeatureCatalog.md)"
     },
     "name": {
-      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Name",
+      "@id": "[Name](#Name)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Name for feature e.g. Paddock, Hazzard, Water Way"
     },
     "description": {
-      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Description",
+      "@id": "[Description](#Description)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Notes for feature"
     },
     "crs": {
-      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-CRS",
+      "@id": "[CRS](#CRS)",
       "@type": "xsd:object",
       "type": "string",
       "dldescription": "Coordinate reference system as per GeoJSON"
     },
     "resolution": {
-      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Resolution",
+      "@id": "[Resolution](#Resolution)",
       "@type": "xsd:decimal",
       "type": "number",
       "dldescription": "E.g. 25000 indicates 1:25000 scale of a map"
     },
     "bbox": {
-      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Bbox",
+      "@id": "[Bbox](#Bbox)",
       "@type": "xsd:decimal",
       "type": "array",
       "items": {
@@ -57,7 +57,7 @@
       "dldescription": "Array that is the bounding box coordinates as per GeoJSON"
     },
     "origin": {
-      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Origin",
+      "@id": "[Origin](#Origin)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": ""
@@ -82,31 +82,31 @@
     },
     "responsibleOrganization": {
       "@id": "http://schema.org/Organization",
-      "@type": "http://schema.org/Organization.jsonld",
+      "@type": "@id",
       "type": "object",
       "dldescription": ""
     },
     "language": {
-      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-Language",
+      "@id": "[Language](#Language)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "E.g english"
     },
     "spatialContent": {
-      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-SpatialContent",
+      "@id": "[SpatialContent](#SpatialContent)",
       "@type": "@id",
       "type": "string",
       "format": "uri",
       "dldescription": "URL to get GeoJSON format"
     },
     "contentType": {
-      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-ContentType",
+      "@id": "[ContentType](#ContentType)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "E.g. application/vnd.geo+json indicates GeoJSON"
     },
     "nonSpatialContent": {
-      "@id": "https://www.datalinker.org/context/FeatureCatalogItem-NonSpatialContent",
+      "@id": "[NonSpatialContent](#NonSpatialContent)",
       "@type": "@id",
       "type": "string",
       "format": "uri",

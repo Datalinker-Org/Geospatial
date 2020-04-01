@@ -1,1 +1,12 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"width":{"@id":"https://www.datalinker.org/context/MapsDuct-Width","@type":"xsd:decimal","type":"number","dldescription":"Width of the duct in m"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "width": {
+      "@id": "[Width](#Width)",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "Width of the duct in m"
+    }
+  }
+}
