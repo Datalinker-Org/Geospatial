@@ -3,19 +3,19 @@
   "type": "object",
   "properties": {
     "length": {
-      "@id": "https://www.datalinker.org/context/MapsWatercourse-Length",
+      "@id": "[Length](#Length)",
       "@type": "xsd:decimal",
       "type": "number",
       "dldescription": "Length of watercourse in m"
     },
     "widthRangeUpper": {
-      "@id": "https://www.datalinker.org/context/MapsWatercourse-widthRangeUpper",
+      "@id": "[widthRangeUpper](#widthRangeUpper)",
       "@type": "xsd:decimal",
       "type": "number",
       "dldescription": "The upper bound of width along its length"
     },
     "widthRangeLower": {
-      "@id": "https://www.datalinker.org/context/MapsWatercourse-widthRangeLower",
+      "@id": "[widthRangeLower](#widthRangeLower)",
       "@type": "xsd:decimal",
       "type": "number",
       "dldescription": "The lower bound of width along its length"

@@ -3,136 +3,136 @@
   "type": "object",
   "properties": {
     "paddock": {
-      "@id": "https://www.datalinker.org/context/MapsPaddock",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsPaddock.jsonld",
+      "@id": "[MapsPaddock](MapsPaddock.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/Paddock"
+      "dldescription": "Attributes for type Paddock"
     },
     "riparianZone": {
-      "@id": "https://www.datalinker.org/context/MapsRiparianZone",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsRiparianZone.jsonld",
+      "@id": "[MapsRiparianZone](MapsRiparianZone.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/RiparianZone"
+      "dldescription": "Attributes for type RiparianZone"
     },
     "fence": {
-      "@id": "https://www.datalinker.org/context/MapsFence",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsFence.jsonld",
+      "@id": "[MapsFence](MapsFence.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/Fence"
+      "dldescription": "Attributes for type Fence"
     },
     "gate": {
-      "@id": "https://www.datalinker.org/context/MapsGate",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsGate.jsonld",
+      "@id": "[MapsGate](MapsGate.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/Gate"
+      "dldescription": "Attributes for type Gate"
     },
     "emergencyLocation": {
-      "@id": "https://www.datalinker.org/context/MapsEmergencyLocation",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsEmergencyLocation.jsonld",
+      "@id": "[MapsEmergencyLocation](MapsEmergencyLocation.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/EmergencyLocation"
+      "dldescription": "Attributes for type EmergencyLocation"
     },
     "cadastralParcel": {
-      "@id": "https://www.datalinker.org/context/MapsCadastralParcel",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsCadastralParcel.jsonld",
+      "@id": "[MapsCadastralParcel](MapsCadastralParcel.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/CadastralParcel"
+      "dldescription": "Attributes for type CadastralParcel"
     },
     "propertyUnit": {
-      "@id": "https://www.datalinker.org/context/MapsPropertyUnit",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsPropertyUnit.jsonld",
+      "@id": "[MapsPropertyUnit](MapsPropertyUnit.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/PropertyUnit"
+      "dldescription": "Attributes for type PropertyUnit"
     },
     "plot": {
-      "@id": "https://www.datalinker.org/context/MapsPlot",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsPlot.jsonld",
+      "@id": "[MapsPlot](MapsPlot.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/Plot"
+      "dldescription": "Attributes for type Plot"
     },
     "drainageBasin": {
-      "@id": "https://www.datalinker.org/context/MapsDrainageBasin",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsDrainageBasin.jsonld",
+      "@id": "[MapsDrainageBasin](MapsDrainageBasin.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/DrainageBasin"
+      "dldescription": "Attributes for type DrainageBasin"
     },
     "managementZone": {
-      "@id": "https://www.datalinker.org/context/MapsManagementZone",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsManagementZone.jsonld",
+      "@id": "[MapsManagementZone](MapsManagementZone.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/ManagementZone"
+      "dldescription": "Attributes for type ManagementZone"
     },
     "watercourse": {
-      "@id": "https://www.datalinker.org/context/MapsWatercourse",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsWatercourse.jsonld",
+      "@id": "[MapsWatercourse](MapsWatercourse.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/Watercourse"
+      "dldescription": "Attributes for type Watercourse"
     },
     "crossing": {
-      "@id": "https://www.datalinker.org/context/MapsCrossing",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsCrossing.jsonld",
+      "@id": "[MapsCrossing](MapsCrossing.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/Crossing"
+      "dldescription": "Attributes for type Crossing"
     },
     "utilityNetwork": {
-      "@id": "https://www.datalinker.org/context/MapsUtilityNetwork",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsUtilityNetwork.jsonld",
+      "@id": "[MapsUtilityNetwork](MapsUtilityNetwork.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/UtilityNetwork"
+      "dldescription": "Attributes for type UtilityNetwork"
     },
     "tower": {
-      "@id": "https://www.datalinker.org/context/MapsTower",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsTower.jsonld",
+      "@id": "[MapsTower](MapsTower.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/Tower"
+      "dldescription": "Attributes for type Tower"
     },
     "pole": {
-      "@id": "https://www.datalinker.org/context/MapsPole",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsPole.jsonld",
+      "@id": "[MapsPole](MapsPole.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/Pole"
+      "dldescription": "Attributes for type Pole"
     },
     "pipe": {
-      "@id": "https://www.datalinker.org/context/MapsPipe",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsPipe.jsonld",
+      "@id": "[MapsPipe](MapsPipe.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/Pipe"
+      "dldescription": "Attributes for type Pipe"
     },
     "duct": {
-      "@id": "https://www.datalinker.org/context/MapsDuct",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsDuct.jsonld",
+      "@id": "[MapsDuct](MapsDuct.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/Duct"
+      "dldescription": "Attributes for type Duct"
     },
     "aerodromeArea": {
-      "@id": "https://www.datalinker.org/context/MapsAerodromeArea",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsAerodromeArea.jsonld",
+      "@id": "[MapsAerodromeArea](MapsAerodromeArea.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type https://www.datalinker.org/featureconcept/AerodromeArea"
+      "dldescription": "Attributes for type AerodromeArea"
     },
     "agriBuilding": {
-      "@id": "https://www.datalinker.org/context/MapsAgriBuilding",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsAgriBuilding.jsonld",
+      "@id": "[MapsAgriBuilding](MapsAgriBuilding.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/AgriBuilding"
+      "dldescription": "Attributes for type AgriBuilding"
     },
     "waterManagementInstallation": {
-      "@id": "https://www.datalinker.org/context/MapsWaterInstallation",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsWaterInstallation.jsonld",
+      "@id": "[MapsWaterInstallation](MapsWaterInstallation.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/WaterManagementInstallation"
+      "dldescription": "Attributes for type WaterManagementInstallation"
     },
     "contourLine": {
-      "@id": "https://www.datalinker.org/context/MapsContourLine",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsContourLine.jsonld",
+      "@id": "[MapsContourLine](MapsContourLine.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/ContourLine"
+      "dldescription": "Attributes for type ContourLine"
     },
     "hazardArea": {
-      "@id": "https://www.datalinker.org/context/MapsHazardArea",
-      "@type": "https://www.datalinker.org/contexts/2.0/MapsHazardArea.jsonld",
+      "@id": "[MapsHazardArea](MapsHazardArea.md)",
+      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type http://inspire.ec.europa.eu/featureconcept/HazardArea"
+      "dldescription": "Attributes for type HazardArea"
     }
   }
 }

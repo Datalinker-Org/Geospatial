@@ -3,38 +3,38 @@
   "type": "object",
   "properties": {
     "@id": {
-      "@id": "https://www.datalinker.org/context/MapsSite-@Id",
+      "@id": "[@Id](#@Id)",
       "@type": "@id",
       "type": "string",
       "format": "uri",
       "dldescription": "Unique identifier in the source system"
     },
     "id": {
-      "@id": "https://www.datalinker.org/context/MapsSite-Id",
+      "@id": "[Id](#Id)",
       "@type": "@id",
       "type": "string",
       "dldescription": "Unique identifier in the source system"
     },
     "identifiers": {
-      "@id": "https://www.datalinker.org/context/MapsSite-Identifiers",
+      "@id": "[Id](#Id)entifiers",
       "@type": "xsd:string",
       "type": "string",
       "@contaner": "@set",
       "dldescription": "Array of unique URN identifiers"
     },
     "name": {
-      "@id": "https://www.datalinker.org/context/MapsSite-Name",
+      "@id": "[Name](#Name)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Display name for the site"
     },
     "featureCatalog": {
-      "@id": "https://www.datalinker.org/context/MapsSite-FeatureCatalog",
+      "@id": "[FeatureCatalog](#FeatureCatalog)",
       "@type": "@id",
       "type": "string",
       "format": "uri",
-      "dltype": "https://www.datalinker.org/context/FeatureCatalogItem",
-      "dldescription": "Url for getting list of catalog items with features(refer to https://www.datalinker.org/context/MapsFeatureCatalog) on a site"
+      "dltype": "[FeatureCatalogItem](FeatureCatalogItem.md)",
+      "dldescription": "Url for getting list of catalog items with features(refer to [MapsFeatureCatalog](MapsFeatureCatalog.md) on a site"
     },
     "dateModified": {
       "@id": "http://schema.org/dateModified",

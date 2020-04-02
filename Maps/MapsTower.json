@@ -1,1 +1,12 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"height":{"@id":"https://www.datalinker.org/context/MapsTower-Height","@type":"xsd:decimal","type":"number","dldescription":"The height of the tower in m"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "height": {
+      "@id": "[Height](#Height)",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "The height of the tower in m"
+    }
+  }
+}

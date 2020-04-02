@@ -1,1 +1,12 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"type":{"@id":"https://www.datalinker.org/context/MapsAgriBuilding-Type","@type":"xsd:string","type":"string","dldescription":"Refer http://www.farmdatastandards.org.nz/wp-content/uploads/2016/10/NZFDS-Farm-Features-and-Attributes-Data-Standard-FINAL-2016-18-10.pdf#%5B%7B%22num%22%3A81%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C87%2C727%2C0%5D"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "type": {
+      "@id": "[Type](#Type)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Refer [Farm features and attributes](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Farm%20Features%20and%20Attributes/README.md)"
+    }
+  }
+}

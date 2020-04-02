@@ -1,1 +1,66 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"type":{"@id":"https://www.datalinker.org/context/MapsRiparianZone-Type","@type":"xsd:string","type":"string","dldescription":"Enumeration: Waterway, Drain, Wetland, Other (Definitions used in SDWA http://www.dairynz.co.nz/media/3286407/sustainable-dairying-water-accord-2015.pdf)"},"name":{"@id":"https://www.datalinker.org/context/MapsRiparianZone-Name","@type":"xsd:string","type":"string","dldescription":"Identification or description of the Riparian Zone."},"management":{"@id":"https://www.datalinker.org/context/MapsRiparianZone-ManagementSDWA","@type":"xsd:boolean","type":"boolean","dldescription":"Describes if this feature is subject to SDWA Management requirements"},"compilant":{"@id":"https://www.datalinker.org/context/MapsRiparianZone-CompilantSDWA","@type":"xsd:boolean","type":"boolean","dldescription":"Describes if the feature is compliant with the SDWA"},"dispensation":{"@id":"https://www.datalinker.org/context/MapsRiparianZone-DispensationSDWA","@type":"xsd:boolean","type":"boolean","dldescription":"Describes if a SDWA dispensation is granted for this feature"},"fenced":{"@id":"https://www.datalinker.org/context/MapsRiparianZone-Fenced","@type":"xsd:number","type":"integer","dldescription":"Percentage of feature fenced to exclude stock as defined in the SDWA"},"planting":{"@id":"https://www.datalinker.org/context/MapsRiparianZone-Planting","@type":"xsd:number","type":"integer","dldescription":"Percentage of Riparian planting as detailed in the Riparian Management Plan which is complete for this feature"},"stockCrossingPoint":{"@id":"https://www.datalinker.org/context/MapsRiparianZone-RegularStockCrossingPoint","@type":"xsd:boolean","type":"boolean","dldescription":"Defined in SDWA"},"relatedZone":{"@id":"https://www.datalinker.org/context/MapsRiparianZone-RelatedZone","@type":"xsd:string","type":"string","dldescription":"Reference to a related riparian zone/s"},"plan":{"@id":"https://www.datalinker.org/context/MapsRiparianZone-Plan","@type":"xsd:string","type":"string","dldescription":"Reference to, or citation of a plan (management or action plan) that describes the environmental objectives and measures that shall be undertaken in the zone to protect the environment"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "type": {
+      "@id": "[Type](#Type)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Enumeration: Waterway, Drain, Wetland, Other (Definitions used in SDWA http://www.dairynz.co.nz/media/3286407/sustainable-dairying-water-accord-2015.pdf)"
+    },
+    "name": {
+      "@id": "[Name](#Name)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Identification or description of the Riparian Zone."
+    },
+    "management": {
+      "@id": "[ManagementSDWA](#ManagementSDWA)",
+      "@type": "xsd:boolean",
+      "type": "boolean",
+      "dldescription": "Describes if this feature is subject to SDWA Management requirements"
+    },
+    "compilant": {
+      "@id": "[CompilantSDWA](#CompilantSDWA)",
+      "@type": "xsd:boolean",
+      "type": "boolean",
+      "dldescription": "Describes if the feature is compliant with the SDWA"
+    },
+    "dispensation": {
+      "@id": "[DispensationSDWA](#DispensationSDWA)",
+      "@type": "xsd:boolean",
+      "type": "boolean",
+      "dldescription": "Describes if a SDWA dispensation is granted for this feature"
+    },
+    "fenced": {
+      "@id": "[Fenced](#Fenced)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Percentage of feature fenced to exclude stock as defined in the SDWA"
+    },
+    "planting": {
+      "@id": "[Planting](#Planting)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Percentage of Riparian planting as detailed in the Riparian Management Plan which is complete for this feature"
+    },
+    "stockCrossingPoint": {
+      "@id": "[RegularStockCrossingPoint](#RegularStockCrossingPoint)",
+      "@type": "xsd:boolean",
+      "type": "boolean",
+      "dldescription": "Defined in SDWA"
+    },
+    "relatedZone": {
+      "@id": "[RelatedZone](#RelatedZone)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Reference to a related riparian zone/s"
+    },
+    "plan": {
+      "@id": "[Plan](#Plan)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Reference to, or citation of a plan (management or action plan) that describes the environmental objectives and measures that shall be undertaken in the zone to protect the environment"
+    }
+  }
+}

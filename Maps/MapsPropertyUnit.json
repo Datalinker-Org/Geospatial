@@ -1,1 +1,18 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"reference":{"@id":"https://www.datalinker.org/context/MapsPropertyUnit-Reference","@type":"xsd:decimal","type":"number","dldescription":"National code of the cadastral parcel as recorded by LINZ"},"areaValue":{"@id":"https://www.datalinker.org/context/MapsPropertyUnit-AreaValue","@type":"xsd:decimal","type":"number","dldescription":"Registered area value in m2"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "reference": {
+      "@id": "[Reference](#Reference)",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "National code of the cadastral parcel as recorded by LINZ"
+    },
+    "areaValue": {
+      "@id": "[AreaValue](#AreaValue)",
+      "@type": "xsd:decimal",
+      "type": "number",
+      "dldescription": "Registered area value in m2"
+    }
+  }
+}

@@ -1,1 +1,24 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"authority":{"@id":"https://www.datalinker.org/context/MapsManagement-Authority","@type":"xsd:string","type":"string","dldescription":"description of the organisation(s) responsible for managing, restricting or regulating measures or activities within the zone"},"legalBasis":{"@id":"https://www.datalinker.org/context/MapsManagement-LegalBasis","@type":"xsd:string","type":"string","dldescription":"reference to, or citation of the legislative instrument or document that required the establishment of a zone"},"plan":{"@id":"https://www.datalinker.org/context/MapsManagement-Plan","@type":"xsd:string","type":"string","dldescription":"reference to, or citation of a plan (management or action plan) that describes the environmental objectives and measures that shall be undertaken in the zone to protect the environment"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "authority": {
+      "@id": "[Authority](#Authority)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "description of the organisation(s) responsible for managing, restricting or regulating measures or activities within the zone"
+    },
+    "legalBasis": {
+      "@id": "[LegalBasis](#LegalBasis)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "reference to, or citation of the legislative instrument or document that required the establishment of a zone"
+    },
+    "plan": {
+      "@id": "[Plan](#Plan)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "reference to, or citation of a plan (management or action plan) that describes the environmental objectives and measures that shall be undertaken in the zone to protect the environment"
+    }
+  }
+}
