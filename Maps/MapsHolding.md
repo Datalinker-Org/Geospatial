@@ -1,0 +1,22 @@
+ - <b id="#/properties/@id">@id</b>
+	 - **Description:** Unique identifier in the source system
+	 - **Type:** `string`
+ - <b id="#/properties/id">id</b>
+	 - **Description:** Unique identifier in the source system
+	 - **Type:** `string`
+ - <b id="#/properties/identifiers">identifiers</b>
+	 - **Description:** One or more globally unique holding identifiers
+	 - **Type:** `array`
+ - <b id="#/properties/name">name</b>
+	 - **Description:** Display name for the holding
+	 - **Type:** `string`
+ - <b id="#/properties/sites">sites</b>
+	 - **Description:** Array of sites that belongs to holding
+	 - **Type:** `array`
+	 - <b id="mapssitemapssite.md">Link to schema: [MapsSite](MapsSite.md)</b>
+ - <b id="#/properties/dateModified">dateModified</b>
+	 - **Description:** ISO8601 date format 2018-07-19T23:00:08+00:00. Date when details were last modified. Bubles up from Sites
+	 - **Type:** `string`
+	 - <b id="httpschema.orgdatemodified">Link to schema: http://schema.org/dateModified</b>
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

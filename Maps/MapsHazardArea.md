@@ -1,0 +1,35 @@
+ - <b id="#/properties/id">id</b>
+	 - **Description:** Internal system identifier
+	 - **Type:** `string`
+ - <b id="#/properties/method">method</b>
+	 - **Description:** Can be 'modeling' or 'indirect determation'
+	 - **Type:** `string`
+ - <b id="#/properties/type">type</b>
+	 - **Description:** Modelled with a ― NaturalHazardClassification data type
+	 - **Type:** `string`
+ - <b id="#/properties/validFrom">validFrom</b>
+	 - **Description:** ISO8601 date format 2018-07-19T23:00:08+00:00. Indicates start date for period of validity
+	 - **Type:** `string`
+ - <b id="#/properties/validTo">validTo</b>
+	 - **Description:** ISO8601 date format 2018-07-19T23:00:08+00:00. Indicates end date for period of validity
+	 - **Type:** `string`
+ - <b id="#/properties/assessmentMethod">assessmentMethod</b>
+	 - **Description:** Describes method used to express the likelihood of a hazard event
+	 - **Type:** `string`
+ - <b id="#/properties/qualitativeLikelihood">qualitativeLikelihood</b>
+	 - **Description:** Describes in narrative form the assessment of the likelihood of occurrence of a hazard event
+	 - **Type:** `string`
+ - <b id="#/properties/quantitativeLikelihood">quantitativeLikelihood</b>
+	 - **Description:** Probability of occurrence, or a return period
+	 - **Type:** `string`
+ - <b id="#/properties/returnPeriod">returnPeriod</b>
+	 - **Description:** long-term average interval of time or number of years within which an event will be equaled or exceeded
+	 - **Type:** `string`
+ - <b id="#/properties/probabilityOfOccurrence">probabilityOfOccurrence</b>
+	 - **Description:** The probability of occurrence is the inverse value of the return period
+	 - **Type:** `string`
+ - <b id="#/properties/levelOrIntensity">levelOrIntensity</b>
+	 - **Description:** A magnitude, or intensity, can be expressed either qualitatively, or quantitatively
+	 - **Type:** `string`
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

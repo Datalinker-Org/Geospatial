@@ -1,0 +1,32 @@
+ - <b id="#/properties/type">type</b>
+	 - **Description:** Enumeration: Waterway, Drain, Wetland, Other (Definitions used in SDWA http://www.dairynz.co.nz/media/3286407/sustainable-dairying-water-accord-2015.pdf)
+	 - **Type:** `string`
+ - <b id="#/properties/name">name</b>
+	 - **Description:** Identification or description of the Riparian Zone.
+	 - **Type:** `string`
+ - <b id="#/properties/management">management</b>
+	 - **Description:** Describes if this feature is subject to SDWA Management requirements
+	 - **Type:** `boolean`
+ - <b id="#/properties/compilant">compilant</b>
+	 - **Description:** Describes if the feature is compliant with the SDWA
+	 - **Type:** `boolean`
+ - <b id="#/properties/dispensation">dispensation</b>
+	 - **Description:** Describes if a SDWA dispensation is granted for this feature
+	 - **Type:** `boolean`
+ - <b id="#/properties/fenced">fenced</b>
+	 - **Description:** Percentage of feature fenced to exclude stock as defined in the SDWA
+	 - **Type:** `integer`
+ - <b id="#/properties/planting">planting</b>
+	 - **Description:** Percentage of Riparian planting as detailed in the Riparian Management Plan which is complete for this feature
+	 - **Type:** `integer`
+ - <b id="#/properties/stockCrossingPoint">stockCrossingPoint</b>
+	 - **Description:** Defined in SDWA
+	 - **Type:** `boolean`
+ - <b id="#/properties/relatedZone">relatedZone</b>
+	 - **Description:** Reference to a related riparian zone/s
+	 - **Type:** `string`
+ - <b id="#/properties/plan">plan</b>
+	 - **Description:** Reference to, or citation of a plan (management or action plan) that describes the environmental objectives and measures that shall be undertaken in the zone to protect the environment
+	 - **Type:** `string`
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_
