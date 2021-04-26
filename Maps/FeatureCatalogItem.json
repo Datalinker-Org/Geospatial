@@ -2,115 +2,80 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "@id": {
-      "@id": "[MapSite-@Id](MapSite.md)",
-      "@type": "@id",
+    "@id": {     
       "type": "string",
       "format": "uri",
-      "dldescription": "Unique identifier in the source system"
+      "description": "Unique identifier in the source system"
     },
-    "id": {
-      "@id": "[Id](#Id)",
-      "@type": "@id",
+    "id": {     
       "type": "string",
-      "dldescription": "Unique identifier in the source system"
+      "description": "Unique identifier in the source system"
     },
     "type": {
-      "@id": "[Type](#Type)",
-      "@type": "@id",
       "type": "string",
       "format": "uri",
-      "dldescription": "Unique feature type id. Refer to [MapsFeatureCatalog](MapsFeatureCatalog.md)"
+      "description": "Unique feature type id. Refer to [MapsFeatureCatalog](MapsFeatureCatalog.md)"
     },
     "name": {
-      "@id": "[Name](#Name)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Name for feature e.g. Paddock, Hazzard, Water Way"
+      "description": "Name for feature e.g. Paddock, Hazzard, Water Way"
     },
     "description": {
-      "@id": "[Description](#Description)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Notes for feature"
+      "description": "Notes for feature"
     },
     "crs": {
-      "@id": "[CRS](#CRS)",
-      "@type": "xsd:object",
       "type": "string",
-      "dldescription": "Coordinate reference system as per GeoJSON"
+      "description": "Coordinate reference system as per GeoJSON"
     },
     "resolution": {
-      "@id": "[Resolution](#Resolution)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "E.g. 25000 indicates 1:25000 scale of a map"
+      "description": "E.g. 25000 indicates 1:25000 scale of a map"
     },
     "bbox": {
-      "@id": "[Bbox](#Bbox)",
-      "@type": "xsd:decimal",
       "type": "array",
       "items": {
         "type": "number"
       },
-      "@container": "@set",
-      "dldescription": "Array that is the bounding box coordinates as per GeoJSON"
+     "description": "Array that is the bounding box coordinates as per GeoJSON"
     },
     "origin": {
-      "@id": "[Origin](#Origin)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": ""
+      "description": ""
     },
     "dateCreated": {
-      "@id": "http://schema.org/dateCreated",
-      "@type": "xsd:dateTime",
       "type": "string",
-      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date when object was created"
+      "description": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date when object was created"
     },
     "dateModified": {
-      "@id": "http://schema.org/dateModified",
-      "@type": "xsd:dateTime",
       "type": "string",
-      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date when details were last modified"
+      "description": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date when details were last modified"
     },
     "datePublished": {
-      "@id": "http://schema.org/datePublished",
-      "@type": "xsd:dateTime",
       "type": "string",
-      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date when details became published"
+      "description": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date when details became published"
     },
     "responsibleOrganization": {
-      "@id": "http://schema.org/Organization",
-      "@type": "@id",
       "type": "object",
-      "dldescription": ""
+      "description": ""
     },
     "language": {
-      "@id": "[Language](#Language)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "E.g english"
+      "description": "E.g english"
     },
     "spatialContent": {
-      "@id": "[SpatialContent](#SpatialContent)",
-      "@type": "@id",
       "type": "string",
       "format": "uri",
-      "dldescription": "URL to get GeoJSON format"
+      "description": "URL to get GeoJSON format"
     },
     "contentType": {
-      "@id": "[ContentType](#ContentType)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "E.g. application/vnd.geo+json indicates GeoJSON"
+      "description": "E.g. application/vnd.geo+json indicates GeoJSON"
     },
     "nonSpatialContent": {
-      "@id": "[NonSpatialContent](#NonSpatialContent)",
-      "@type": "@id",
       "type": "string",
       "format": "uri",
-      "dldescription": "URL to get attribute data related to specified type"
+      "description": "URL to get attribute data related to specified type"
     }
   }
 }

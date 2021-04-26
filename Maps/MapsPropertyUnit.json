@@ -3,16 +3,12 @@
   "type": "object",
   "properties": {
     "reference": {
-      "@id": "[Reference](#Reference)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "National code of the cadastral parcel as recorded by LINZ"
+      "description": "National code of the cadastral parcel as recorded by LINZ"
     },
     "areaValue": {
-      "@id": "[AreaValue](#AreaValue)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "Registered area value in m2"
+      "description": "Registered area value in m2"
     }
   }
 }

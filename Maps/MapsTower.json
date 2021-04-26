@@ -3,10 +3,8 @@
   "type": "object",
   "properties": {
     "height": {
-      "@id": "[Height](#Height)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "The height of the tower in m"
+      "description": "The height of the tower in m"
     }
   }
 }

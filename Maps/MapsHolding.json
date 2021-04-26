@@ -3,49 +3,35 @@
   "type": "object",
   "properties": {
     "@id": {
-      "@id": "[@Id](#@Id)",
-      "@type": "@id",
       "type": "string",
       "format": "uri",
-      "dldescription": "Unique identifier in the source system"
+      "description": "Unique identifier in the source system"
     },
     "id": {
-      "@id": "[Id](#Id)",
-      "@type": "@id",
       "type": "string",
-      "dldescription": "Unique identifier in the source system"
+      "description": "Unique identifier in the source system"
     },
     "identifiers": {
-      "@id": "[Id](#Id)entifiers",
-      "@container": "@set",
-      "@type": "xsd:string",
       "type": "array",
       "items": {
         "type": "string"
       },
-      "dldescription": "One or more globally unique holding identifiers"
+      "description": "One or more globally unique holding identifiers"
     },
     "name": {
-      "@id": "[Name](#Name)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Display name for the holding"
+      "description": "Display name for the holding"
     },
     "sites": {
-      "@id": "[MapsSite](MapsSite.md)",
-      "@type": "@id",
       "type": "array",
       "items": {
         "type": "object"
       },
-      "@container": "@set",
-      "dldescription": "Array of sites that belongs to holding"
+      "description": "Array of sites that belongs to holding"
     },
     "dateModified": {
-      "@id": "http://schema.org/dateModified",
-      "@type": "xsd:dateTime",
       "type": "string",
-      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date when details were last modified. Bubles up from Sites"
+      "description": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date when details were last modified. Bubles up from Sites"
     }
   }
 }

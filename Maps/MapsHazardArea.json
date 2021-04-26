@@ -3,70 +3,48 @@
   "type": "object",
   "properties": {
     "id": {
-      "@id": "[Id](#Id)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Internal system identifier"
+      "description": "Internal system identifier"
     },
     "method": {
-      "@id": "[Method](#Method)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Can be 'modeling' or 'indirect determation'"
+      "description": "Can be 'modeling' or 'indirect determation'"
     },
     "type": {
-      "@id": "[Type](#Type)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Modelled with a ― NaturalHazardClassification data type"
+      "description": "Modelled with a ― NaturalHazardClassification data type"
     },
     "validFrom": {
-      "@id": "[ValidFrom](#ValidFrom)",
-      "@type": "xsd:dateTime",
       "type": "string",
-      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Indicates start date for period of validity"
+      "description": "ISO8601 date format 2018-07-19T23:00:08+00:00. Indicates start date for period of validity"
     },
     "validTo": {
-      "@id": "[ValidTo](#ValidTo)",
-      "@type": "xsd:dateTime",
       "type": "string",
-      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Indicates end date for period of validity"
+      "description": "ISO8601 date format 2018-07-19T23:00:08+00:00. Indicates end date for period of validity"
     },
     "assessmentMethod": {
-      "@id": "[AssessmentMethod](#AssessmentMethod)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Describes method used to express the likelihood of a hazard event"
+      "description": "Describes method used to express the likelihood of a hazard event"
     },
     "qualitativeLikelihood": {
-      "@id": "[QualitativeLikelihood](#QualitativeLikelihood)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Describes in narrative form the assessment of the likelihood of occurrence of a hazard event"
+      "description": "Describes in narrative form the assessment of the likelihood of occurrence of a hazard event"
     },
     "quantitativeLikelihood": {
-      "@id": "[QuantitativeLikelihood](#QuantitativeLikelihood)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Probability of occurrence, or a return period"
+      "description": "Probability of occurrence, or a return period"
     },
     "returnPeriod": {
-      "@id": "[ReturnPeriod](#ReturnPeriod)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "long-term average interval of time or number of years within which an event will be equaled or exceeded"
+      "description": "long-term average interval of time or number of years within which an event will be equaled or exceeded"
     },
     "probabilityOfOccurrence": {
-      "@id": "[ProbabilityOfOccurrence](#ProbabilityOfOccurrence)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "The probability of occurrence is the inverse value of the return period"
+      "description": "The probability of occurrence is the inverse value of the return period"
     },
     "levelOrIntensity": {
-      "@id": "[LevelOrIntensity](#LevelOrIntensity)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "A magnitude, or intensity, can be expressed either qualitatively, or quantitatively"
+      "description": "A magnitude, or intensity, can be expressed either qualitatively, or quantitatively"
     }
   }
 }

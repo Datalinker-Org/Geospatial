@@ -3,34 +3,24 @@
   "type": "object",
   "properties": {
     "id": {
-      "@id": "[Id](#Id)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Internal system identifier"
+      "description": "Internal system identifier"
     },
     "name": {
-      "@id": "[Plan](#Plan)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Name of the management zone"
+      "description": "Name of the management zone"
     },
     "authority": {
-      "@id": "[Authority](#Authority)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "description of the organisation(s) responsible for managing, restricting or regulating measures or activities within the zone"
+      "description": "description of the organisation(s) responsible for managing, restricting or regulating measures or activities within the zone"
     },
     "legalBasis": {
-      "@id": "[LegalBasis](#LegalBasis)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "reference to, or citation of the legislative instrument or document that required the establishment of a zone"
+      "description": "reference to, or citation of the legislative instrument or document that required the establishment of a zone"
     },
     "plan": {
-      "@id": "[Plan](#Plan)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "reference to, or citation of a plan (management or action plan) that describes the environmental objectives and measures that shall be undertaken in the zone to protect the environment"
+      "description": "reference to, or citation of a plan (management or action plan) that describes the environmental objectives and measures that shall be undertaken in the zone to protect the environment"
     }
   }
 }

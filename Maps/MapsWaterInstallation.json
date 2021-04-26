@@ -3,16 +3,12 @@
   "type": "object",
   "properties": {
     "waterQuantity": {
-      "@id": "[WaterQuantity](#WaterQuantity)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "The quantity of water given by the water source in m3"
+      "description": "The quantity of water given by the water source in m3"
     },
     "typeOfWaterSource": {
-      "@id": "[TypeOfWaterSource](#TypeOfWaterSource)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "onFarmGroundWater, onFarmSurfaceWater, offFarmSurfaceWater, offFarmWaterFromCommonWaterSupplyNetworks, otherSources"
+      "description": "onFarmGroundWater, onFarmSurfaceWater, offFarmSurfaceWater, offFarmWaterFromCommonWaterSupplyNetworks, otherSources"
     }
   }
 }

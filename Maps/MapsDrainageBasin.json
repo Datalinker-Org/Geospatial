@@ -3,16 +3,12 @@
   "type": "object",
   "properties": {
     "origin": {
-      "@id": "[Origin](#Origin)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Natural, ManMade"
+      "description": "Natural, ManMade"
     },
     "area": {
-      "@id": "[Area](#Area)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "Registered area value in m2"
+      "description": "Registered area value in m2"
     }
   }
 }

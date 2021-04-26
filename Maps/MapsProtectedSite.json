@@ -3,22 +3,16 @@
   "type": "object",
   "properties": {
     "legalFoundationDate": {
-      "@id": "[LegalFoundationDate](#LegalFoundationDate)",
-      "@type": "xsd:dateTime",
       "type": "string",
-      "dldescription": "The date that the protected site was legally created"
+      "description": "The date that the protected site was legally created"
     },
     "designation": {
-      "@id": "[Designation](#Designation)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": ""
+      "description": ""
     },
     "protectionClassification": {
-      "@id": "[ProtectionClassification](#ProtectionClassification)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "natureConservation, archaeological, cultural, ecological, landscape, environment, geological"
+      "description": "natureConservation, archaeological, cultural, ecological, landscape, environment, geological"
     }
   }
 }

@@ -3,10 +3,8 @@
   "type": "object",
   "properties": {
     "type": {
-      "@id": "[Type](#Type)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Aqueduct, bridge, culvert, siphon"
+      "description": "Aqueduct, bridge, culvert, siphon"
     }
   }
 }

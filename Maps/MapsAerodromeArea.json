@@ -2,17 +2,13 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "type": {
-      "@id": "[Type](#Type)",
-      "@type": "xsd:string",
+    "type": {      
       "type": "string",
-      "dldescription": "aerodromeHeliport, aerodromeOnly, heliportOnly, LandingSite"
+      "description": "aerodromeHeliport, aerodromeOnly, heliportOnly, LandingSite"
     },
-    "surface": {
-      "@id": "[Surface](#Surface)",
-      "@type": "xsd:string",
+    "surface": {      
       "type": "string",
-      "dldescription": "asphalt, concrete, grass"
+      "description": "asphalt, concrete, grass"
     }
   }
 }

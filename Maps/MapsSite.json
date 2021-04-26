@@ -3,44 +3,31 @@
   "type": "object",
   "properties": {
     "@id": {
-      "@id": "[@Id](#@Id)",
-      "@type": "@id",
       "type": "string",
       "format": "uri",
-      "dldescription": "Unique identifier in the source system"
+      "description": "Unique identifier in the source system"
     },
     "id": {
-      "@id": "[Id](#Id)",
-      "@type": "@id",
       "type": "string",
-      "dldescription": "Unique identifier in the source system"
+      "description": "Unique identifier in the source system"
     },
     "identifiers": {
-      "@id": "[Id](#Id)entifiers",
-      "@type": "xsd:string",
       "type": "string",
-      "@contaner": "@set",
-      "dldescription": "Array of unique URN identifiers"
+      "description": "Array of unique URN identifiers"
     },
     "name": {
-      "@id": "[Name](#Name)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Display name for the site"
+      "description": "Display name for the site"
     },
     "featureCatalog": {
-      "@id": "[FeatureCatalog](#FeatureCatalog)",
-      "@type": "@id",
       "type": "string",
       "format": "uri",
       "dltype": "[FeatureCatalogItem](FeatureCatalogItem.md)",
-      "dldescription": "Url for getting list of catalog items with features(refer to [MapsFeatureCatalog](MapsFeatureCatalog.md) on a site"
+      "description": "Url for getting list of catalog items with features(refer to [MapsFeatureCatalog](MapsFeatureCatalog.md) on a site"
     },
     "dateModified": {
-      "@id": "http://schema.org/dateModified",
-      "@type": "xsd:dateTime",
       "type": "string",
-      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date when details were last modified. Bubles up from Feature Catalog"
+      "description": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date when details were last modified. Bubles up from Feature Catalog"
     }
   }
 }

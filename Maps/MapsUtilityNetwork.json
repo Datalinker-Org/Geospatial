@@ -3,10 +3,8 @@
   "type": "object",
   "properties": {
     "type": {
-      "@id": "[Type](#Type)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "E.g electricity, oilGasChemical,  sewer,  water,  thermal, telecommunications, crossTheme"
+      "description": "E.g electricity, oilGasChemical,  sewer,  water,  thermal, telecommunications, crossTheme"
     }
   }
 }

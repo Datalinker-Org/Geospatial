@@ -3,22 +3,16 @@
   "type": "object",
   "properties": {
     "length": {
-      "@id": "[Length](#Length)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "Length of watercourse in m"
+      "description": "Length of watercourse in m"
     },
     "widthRangeUpper": {
-      "@id": "[widthRangeUpper](#widthRangeUpper)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "The upper bound of width along its length"
+      "description": "The upper bound of width along its length"
     },
     "widthRangeLower": {
-      "@id": "[widthRangeLower](#widthRangeLower)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "The lower bound of width along its length"
+      "description": "The lower bound of width along its length"
     }
   }
 }

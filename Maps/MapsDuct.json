@@ -3,10 +3,8 @@
   "type": "object",
   "properties": {
     "width": {
-      "@id": "[Width](#Width)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "Width of the duct in m"
+      "description": "Width of the duct in m"
     }
   }
 }

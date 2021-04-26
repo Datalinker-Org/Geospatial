@@ -3,18 +3,13 @@
   "type": "object",
   "properties": {
     "holdings": {
-      "@id": "[MapsHolding](MapsHolding.md)",
-      "@type": "@id",
       "type": "array",
       "items": { "type": "object" },
-      "@container": "@set",
-      "dldescription": "Array of holdings"
+      "description": "Array of holdings"
     },
     "provider": {
-      "@id": "http://schema.org/Organization",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "An organization details defined by schema.org"
+      "description": "An organization details defined by schema.org"
     }
   }
 }

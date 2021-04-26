@@ -3,136 +3,92 @@
   "type": "object",
   "properties": {
     "paddock": {
-      "@id": "[MapsPaddock](MapsPaddock.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type Paddock"
+      "description": "Attributes for type Paddock"
     },
     "riparianZone": {
-      "@id": "[MapsRiparianZone](MapsRiparianZone.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type RiparianZone"
+      "description": "Attributes for type RiparianZone"
     },
     "fence": {
-      "@id": "[MapsFence](MapsFence.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type Fence"
+      "description": "Attributes for type Fence"
     },
     "gate": {
-      "@id": "[MapsGate](MapsGate.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type Gate"
+      "description": "Attributes for type Gate"
     },
     "emergencyLocation": {
-      "@id": "[MapsEmergencyLocation](MapsEmergencyLocation.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type EmergencyLocation"
+      "description": "Attributes for type EmergencyLocation"
     },
     "cadastralParcel": {
-      "@id": "[MapsCadastralParcel](MapsCadastralParcel.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type CadastralParcel"
+      "description": "Attributes for type CadastralParcel"
     },
     "propertyUnit": {
-      "@id": "[MapsPropertyUnit](MapsPropertyUnit.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type PropertyUnit"
+      "description": "Attributes for type PropertyUnit"
     },
     "plot": {
-      "@id": "[MapsPlot](MapsPlot.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type Plot"
+      "description": "Attributes for type Plot"
     },
     "drainageBasin": {
-      "@id": "[MapsDrainageBasin](MapsDrainageBasin.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type DrainageBasin"
+      "description": "Attributes for type DrainageBasin"
     },
     "managementZone": {
-      "@id": "[MapsManagementZone](MapsManagementZone.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type ManagementZone"
+      "description": "Attributes for type ManagementZone"
     },
     "watercourse": {
-      "@id": "[MapsWatercourse](MapsWatercourse.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type Watercourse"
+      "description": "Attributes for type Watercourse"
     },
     "crossing": {
-      "@id": "[MapsCrossing](MapsCrossing.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type Crossing"
+      "description": "Attributes for type Crossing"
     },
     "utilityNetwork": {
-      "@id": "[MapsUtilityNetwork](MapsUtilityNetwork.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type UtilityNetwork"
+      "description": "Attributes for type UtilityNetwork"
     },
     "tower": {
-      "@id": "[MapsTower](MapsTower.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type Tower"
+      "description": "Attributes for type Tower"
     },
     "pole": {
-      "@id": "[MapsPole](MapsPole.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type Pole"
+      "description": "Attributes for type Pole"
     },
     "pipe": {
-      "@id": "[MapsPipe](MapsPipe.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type Pipe"
+      "description": "Attributes for type Pipe"
     },
     "duct": {
-      "@id": "[MapsDuct](MapsDuct.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type Duct"
+      "description": "Attributes for type Duct"
     },
     "aerodromeArea": {
-      "@id": "[MapsAerodromeArea](MapsAerodromeArea.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type AerodromeArea"
+      "description": "Attributes for type AerodromeArea"
     },
     "agriBuilding": {
-      "@id": "[MapsAgriBuilding](MapsAgriBuilding.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type AgriBuilding"
+      "description": "Attributes for type AgriBuilding"
     },
     "waterManagementInstallation": {
-      "@id": "[MapsWaterInstallation](MapsWaterInstallation.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type WaterManagementInstallation"
+      "description": "Attributes for type WaterManagementInstallation"
     },
     "contourLine": {
-      "@id": "[MapsContourLine](MapsContourLine.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type ContourLine"
+      "description": "Attributes for type ContourLine"
     },
     "hazardArea": {
-      "@id": "[MapsHazardArea](MapsHazardArea.md)",
-      "@type": "@id",
       "type": "object",
-      "dldescription": "Attributes for type HazardArea"
+      "description": "Attributes for type HazardArea"
     }
   }
 }

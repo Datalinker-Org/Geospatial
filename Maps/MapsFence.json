@@ -3,40 +3,28 @@
   "type": "object",
   "properties": {
     "type": {
-      "@id": "[Type](#Type)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Wire, Post and rail, other"
+      "description": "Wire, Post and rail, other"
     },
     "battenDistance": {
-      "@id": "[BattenDistance](#BattenDistance)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "Distance between battens in m"
+      "description": "Distance between battens in m"
     },
     "wiresDistance": {
-      "@id": "[WiresDistance](#WiresDistance)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "Distance between wires or rails in m"
+      "description": "Distance between wires or rails in m"
     },
     "wiresNumber": {
-      "@id": "[WiresNumber](#WiresNumber)",
-      "@type": "xsd:number",
       "type": "integer",
-      "dldescription": "Number of wires"
+      "description": "Number of wires"
     },
     "electricWireNumber": {
-      "@id": "[ElectricWireNumber](#ElectricWireNumber)",
-      "@type": "xsd:number",
       "type": "integer",
-      "dldescription": "Number of wires electrified"
+      "description": "Number of wires electrified"
     },
     "plannedLife": {
-      "@id": "[PlannedLife](#PlannedLife)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Permanent, temporary, moveable"
+      "description": "Permanent, temporary, moveable"
     }
   }
 }

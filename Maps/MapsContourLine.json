@@ -3,16 +3,12 @@
   "type": "object",
   "properties": {
     "type": {
-      "@id": "[Type](#Type)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "master, ordinary, auxiliary"
+      "description": "master, ordinary, auxiliary"
     },
     "downRight": {
-      "@id": "[DownRight](#DownRight)",
-      "@type": "xsd:boolean",
       "type": "boolean",
-      "dldescription": ""
+      "description": ""
     }
   }
 }

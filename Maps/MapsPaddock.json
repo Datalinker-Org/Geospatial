@@ -3,131 +3,88 @@
   "type": "object",
   "properties": {
     "id": {
-      "@id": "[Id](#Id)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Unique identifier in provider system"
+      "description": "Unique identifier in provider system"
     },
     "identifiers": {
-      "@id": "[Id](#Id)entifiers",
-      "@type": "xsd:string",
       "type": "string",
-      "@contaner": "@set",
-      "dldescription": "Array of unique URN identifiers"
+      "description": "Array of unique URN identifiers"
     },
     "name": {
-      "@id": "[Name](#Name)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Display name for the paddock"
+      "description": "Display name for the paddock"
     },
     "activity": {
-      "@id": "[Activity](#Activity)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Enumeration: the type of vegetation grown here: e.g. permanent  grassland"
+      "description": "Enumeration: the type of vegetation grown here: e.g. permanent  grassland"
     },
     "secondaryActivity": {
-      "@id": "[SecondaryActivity](#SecondaryActivity)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Description of any secondary values relevant to the paddock, i.e. fodder beet section on grazing paddock"
+      "description": "Description of any secondary values relevant to the paddock, i.e. fodder beet section on grazing paddock"
     },
     "pastureType": {
-      "@id": "[PastureType](#PastureType)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Enumeration: Ryegrass/white clover, Browntop, Unimproved/tussock grasslands, Summer C4 (paspalum) pastures, C4 (kikuyu) pastures, Lucerne, Grass only (enumeration defined by Overseer)"
+      "description": "Enumeration: Ryegrass/white clover, Browntop, Unimproved/tussock grasslands, Summer C4 (paspalum) pastures, C4 (kikuyu) pastures, Lucerne, Grass only (enumeration defined by Overseer)"
     },
     "pastureUtilisation": {
-      "@id": "[PastureUtilisation](#PastureUtilisation)",
-      "@type": "xsd:number",
       "type": "integer",
-      "dldescription": "%"
+      "description": "%"
     },
     "averagePastureNConcentration": {
-      "@id": "[AveragePastureNConcentration](#AveragePastureNConcentration)",
-      "@type": "xsd:number",
       "type": "integer",
-      "dldescription": "%"
+      "description": "%"
     },
     "organic": {
-      "@id": "[Organic](#Organic)",
-      "@type": "xsd:boolean",
       "type": "boolean",
-      "dldescription": "Indicates whether paddock is organic"
+      "description": "Indicates whether paddock is organic"
     },
     "totalArea": {
-      "@id": "[TotalArea](#TotalArea)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "Total paddock area expressed in m2"
+      "description": "Total paddock area expressed in m2"
     },
     "effectiveArea": {
-      "@id": "[effectiveArea](#effectiveArea)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "Paddock effective area in m2"
+      "description": "Paddock effective area in m2"
     },
     "cultivableArea": {
-      "@id": "[cultivableArea](#cultivableArea)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "Effective area of the farm for cultivation (cropping) purposes"
+      "description": "Effective area of the farm for cultivation (cropping) purposes"
     },
     "grazeableArea": {
-      "@id": "[grazeableArea](#grazeableArea)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "Paddock grazeable area in m2"
+      "description": "Paddock grazeable area in m2"
     },
     "croppingArea": {
-      "@id": "[croppingArea](#croppingArea)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "Area planted in crop. In m2"
+      "description": "Area planted in crop. In m2"
     },
     "drainageArea": {
-      "@id": "[DrainageArea](#DrainageArea)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": ""
+      "description": ""
     },
     "irrigationArea": {
-      "@id": "[IrrigationArea](#IrrigationArea)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": ""
+      "description": ""
     },
     "irrigationMethod": {
-      "@id": "[IrrigationMethod](#IrrigationMethod)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": ""
+      "description": ""
     },
     "ownership": {
-      "@id": "[Ownership](#Ownership)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Owned, Leased"
+      "description": "Owned, Leased"
     },
     "topography": {
-      "@id": "[Topography](#Topography)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Values can be Flat,Rolling,Easy hill, Steep hill"
+      "description": "Values can be Flat,Rolling,Easy hill, Steep hill"
     },
     "validFrom": {
-      "@id": "[ValidFrom](#ValidFrom)",
-      "@type": "xsd:dateTime",
       "type": "string",
-      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date started operating for specific paddock type"
+      "description": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date started operating for specific paddock type"
     },
     "validTo": {
-      "@id": "[ValidTo](#ValidTo)",
-      "@type": "xsd:dateTime",
       "type": "string",
-      "dldescription": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date ended(ceased) operating for specific paddock type"
+      "description": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date ended(ceased) operating for specific paddock type"
     }
   }
 }

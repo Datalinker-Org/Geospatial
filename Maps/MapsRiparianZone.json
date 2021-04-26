@@ -3,64 +3,44 @@
   "type": "object",
   "properties": {
     "type": {
-      "@id": "[Type](#Type)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Enumeration: Waterway, Drain, Wetland, Other (Definitions used in SDWA http://www.dairynz.co.nz/media/3286407/sustainable-dairying-water-accord-2015.pdf)"
+      "description": "Enumeration: Waterway, Drain, Wetland, Other (Definitions used in SDWA http://www.dairynz.co.nz/media/3286407/sustainable-dairying-water-accord-2015.pdf)"
     },
     "name": {
-      "@id": "[Name](#Name)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Identification or description of the Riparian Zone."
+      "description": "Identification or description of the Riparian Zone."
     },
     "management": {
-      "@id": "[ManagementSDWA](#ManagementSDWA)",
-      "@type": "xsd:boolean",
       "type": "boolean",
-      "dldescription": "Describes if this feature is subject to SDWA Management requirements"
+      "description": "Describes if this feature is subject to SDWA Management requirements"
     },
     "compilant": {
-      "@id": "[CompilantSDWA](#CompilantSDWA)",
-      "@type": "xsd:boolean",
       "type": "boolean",
-      "dldescription": "Describes if the feature is compliant with the SDWA"
+      "description": "Describes if the feature is compliant with the SDWA"
     },
     "dispensation": {
-      "@id": "[DispensationSDWA](#DispensationSDWA)",
-      "@type": "xsd:boolean",
       "type": "boolean",
-      "dldescription": "Describes if a SDWA dispensation is granted for this feature"
+      "description": "Describes if a SDWA dispensation is granted for this feature"
     },
     "fenced": {
-      "@id": "[Fenced](#Fenced)",
-      "@type": "xsd:number",
       "type": "integer",
-      "dldescription": "Percentage of feature fenced to exclude stock as defined in the SDWA"
+      "description": "Percentage of feature fenced to exclude stock as defined in the SDWA"
     },
     "planting": {
-      "@id": "[Planting](#Planting)",
-      "@type": "xsd:number",
       "type": "integer",
-      "dldescription": "Percentage of Riparian planting as detailed in the Riparian Management Plan which is complete for this feature"
+      "description": "Percentage of Riparian planting as detailed in the Riparian Management Plan which is complete for this feature"
     },
     "stockCrossingPoint": {
-      "@id": "[RegularStockCrossingPoint](#RegularStockCrossingPoint)",
-      "@type": "xsd:boolean",
       "type": "boolean",
-      "dldescription": "Defined in SDWA"
+      "description": "Defined in SDWA"
     },
     "relatedZone": {
-      "@id": "[RelatedZone](#RelatedZone)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Reference to a related riparian zone/s"
+      "description": "Reference to a related riparian zone/s"
     },
     "plan": {
-      "@id": "[Plan](#Plan)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Reference to, or citation of a plan (management or action plan) that describes the environmental objectives and measures that shall be undertaken in the zone to protect the environment"
+      "description": "Reference to, or citation of a plan (management or action plan) that describes the environmental objectives and measures that shall be undertaken in the zone to protect the environment"
     }
   }
 }

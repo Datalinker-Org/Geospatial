@@ -3,16 +3,12 @@
   "type": "object",
   "properties": {
     "diameter": {
-      "@id": "[Diameter](#Diameter)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "Pipe outer diameter in m"
+      "description": "Pipe outer diameter in m"
     },
     "pressure": {
-      "@id": "[Pressure](#Pressure)",
-      "@type": "xsd:decimal",
       "type": "number",
-      "dldescription": "The maximum allowable operating pressure at which a product is conveyed through a pipe, commonly expressed in 'bar'"
+      "description": "The maximum allowable operating pressure at which a product is conveyed through a pipe, commonly expressed in 'bar'"
     }
   }
 }

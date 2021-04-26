@@ -3,16 +3,12 @@
   "type": "object",
   "properties": {
     "type": {
-      "@id": "[Type](#Type)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": "Metal, Wooden, other"
+      "description": "Metal, Wooden, other"
     },
     "latchType": {
-      "@id": "[LatchType](#LatchType)",
-      "@type": "xsd:string",
       "type": "string",
-      "dldescription": ""
+      "description": ""
     }
   }
 }
