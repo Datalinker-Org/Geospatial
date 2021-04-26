@@ -1,5 +1,4 @@
  - <b id="#/properties/type">type</b>
-	 - **Description:** master, ordinary, auxiliary
 	 - **Type:** `string`
  - <b id="#/properties/downRight">downRight</b>
 	 - **Type:** `boolean`

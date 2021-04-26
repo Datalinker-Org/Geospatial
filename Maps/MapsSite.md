@@ -1,22 +1,15 @@
  - <b id="#/properties/@id">@id</b>
-	 - **Description:** Unique identifier in the source system
 	 - **Type:** `string`
  - <b id="#/properties/id">id</b>
-	 - **Description:** Unique identifier in the source system
 	 - **Type:** `string`
  - <b id="#/properties/identifiers">identifiers</b>
-	 - **Description:** Array of unique URN identifiers
 	 - **Type:** `string`
  - <b id="#/properties/name">name</b>
-	 - **Description:** Display name for the site
 	 - **Type:** `string`
  - <b id="#/properties/featureCatalog">featureCatalog</b>
-	 - **Description:** Url for getting list of catalog items with features(refer to [MapsFeatureCatalog](MapsFeatureCatalog.md) on a site
 	 - **Type:** `string`
 	 - <b id="featurecatalogitemfeaturecatalogitem.md">Link to schema: [FeatureCatalogItem](FeatureCatalogItem.md)</b>
  - <b id="#/properties/dateModified">dateModified</b>
-	 - **Description:** ISO8601 date format 2018-07-19T23:00:08+00:00. Date when details were last modified. Bubles up from Feature Catalog
 	 - **Type:** `string`
-	 - <b id="httpschema.orgdatemodified">Link to schema: http://schema.org/dateModified</b>
 
 _Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

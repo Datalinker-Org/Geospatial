@@ -1,5 +1,4 @@
  - <b id="#/properties/type">type</b>
-	 - **Description:** Metal, Wooden, other
 	 - **Type:** `string`
  - <b id="#/properties/latchType">latchType</b>
 	 - **Type:** `string`
