@@ -1,0 +1,41 @@
+{
+    "description": "Metadata based on a small subset of Dublin Core.",
+  
+    "type": "object",
+  
+    "required": [
+      "sourceId",
+      "modified"
+    ],
+  
+    "properties": {
+      "sourceId": {
+          "$ref": "../types/IdentifierType.json",
+          "description": "To be filled at creation by the source system with its unique identifier."
+      },
+      "modified": {
+        "$ref": "../types/DateTimeType.json",
+        "description": "The date and time at which the object was last modified."
+      },
+      "created": {
+        "$ref": "../types/DateTimeType.json",
+        "description": "The date and time at which the object was created. SHOULD be set if known.",
+        "nullable": true
+      },
+      "creator": {
+        "type": "string",
+        "description": "Person or organisation who created the object",
+        "nullable": true
+      },
+      "validFrom": {
+        "$ref": "../types/DateTimeType.json",
+        "description": "The earliest date and time from which the object is valid.",
+        "nullable": true
+      },
+      "validTo": {
+        "$ref": "../types/DateTimeType.json",
+        "description": "The latest date and time to which the object is valid.",
+        "nullable": true
+      }
+    }
+  }

@@ -1,0 +1,43 @@
+{
+    "description": "Base class for a resource (such as a feature). Resources should use AllOf to incorporate this class.",
+  
+    "type": "object",
+  
+    "discriminator": {
+      "propertyName": "resourceType"
+    },
+  
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier (UUID) used within the current server to identify the resource."
+      },
+      "identifiers": {
+        "type": "array",
+        "items": {
+          "$ref": "../types/IdentifierType.json"
+        },
+        "description": "Identifiers for a feature or other resource, each with a scheme and id."
+      },
+      "links": {
+        "type": "array",
+        "items": {
+          "$ref": "../types/RelationType.json"
+        },
+        "description": "Linked resources that are related to the current resource."
+      },
+      "meta": {
+        "$ref": "../types/MetaDataType.json",
+        "description": "Meta-data for the resource. Mandatory if you wish to support synchronisation."
+      },
+      "name": {
+        "type": "string",
+        "description": "A user-readable name for the resource."
+      },
+      "@self": {
+        "type": "string",
+        "description": "Uniform resource identifier (URI) of the resource (rel=self).",
+        "nullable": true
+      }      
+    }
+  }

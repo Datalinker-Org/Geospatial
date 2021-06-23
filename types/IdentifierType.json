@@ -1,0 +1,24 @@
+{
+    "description": "A compound identifier that can uniquely identify resources or other items.",
+    
+    "type": "object",
+    "discriminator": {
+        "propertyName": "identifierType"
+    },
+
+    "required": [
+        "scheme",
+        "id"
+    ],
+
+    "properties": {
+        "scheme": {
+            "type": "string",
+            "description": "The identifier (in reverse domain format) of an official scheme that manages unique identifiers."
+        },
+        "id": {
+            "type": "string",
+            "description": "A unique identification for the resource issued under the auspices of the scheme."
+        }
+    }
+}
