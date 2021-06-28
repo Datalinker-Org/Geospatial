@@ -1,0 +1,23 @@
+{
+  "description": "Representation of an operating farm (holding), as distinct from land ownership.",
+  "allOf": [
+    {
+      "$ref": "../types/ResourceType.json"
+    },
+    {
+      "type": "object",
+
+      "properties": {
+        "totalArea": {
+          "type": "string",
+          "description": "The total area of the polygon(s) that define the holding. Specified in Square Metres."
+        },
+        "featureCatalog": {
+          "type": "string",
+          "format": "uri-reference",
+          "description": "URL to a Feature Catalog that filtered to features that relate to the holding."
+        }
+      }
+    }
+  ]
+}

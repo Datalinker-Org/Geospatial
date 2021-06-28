@@ -1,0 +1,7 @@
+{
+    "description": "udt:DateTimeType | A particular point in the progression of time. SHOULD always be UTC (Z).",
+    
+    "type": "string",
+  
+    "format": "date-time"
+  }

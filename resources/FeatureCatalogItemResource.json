@@ -1,0 +1,47 @@
+{
+    "description": "Defines a single item used in a feature catalog - a reference to a list of features.",
+    "allOf": [
+        {
+            "$ref": "../types/ResourceType.json"
+        },
+        {
+            "type": "object",
+
+            "required": [
+                "geometryType",
+                "contentType"
+            ],
+
+            "properties": {
+                "geometryType": {
+                    "type": "string",
+                    "description": "GeoJSON RFC-7946 geometry type (Point, LineString, Polygon, MultiPoint, etc)."
+                },
+                "bbox": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "description": "Array that is the bounding box coordinates as per GeoJSON",
+                    "nullable": true
+                },
+                "contentType": {
+                    "type": "string",
+                    "description": "Type of the data class accompanying the geographic data (e.g. HoldingResource, SiteResource)."
+                },
+                "featureCollection": {
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "The URL from which to fetch a GeoJSON feature collection.",
+                    "nullable": true
+                },
+                "contentCollection": {
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "The URL from which to fetch a collection or array of non-spatial data items. Null if not supported.",
+                    "nullable": true
+                }
+            }
+        }
+    ]
+}
