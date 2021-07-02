@@ -1,0 +1,38 @@
+{
+    "description": "Defines a managed crop, or a species in a mixed sward (or even potentially a weed species).",
+    
+    "type": "object",
+    "discriminator": {
+        "propertyName": "cropType"
+    },
+
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "The human-readable name of the crop or species."
+        },
+        "taxonomicName": {
+            "type": "string",
+            "nullable": true,
+            "description": "Taxonomic name of the species. Developers should check this against official databases or taxonomic registers."
+        },
+        "variety": {
+            "type": "string",
+            "nullable": true,
+            "description": "Recognised plant variety."
+        },
+        "identifiers": {
+            "type": "array",
+            "nullable": true,
+            "description": "A list of official identifiers of different sorts, idenfified by scheme and id.",
+            "items": {
+                "$ref": "../types/IdentifierType.json"
+            }
+        },
+        "establishmentDate": {
+            "$ref": "../types/DateTimeType.json",
+            "nullable": true, 
+            "description": "The establishment date of the crop or species if known."
+        }
+    }
+}
