@@ -17,7 +17,7 @@
           "description": "A set of land use activities for this Site.",
           "nullable": true,
           "items": {
-            "$ref": "../types/LandUseActivity.json"
+            "$ref": "../types/LandUseActivityType.json"
           }
         },
         "classifications": {
