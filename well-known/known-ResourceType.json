@@ -1,0 +1,5 @@
+[
+    { "name": "Holding", "type": "HoldingResource" },
+    { "name": "Site", "type": "SiteResource" },
+    { "name": "Plot", "type": "PlotResource" }
+]

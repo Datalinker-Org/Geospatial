@@ -2,7 +2,7 @@
     "description": "Defines a single item used in a feature catalog - a reference to a list of features.",
     "allOf": [
         {
-            "$ref": "../types/ResourceType.json"
+            "$ref": "../types/BaseResource.json"
         },
         {
             "type": "object",
@@ -25,8 +25,8 @@
                     "description": "Array that is the bounding box coordinates as per GeoJSON",
                     "nullable": true
                 },
-                "contentType": {
-                    "type": "string",
+                "resourceType": {
+                    "$ref": "../types/ResourceType.json",
                     "description": "Type of the data class accompanying the geographic data (e.g. HoldingResource, SiteResource)."
                 },
                 "featureCollection": {
@@ -35,7 +35,7 @@
                     "description": "The URL from which to fetch a GeoJSON feature collection.",
                     "nullable": true
                 },
-                "contentCollection": {
+                "resourceCollection": {
                     "type": "string",
                     "format": "uri-reference",
                     "description": "The URL from which to fetch a collection or array of non-spatial data items. Null if not supported.",

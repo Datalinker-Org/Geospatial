@@ -33,6 +33,16 @@
             "$ref": "../types/DateTimeType.json",
             "nullable": true, 
             "description": "The establishment date of the crop or species if known."
+        },
+        "maturityDate": {
+            "$ref": "../types/DateTimeType.json",
+            "nullable": true, 
+            "description": "The target or actual maturity date of the crop or species if known."
+        },
+        "harvestDate": {
+            "$ref": "../types/DateTimeType.json",
+            "nullable": true, 
+            "description": "The target or actual harvest date of the crop or species if known. Most useful for historic reference."
         }
     }
 }
