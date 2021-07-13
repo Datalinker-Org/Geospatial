@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier in provider system"
+    },
+    "identifiers": {
+      "type": "string",
+      "description": "Array of unique URN identifiers"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name for the plot"
+    },
+    "activity": {
+      "type": "string",
+      "description": "Enumeration: the type of vegetation grown here: e.g. permanent  grassland"
+    },
+    "secondaryActivity": {
+      "type": "string",
+      "description": "Description of any secondary values relevant to the plot, i.e. fodder beet section on grazing plot"
+    },
+    "organic": {
+      "type": "boolean",
+      "description": "Indicates whether plot is organic"
+    },
+    "area": {
+      "type": "number",
+      "description": "Total paddock area expressed in m2"
+    },
+    "effectiveArea": {
+      "type": "number",
+      "description": "Plot effective area in m2"
+    },
+    "cultivableArea": {
+      "type": "number",
+      "description": "Effective area of the farm for cultivation (cropping) purposes"
+    },
+    "grazeableArea": {
+      "type": "number",
+      "description": "Plot grazeable area in m2"
+    },
+    "croppingArea": {
+      "type": "number",
+      "description": "Area planted in crop. In m2"
+    },
+    "drainageArea": {
+      "type": "number",
+      "description": ""
+    },
+    "irrigationArea": {
+      "type": "number",
+      "description": ""
+    },
+    "irrigationMethod": {
+      "type": "string",
+      "description": ""
+    },
+    "ownership": {
+      "type": "string",
+      "description": "Owned, Leased"
+    },
+    "topography": {
+      "type": "string",
+      "description": "Values can be Flat, Rolling, Easy hill, Steep hill"
+    },
+    "validFrom": {
+      "type": "string",
+      "description": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date started operating for specific plot type"
+    },
+    "validTo": {
+      "type": "string",
+      "description": "ISO8601 date format 2018-07-19T23:00:08+00:00. Date ended(ceased) operating for specific plot type"
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "description": "Representation of an operating farm (holding), as distinct from land ownership.",
+  "description": "Representation of an operating farm (holding), as distinct from land ownership. A multi-polygon feature in GeoJSON.",
   "allOf": [
     {
       "$ref": "../types/ResourceType.json"
@@ -9,8 +9,8 @@
 
       "properties": {
         "totalArea": {
-          "type": "string",
-          "description": "The total area of the polygon(s) that define the holding. Specified in Square Metres."
+          "$ref": "../types/AreaMeasureType.json",
+          "description": "The total area of the polygon(s) that define the holding. To be specified in Square Metres."
         },
         "featureCatalog": {
           "type": "string",

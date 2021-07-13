@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "waterQuantity": {
+      "type": "number",
+      "description": "The quantity of water given by the water source in m3"
+    },
+    "typeOfWaterSource": {
+      "type": "string",
+      "description": "onFarmGroundWater, onFarmSurfaceWater, offFarmSurfaceWater, offFarmWaterFromCommonWaterSupplyNetworks, otherSources"
+    }
+  }
+}

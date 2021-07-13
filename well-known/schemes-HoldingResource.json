@@ -1,0 +1,6 @@
+[
+    { "scheme": "gs.standards.gln", "description": "GS1 Global Location Number" },
+    { "scheme": "nz.govt.farmsonline", "description": "NZ FarmsOnline Identifier" },
+    { "scheme": "nz.nait.pica", "description": "NZ NAIT PICA associated with a farm" },
+    { "scheme": "nz.agribase", "description": "NZ AsureQuality Agribase ID" }
+]

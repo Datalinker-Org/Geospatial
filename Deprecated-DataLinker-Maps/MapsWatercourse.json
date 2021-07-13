@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "length": {
+      "type": "number",
+      "description": "Length of watercourse in m"
+    },
+    "widthRangeUpper": {
+      "type": "number",
+      "description": "The upper bound of width along its length"
+    },
+    "widthRangeLower": {
+      "type": "number",
+      "description": "The lower bound of width along its length"
+    }
+  }
+}

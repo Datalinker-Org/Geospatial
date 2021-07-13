@@ -4,7 +4,7 @@
     "type": "object",
   
     "discriminator": {
-      "propertyName": "resourceType"
+      "propertyName": "baseResource"
     },
   
     "properties": {
@@ -17,7 +17,7 @@
         "items": {
           "$ref": "../types/IdentifierType.json"
         },
-        "description": "Identifiers for a feature or other resource, each with a scheme and id."
+        "description": "Identifiers for the resource (see well-known/schemes... for example identity schemes)."
       },
       "links": {
         "type": "array",

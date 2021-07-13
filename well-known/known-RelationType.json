@@ -2,5 +2,6 @@
     { "relationship": "Organization", "type": "Organization" },
     { "relationship": "Primary Contact", "type": "ContactPoint" },
     { "relationship": "Visitor Reception", "type": "Place" },
-    { "relationship": "Fire Alarm Call Point", "type": "Place" }
+    { "relationship": "Fire Alarm Call Point", "type": "Place" },
+    { "relationship": "Holding", "type": "HoldingResource" }
 ]

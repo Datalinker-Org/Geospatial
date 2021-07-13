@@ -1,25 +1,25 @@
 {
-    "description": "Used to define a relationship with another resource. Examples include the person who manages a holding, or a controlling organisation.",
-  
-    "type": "object",
-  
-    "discriminator": {
-      "propertyName": "relationType"
+  "description": "Used to define a relationship with another resource. Examples include the person who manages a holding, or a controlling organisation.",
+
+  "type": "object",
+
+  "discriminator": {
+    "propertyName": "relationType"
+  },
+
+  "properties": {
+    "relationship": {
+      "type": "string",
+      "description": "How the referenced resource relates to the current resource (see well-known/known-RelationType for examples)."
     },
-  
-    "properties": {
-      "relationship": {
-        "type": "string",
-        "description": "How the referenced resource relates to the current resource. Use well-known values where possible."
-      },
-      "type": {
-        "type": "string",
-        "description": "The type of the referenced entity (e.g. Person, Organization, Place)"
-      },
-      "uri": {
-        "type": "string",
-        "format": "uri-reference",
-        "description": "A URL that may be used to retrieve the related resource."
-      }
+    "contentType": {
+      "type": "string",
+      "description": "The type of the referenced entity (see well-known/ResourceType)."
+    },
+    "related": {
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A URL that may be used to retrieve the related resource."
     }
   }
+}

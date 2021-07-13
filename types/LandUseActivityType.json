@@ -1,0 +1,31 @@
+{
+    "description": "Describes a land use activity that might be applied to a Site or Plot.",
+    
+    "type": "object",
+    "discriminator": {
+        "propertyName": "landUseActivityType"
+    },
+
+    "required": [
+        "id"
+    ],
+
+    "properties": {
+        "id": {
+            "$ref": "../types/IdentifierType.json",
+            "description": "A scheme and id method to identify the activity. Allows country-specific and international codes"
+        },
+        "name": {
+            "type": "string",
+            "description": "User-readable name for the activity"
+        },
+        "isPrimary": {
+            "type": "boolean",
+            "description": "True if this is the primary activity for the land unit."
+        },
+        "productiveArea": {
+            "$ref": "../types/AreaMeasureType.json",
+            "description": "The area (in square metres) of effective or productive area for this activity."
+        }
+    }
+}
