@@ -1,0 +1,23 @@
+{
+    "description": "Supports embedding any of the agricultural geospatial resources in this repository into the GeoJSON properties object",
+    "type": "object",
+    "properties": {
+        "contentType": {
+            "type": "string",
+            "description": "Type of the data class accompanying the geographic data (e.g. HoldingResource, SiteResource)."
+        },
+        "content": {
+            "oneOf": [
+                {
+                    "$ref": "../resources/HoldingResource.json"
+                },
+                {
+                    "$ref": "../resources/PlotResource.json"
+                },
+                {
+                    "$ref": "../resources/SiteResource.json"
+                }
+            ]
+        }
+    }
+}
