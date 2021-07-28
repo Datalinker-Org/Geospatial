@@ -2,7 +2,7 @@
     "description": "Defines a single item used in a feature catalog - a reference to a list of features.",
     "allOf": [
         {
-            "$ref": "../types/BaseResource.json"
+            "$ref": "../types/ResourceType.json"
         },
         {
             "type": "object",
@@ -25,8 +25,8 @@
                     "description": "Array that is the bounding box coordinates as per GeoJSON",
                     "nullable": true
                 },
-                "resourceType": {
-                    "$ref": "../types/ResourceType.json",
+                "contentType": {
+                    "type": "string",
                     "description": "Type of the data class accompanying the geographic data (e.g. HoldingResource, SiteResource)."
                 },
                 "featureCollection": {
