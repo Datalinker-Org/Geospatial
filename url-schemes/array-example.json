@@ -1,0 +1,175 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Agricultural Geospatial Examples",
+        "description": "Example of how a collection of geospatial objects could be handled outside of GeoJSON.",
+        "license": {
+            "name": "Apache 2.0"
+        },
+        "contact": {
+            "name": "Rezare Systems",
+            "email": "info@rezare.com"
+        }
+    },
+    "tags": [
+        {
+            "name": "Holdings",
+            "description": "Methods for retrieving or posting holdings."
+        }
+    ],
+    "servers": [
+        {
+            "url": "http://myhost/example"
+        }
+    ],
+    "paths": {
+        "/holdings": {
+            "get": {
+                "summary": "Retrieve all holdings",
+                "description": "This method allows you to get a list of all holdings accessible under the current access token.",
+                "operationId": "getHoldings",
+                "tags": [
+                    "Holdings"
+                ],
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "How many items to return at one time (max 100)",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A paged array of Holdings",
+                        "headers": {
+                            "x-next": {
+                                "description": "A link to the next page of responses",
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Holdings"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Create a Holding",
+                "description": "Example of a method to post a new holding (where supported).",
+                "operationId": "createHolding",
+                "tags": [
+                    "Holdings"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Null response"
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/holdings/{holdingId}": {
+            "get": {
+                "summary": "Info for a specific holding",
+                "description": "This method returns the specific holding identified by its ID.",
+                "operationId": "getHolding",
+                "tags": [
+                    "Holdings"
+                ],
+                "parameters": [
+                    {
+                        "name": "holdingId",
+                        "in": "path",
+                        "required": true,
+                        "description": "The id of the holding to retrieve.",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Expected response to a valid request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Holding"
+                                }
+                            }
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Holding": {
+                "$ref": "../resources/HoldingResource.json"
+            },
+            "Holdings": {
+                "type": "array",
+                "items": {
+                    "$ref": "#/components/schemas/Holding"
+                }
+            },
+            "Error": {
+                "type": "object",
+                "required": [
+                    "code",
+                    "message"
+                ],
+                "properties": {
+                    "code": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "message": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
