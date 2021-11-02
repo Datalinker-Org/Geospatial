@@ -1,5 +1,5 @@
  - <b id="#/properties/area">area</b>
-	 - **Type:** `string`
+	 - **Type:** `number`
  - <b id="#/properties/units">units</b>
 	 - &#36;ref: [../enums/uncefactAreaUnits.json](#..enumsuncefactareaunits.json)
 	 - Default: _"MTK"_
