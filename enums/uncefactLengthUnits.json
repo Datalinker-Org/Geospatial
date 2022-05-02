@@ -1,0 +1,16 @@
+{
+    "description": "Units for area from UN/CEFACT trade facilitation recommendation 20. In order: km, m, cm, mm, statute mile, yard, foot, inch",
+  
+    "type": "string",
+  
+    "enum": [
+      "KMT", 
+      "MTR",
+      "CMT",
+      "MMT", 
+      "SMI",
+      "YRD", 
+      "FOT",
+      "INH"
+    ]
+  }

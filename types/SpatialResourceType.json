@@ -1,0 +1,21 @@
+{
+  "description": "Base class for spatial resources that have a geometry",
+  "allOf": [
+    {
+      "$ref": "../types/ResourceType.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "totalArea": {
+          "$ref": "../types/AreaMeasureType.json",
+          "description": "If the feature is a polygon, the total area (default is in square metres - MTK)"
+        },
+        "totalLength": {
+          "$ref": "../types/LengthMeasureType.json",
+          "description": "If the feature is linear, the total length. If a polygon, the perimeter (default is in metres - MTR)"
+        }
+      }
+    }
+  ]
+}
