@@ -2,6 +2,9 @@
     "description": "Defines a hierarchical classification within a defined classification scheme. Used for soils, slope, land use capability, etc.",
     
     "type": "object",
+    "discriminator": {
+        "propertyName": "classificationType"
+    },
 
     "properties": {
         "scheme": {

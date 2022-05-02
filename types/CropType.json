@@ -2,6 +2,9 @@
     "description": "Defines a managed crop, or a species in a mixed sward (or even potentially a weed species).",
     
     "type": "object",
+    "discriminator": {
+        "propertyName": "cropType"
+    },
 
     "properties": {
         "name": {
