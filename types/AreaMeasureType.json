@@ -6,7 +6,7 @@
     "properties": {
         "area": {
             "type": "number",
-            "description": "The area of a spatial resource (in the specified units)."
+            "description": "The area of the spatial resource (in the specified units)."
         },
         "units": {
             "$ref": "../enums/uncefactAreaUnits.json",
