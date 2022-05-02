@@ -5,8 +5,8 @@
 
     "properties": {
         "measurement": {
-            "type": "string",
-            "description": "The identifier (in reverse domain format) of an official scheme that manages unique identifiers."
+            "type": "number",
+            "description": "The length or perimeter of the spatial resouce (in the specified units)."
         },
         "units": {
             "$ref": "../enums/uncefactLengthUnits.json",

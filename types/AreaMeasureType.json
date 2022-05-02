@@ -4,9 +4,9 @@
     "type": "object",
 
     "properties": {
-        "measurement": {
-            "type": "string",
-            "description": "The identifier (in reverse domain format) of an official scheme that manages unique identifiers."
+        "area": {
+            "type": "number",
+            "description": "The area of a spatial resource (in the specified units)."
         },
         "units": {
             "$ref": "../enums/uncefactAreaUnits.json",
