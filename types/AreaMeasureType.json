@@ -4,7 +4,7 @@
     "type": "object",
 
     "properties": {
-        "area": {
+        "measurement": {
             "type": "number",
             "description": "The area of the spatial resource (in the specified units)."
         },
