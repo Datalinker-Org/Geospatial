@@ -2,28 +2,7 @@
   "description": "Representation of a small activity-based unit, such as a paddock, field, crop, or subblock). A polygon feature in GeoJSON.",
   "allOf": [
     {
-      "$ref": "../types/LandUseResourceType.json"
-    },
-    {
-      "type": "object",
-      "properties": {
-        "crops": {
-          "type": "array",
-          "description": "One or more crops grown in the plot. May also be used to define the species in a multi-species pasture.",
-          "nullable": true,
-          "items": {
-            "$ref": "../types/CropType.json"
-          }
-        },
-        "historicCrops": {
-          "type": "array",
-          "description": "Used where a record of historic crops must be kept for compliance purposes.",
-          "nullable": true,
-          "items": {
-            "$ref": "../types/CropType.json"
-          }          
-        }
-      }
+      "$ref": "../types/CroppedResourceType.json"
     }
   ]
 }

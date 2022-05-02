@@ -1,0 +1,27 @@
+{
+  "description": "Represents a land area that has current or historic crops (may be field crops, forages, tree or vine crops).",
+  "allOf": [
+    {
+      "$ref": "../types/LandUseResourceType.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "crops": {
+          "type": "array",
+          "description": "One or more crops grown in the plot. May also be used to define the species in a multi-species pasture.",
+          "items": {
+            "$ref": "../types/CropType.json"
+          }
+        },
+        "historicCrops": {
+          "type": "array",
+          "description": "Used where a record of historic crops must be kept for compliance purposes.",
+          "items": {
+            "$ref": "../types/CropType.json"
+          }          
+        }
+      }
+    }
+  ]
+}

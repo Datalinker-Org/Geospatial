@@ -1,0 +1,8 @@
+{
+  "description": "Representation of a zone within a paddock or block that may have different management, varieties, or characteristics.",
+  "allOf": [
+    {
+      "$ref": "../types/CroppedResourceType.json"
+    }
+  ]
+}
