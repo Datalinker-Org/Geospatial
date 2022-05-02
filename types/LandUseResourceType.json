@@ -1,0 +1,30 @@
+{
+    "description": "An intermediate type that represents a land area which can be categorised and has activties.",
+    "allOf": [
+      {
+        "$ref": "../types/SpatialResourceType.json"
+      },
+      {
+        "type": "object",
+  
+        "properties": {
+          "classifications": {
+            "type": "array",
+            "description": "A set of hierarchical classifications for the Site.",
+            "nullable": true,
+            "items": {
+                "$ref": "../types/ClassificationType.json"
+            }
+          },
+          "activities": {
+              "type": "array",
+              "description": "A set of land use activities for this Site.",
+              "nullable": true,
+              "items": {
+                  "$ref": "../types/LandUseActivityType.json"
+              }
+          }
+        }
+      }
+    ]
+  }
