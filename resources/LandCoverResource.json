@@ -1,0 +1,32 @@
+{
+    "description": "Representation of an land management unit (sometimes called block, though this name can be used elsewhere). A polygon feature in GeoJSON.",
+    "allOf": [
+      {
+        "$ref": "../types/LandUseResourceType.json"
+      },
+      {
+        "type": "object",
+
+        "properties": {
+          "landCoverClass": {
+            "description": "Defines the class of land cover object (e.g., scheme: 'nz.lcdb.5.classes', primary: 'helipad_pnt').",
+            "$ref" : "../types/ClassificationType.json"
+          },
+
+          "speciesPresent": {
+            "description": "An array of species that have been observed at this feature (this is a summary, not individual observations).",
+
+            "type": "array",
+            "items": {
+              "$ref": "../types/SpeciesPresenceType.json"
+            }
+          },
+
+          "eligibility": {
+            "description": "Classification under a compliance or funding programme.",
+            "$ref": "../types/ComplianceEligibilityType.json"
+          }
+        }
+      }
+    ]
+  }

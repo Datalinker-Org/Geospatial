@@ -1,0 +1,19 @@
+{
+    "description": "Extends a hierarchical classification within a defined classification scheme for compliance or funding eligibility.",
+    
+    "allOf": [
+        {
+            "$ref": "../types/ClassificationType.json"
+        },
+        {
+            "type": "object",
+
+            "properties": {
+                "eligible": {
+                    "type": "boolean",
+                    "description": "True if recognised as eligible or compliant."
+                }
+            }
+        }
+    ]
+}
