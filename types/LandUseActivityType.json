@@ -2,9 +2,6 @@
     "description": "Describes a land use activity that might be applied to a Site or Plot.",
     
     "type": "object",
-    "discriminator": {
-        "propertyName": "landUseActivityType"
-    },
 
     "required": [
         "id"

@@ -4,8 +4,14 @@
     "type": "object",
   
     "discriminator": {
-      "propertyName": "baseResource"
+      "propertyName": "resourceType"
     },
+
+    "required": [
+      "resourceType", 
+      "id",
+      "meta"
+    ],
   
     "properties": {
       "id": {
@@ -33,6 +39,10 @@
       "name": {
         "type": "string",
         "description": "A user-readable name for the resource."
+      },
+      "resourceType": {
+        "type": "string",
+        "description": "This MUST be populated with the name of the concrete type to support inheritance and deserialisation."
       },
       "@self": {
         "type": "string",

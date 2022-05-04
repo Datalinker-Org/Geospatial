@@ -3,10 +3,6 @@
 
   "type": "object",
 
-  "discriminator": {
-    "propertyName": "relationType"
-  },
-
   "properties": {
     "relationship": {
       "type": "string",
