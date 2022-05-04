@@ -1,0 +1,24 @@
+{
+    "description": "Identifies a species that has been observed to be present at a geographic feature. This is NOT an observation event, but a summary of last known state.",
+    
+    "type": "object",
+
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Common human readable name of the species (e.g., Radiata Pine)"
+        },
+        "taxonomicName": {
+            "type": "string",
+            "description": "Taxonomic (genus/species) name that distinguishes this species (e.g. Pinus radiata)."
+        },
+        "classfication": {
+            "description": "Classification of biodiversity group using a recognised scheme (for instance scheme: 'https://doi.org/10.1002/pan3.10285', primary:'IntroducedWoodyPlants')",
+            "$ref": "../types/ClassificationType.json"
+        },
+        "abundance" : {
+            "description": "DAFOR scale abundance (Peter Morris 1995, https://doi.org/10.4324/9780203892909)",
+            "$ref": "../enums/DAFORabundance.json"
+        }
+    }
+}
