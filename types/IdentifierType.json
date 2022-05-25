@@ -2,9 +2,6 @@
     "description": "A compound identifier that can uniquely identify resources or other items.",
     
     "type": "object",
-    "discriminator": {
-        "propertyName": "identifierType"
-    },
 
     "required": [
         "scheme",
