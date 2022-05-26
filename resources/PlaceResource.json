@@ -1,0 +1,53 @@
+{
+  "description": "Represents a place or point feature",
+  "allOf": [
+    {
+      "$ref": "../types/SpatialResourceType.json"
+    },
+    {
+      "type": "object",
+
+      "properties": {
+        "class": {
+          "description": "Defines the topographic class or 'type of thing'. Uses a scheme and ID - e.g. { 'nz.govt.topo', 'helipad_pnt' }.",
+          "$ref": "../types/IdentifierType.json"
+        },
+
+        "address" : {
+          "description": "The physical address of the item.",
+          "anyOf": [
+            { "type": "string" },
+            { "$ref": "../types/PostalAddress.json" }
+          ]
+        },
+        "globalLocationNumber": {
+          "description": "The Global Location Number (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.",
+          "type": "string"
+        },
+        "isAccessibleForFree": {
+          "description": "A flag to signal that the item, event, or place is accessible for free.",
+          "type": "boolean"
+        },
+        "isicV4": {
+          "description": "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
+          "type": "string"
+        },
+        "logo": {
+          "description": "An associated logo.",
+          "type": "string"
+        },
+        "map": {
+          "description": "A URL to a map of the place.",
+          "oneOf": [
+            { "type": "string", "format": "uri" },
+            { "type": "array", "items": { "type": "string", "format": "uri" } }
+          ]
+        },
+        "publicAccess": {
+          "description": "A flag to signal that the Place is open to public visitors.  If this property is omitted there is no assumed default boolean value",
+          "type": "boolean"
+        }        
+      }
+    }
+  ]
+}
