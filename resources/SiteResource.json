@@ -2,34 +2,7 @@
     "description": "Representation of an land management unit (sometimes called block, though this name can be used elsewhere). A polygon feature in GeoJSON.",
     "allOf": [
       {
-        "$ref": "../types/ResourceType.json"
-      },
-      {
-        "type": "object",
-  
-        "properties": {
-          "totalArea": {
-            "$ref": "../types/AreaMeasureType.json",
-            "description": "The total area of the polygon(s) that define the land management unit. To be specified in Square Metres.",
-            "nullable": true
-          },
-          "classifications": {
-            "type": "array",
-            "description": "A set of hierarchical classifications for the Site.",
-            "nullable": true,
-            "items": {
-                "$ref": "../types/ClassificationType.json"
-            }
-          },
-          "activities": {
-              "type": "array",
-              "description": "A set of land use activities for this Site.",
-              "nullable": true,
-              "items": {
-                  "$ref": "../types/LandUseActivityType.json"
-              }
-          }
-        }
+        "$ref": "../types/LandUseResourceType.json"
       }
     ]
   }
