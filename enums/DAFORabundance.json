@@ -1,0 +1,14 @@
+{
+    "description": "DAFOR ecology species abundance scale, from Peter Morris 1995 (https://doi.org/10.4324/9780203892909)",
+  
+    "type": "string",
+  
+    "enum": [
+      "Dominant", 
+      "Abundant",
+      "Frequent",
+      "Occasional", 
+      "Rare",
+      "NotObserved"
+    ]
+  }
