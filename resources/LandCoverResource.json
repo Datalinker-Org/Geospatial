@@ -1,5 +1,5 @@
 {
-    "description": "Representation of an land management unit (sometimes called block, though this name can be used elsewhere). A polygon feature in GeoJSON.",
+    "description": "Representation of a land cover of some sort, from hedges and helipads to forests and swamps.",
     "allOf": [
       {
         "$ref": "../types/LandUseResourceType.json"

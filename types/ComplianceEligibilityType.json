@@ -10,8 +10,8 @@
 
             "properties": {
                 "eligible": {
-                    "type": "boolean",
-                    "description": "True if recognised as eligible or compliant."
+                    "type": "string",
+                    "description": "A value defined by the scheme that indicates eligible, partially eligible (of some sort), or ineligible."
                 }
             }
         }
