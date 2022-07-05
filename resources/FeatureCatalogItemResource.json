@@ -25,6 +25,10 @@
                     "description": "Array that is the bounding box coordinates as per GeoJSON",
                     "nullable": true
                 },
+                "collectionMetadata": {
+                     "description": "ISO 19115-2/3 or FGDC compliant meta-data for the collection.",
+                    "$ref": "https://raw.githubusercontent.com/Datalinker-Org/Geospatial_MetaData_Schemas/main/schema/metadata.json"
+                },
                 "contentType": {
                     "type": "string",
                     "description": "Type of the data class accompanying the geographic data (e.g. HoldingResource, SiteResource)."
