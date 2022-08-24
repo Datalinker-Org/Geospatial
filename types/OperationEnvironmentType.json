@@ -24,6 +24,9 @@
             "$ref": "./temperatureMeasure.json",
             "description": "Soil temperature"
         },
+        "solarRadiation24hrAverage" :{
+            "$ref": "./ClimateMeasurement.json"
+        },
         "rainfall24hrAverage" : {
             "$ref": "./distanceMeasure.json",
             "description": "average of 24h rainfall"
