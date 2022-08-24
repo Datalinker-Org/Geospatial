@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/types/ComponentProductType",
+    "description": "Abstract class that represents a mix of products or single product.",
+    "type": "object",
+
+    "properties": {
+
+        "mixSequence":{
+            "description":"the order of this product in the mix",
+            "type":  "number"
+        },
+        "percent":{
+            "type":"number"
+        },
+        "product":{
+            "$ref":  "../resources/ProductResource.json"
+        }
+    }
+}
