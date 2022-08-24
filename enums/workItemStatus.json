@@ -1,0 +1,12 @@
+{
+    "description": "Allowable statuses of a work item",
+    "type": "string",
+    "enum": [
+        "Cancelled",
+        "Scheduled",
+        "InProgress",
+        "Complete",
+        "Paused",
+        "PartiallyCompleted"
+    ]
+}
