@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/types/FeatureReferenceType",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "../types/RelationType.json"
+        }],
+    "properties": {
+        "contentType": {
+            "type": "string",
+            "description": "Identifies the type of feature referenced"
+        },
+        "identifier": {
+            "$ref": "../types/IdentifierType.json"
+        },
+        "name": {
+            "type": "string",
+            "description": "Provides a human-readable name"
+        },
+        "uri": {
+            "type": "string",
+            "format": "uri",
+            "description": "Provides a URI link to the feature"
+        }
+    },
+    "required": [
+        "contentType",
+        "identifier"
+    ]
+}
