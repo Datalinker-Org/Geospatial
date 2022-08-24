@@ -1,0 +1,74 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/resources/ProductResource",
+    "type": "object",
+    "allOf": [
+        {"$ref": "../types/RelationType.json"}
+    ],
+    "properties": {
+        "type": {
+            "$ref": "../enums/productType.json"            
+        },
+        "manufacturer": {
+            "type": "string"
+        },
+        "brand": {
+            "type": "string"
+        },
+        "form": {
+            "$ref": "../enums/productForm.json"            
+        },
+        "uri": {
+            "type": "string",
+            "format": "uri-reference",
+            "description": "URL to the product."
+          },
+        "crop" : {
+            "$ref": "../types/CropType.json"
+        },
+        "specificGravity": {
+            "type":"number"
+        },
+        "matterState": {
+            "$ref": "../enums/matterState.json"            
+        },
+        "analysis":{
+            "type":"array",
+            "items":{
+                "$ref": "./ProductAnalysisType.json"
+            }      
+        },
+        "activeIngredients":{
+            "type":"array",
+            "description":"array of active ingredients in the product",
+            "items":{
+                "$ref": "./ProductIngredientType.json"
+            }      
+        },
+        "withdrawals" :{
+            "type":"array",
+            "description":"The withdrawal period of the product ",
+            "items":{
+                "$ref":"../types/WithdrawalPeriodType.json"
+            }
+        },
+        "claims" :{
+            "type":"array",
+            "items":{
+                "$ref":"../types/RegistrationType.json"
+            }
+        },
+        "registrations" :{
+            "type":"array",
+            "items":{
+                "$ref":"../types/RegistrationType.json"
+            }
+        }
+    }
+}
+
+
+
+
+
+
