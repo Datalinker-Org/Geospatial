@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "types/ProductIngredientType",
+    "type": "object",
+    "properties": {
+        "id" :{
+            "$ref" : "../types/IdentifierType.json"
+        },
+        "name": {
+            "type": "string",
+            "description": "Human readable description of the ingredient"
+        }
+        
+    }
+
+}
