@@ -1,0 +1,7 @@
+{
+    "description": "MATTER STATE TODO",
+    "type": "string",
+    "enum": [
+        "TODO"
+    ]
+}
