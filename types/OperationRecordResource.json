@@ -22,15 +22,12 @@
         "summaryGeometry":{
             "$ref": "https://geojson.org/schema/Feature.json",
             "description":"The geojson feature, with its geometry"
-
         },
         "loggedGeometry":{
 
             "$ref": "https://geojson.org/schema/Feature.json",
             "description":"The geojson feature, with its geometry"
-
         },
-
         "products":
         {
             "type":"array",
@@ -38,6 +35,11 @@
                 "$ref": "./OperationProductType.json"
             },
             "description":" Products applied in the operation "
+        },
+        "environment":
+        {
+            "$ref": "../types/OperationEnvironmentType.json",
+            "description":"Environmental Data"
         }
     }
 }
