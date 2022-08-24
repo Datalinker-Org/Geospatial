@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/types/workRecord",
+    "$id": "/types/WorkRecordResource",
     "description": "Abstract class that represents a work record - an activity that has been carried out.",
     "type": "object",
     "required": [
@@ -9,7 +9,7 @@
     ],
     "allOf": [
         {
-            "$ref": "../types/observation.json"
+            "$ref": "../types/ObservationType.json"
         }
     ],
     "properties": {
@@ -24,35 +24,15 @@
         {
             "$ref":"../enums/workItemPriority.json"
         },
-        "startDateTime": {
-            "$ref": "../types/DateTimeType.json",
-            "format":"date-time",
-            "description": "The start datetime of the operation"
-        },
-        "endDateTime": {
-            "$ref": "../types/DateTimeType.json",
-            "format":"date-time",
-            "description": "The end datetime of the operation"
-        },
         "area": {
-            "$ref": "https://raw.githubusercontent.com/Datalinker-Org/Geospatial/master/types/AreaMeasureType.json",
+            "$ref": "../types/AreaMeasureType.json",
             "description": "Area of the operation"
         },        
-        "crops": {
-            "type": "array",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/Datalinker-Org/Geospatial/master/types/CropType.json"
-            }
-        },
-        "environment": {
-            "description":"Captured environmental data",
-            "$ref": "./environment.json"
-        },
-        "operations":{
+        "loggedOperations":{
             "description" : "array of operations completed in this work record",
             "type":"array",
             "items":{
-                "$ref": "./operationRecord.json"
+                "$ref": "../types/OperationRecordResource.json"
             }
 
         }
