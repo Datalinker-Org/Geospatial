@@ -1,0 +1,14 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "types/WithdrawalPeriodType",
+    "description": "Specifies a withdrawal period of product.",
+    "type": "object",
+    "properties": {
+        "scheme": {
+            "type": "string"
+        },
+        "hours": {
+            "type":"number"
+        }
+    }
+}
