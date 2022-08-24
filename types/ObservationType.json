@@ -1,0 +1,106 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/typesObservationType",
+    "description": "Abstract class that supports any observation or activity on a geospatial feature or crop",
+    "type": "object",
+    "required": [
+        "observationDate"
+    ],
+    "allOf": [
+        {
+            "$ref": "../types/ResourceTyoe.json"
+        },
+        {
+            "not": {
+                "allOf": [
+                    {
+                        "required": [
+                            "feature"
+                        ]
+                    },
+                    {
+                        "required": [
+                            "featureId"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "not": {
+                "allOf": [
+                    {
+                        "required": [
+                            "holding"
+                        ]
+                    },
+                    {
+                        "required": [
+                            "holdingId"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "properties": {
+        "observationDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "UTC Date (required) and time (optional) the sample was taken"
+        },
+        "phenomenonStartTime": {
+            "type": "string",
+            "description": "ISO UTC DateTime"
+        },        
+        "phenomenonEndTime": {
+            "type": "string",
+            "description": "ISO UTC DateTime"
+        },
+        "holding": {
+            "$ref": "../types/featureReferenceType.json"
+        },
+        "feature": {
+            "$ref": "../types/featureReferenceType.json"
+        },
+        "responsible": {
+            "type": "string",
+            "description": "Identifier of the person responsible for the observation"
+        },
+        "remark": {
+            "type": "string",
+            "description": "Notes or remarks field"
+        }
+    },
+    "examples": [
+
+        {
+
+            "description": "my external representation of an observation",
+            "meta": {
+                "sourceId": {
+                    "id": "123456789",
+                    "scheme": "observationIdentifyingScheme"
+                },
+                "modified": "2021-09-15T12:34:56.000Z"
+            },
+            "observationDate": "2021-01-01T00:00:00.000Z",
+            "holding": {
+                "contentType": "vineyard",
+                "identifier": {
+                    "id": "44444444",
+                    "scheme": "holdingIdentifierScheme"
+                },
+                "name": "my holding name"
+            },
+            "feature": {
+                "contentType": "subblock",
+                "identifier": {
+                    "id": "333333333333",
+                    "scheme": "subblockIdentifierSchema"
+                },
+                "name": "my feature name"
+            }
+        }
+    ]
+}
