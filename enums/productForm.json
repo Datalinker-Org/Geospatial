@@ -1,0 +1,10 @@
+{
+    "description": "Product Form",
+    "type": "string",
+    "enum": [
+        "Gas",
+        "Liquid",
+        "Solid",
+        "Unknown"
+    ]
+}
