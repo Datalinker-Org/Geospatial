@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "types/velocityMeasureType",
+    "description": "Specifies a velocity, including units (default is metre per second).",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "measurement": {
+            "type": "number",
+            "description": "Velocity measurement"
+        },
+        "unit": {
+            "$ref": "../enums/uncefactVelocityUnits.json",
+            "nullable": true,
+            "default": "MTS",
+            "description": "Defines the unit of measure for velocity. Prefered units are MTS (UN-CEFACT for metre per second)."
+        }
+    }
+}

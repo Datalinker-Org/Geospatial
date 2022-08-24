@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "types/humidityMeasure",
+    "description": "Specifies a humidity measure including units (default is ).",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "measurement": {
+            "type": "number",
+            "description": "Humidity measurement"
+        },
+        "unit": {
+            "type": "string",
+            "enum": [
+                "A93",
+                "PER",
+                "H64"
+            ],
+            "nullable": true,
+            "default": "PER",
+            "description": "UNCefact units for humidity - Absolute (A93 = g/m³), Relative (percent), Specific (mg/g = g/kg)"
+        }
+    }
+}

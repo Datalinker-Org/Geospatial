@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "types/temperatureMeasure",
+    "description": "Specifies a temperature including units (default is degrees celcius).",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "measurement": {
+            "type": "number",
+            "description": "temperature measurement"
+        },
+        "unit": {
+            "$ref": "../enums/uncefactTemperatureUnits.json",
+            "nullable": true,
+            "default": "CEL",
+            "description": "Defines the unit of measure for temperatue. Prefered units are CEL (UN-CEFACT for degrees celcius)."
+        }
+    }
+}

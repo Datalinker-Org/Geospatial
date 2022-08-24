@@ -1,0 +1,9 @@
+{
+    "description": "Units for temperature from UN/CEFACT trade facilitation recommendation 20. In order: kelvin, degrees celcius, degrees Fahrenheit",
+    "type": "string",
+    "enum": [
+        "KEL",
+        "CEL",
+        "FAH"
+    ]
+}

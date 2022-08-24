@@ -1,0 +1,34 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "types/environment",
+    "type": "object",
+    "properties": {
+        "windSpeed": {
+            "$ref": "./velocityMeasure.json",
+            "description": "Wind speed (velocity)"
+        },
+        "windDirection": {
+            "description": "Wind direction. Need to think about handling degrees.",
+            "type": "string",
+            "$ref" : "../enums/windDirection.json"
+        },
+        "airTemperature": {
+            "$ref": "./temperatureMeasure.json",
+            "description": "Air temperature"
+        },
+        "humidity": {
+            "$ref": "./humidityMeasure.json",
+            "description": "Humidity"
+        },
+        "soilTemperature": {
+            "$ref": "./temperatureMeasure.json",
+            "description": "Soil temperature"
+        },
+        "rainfall24hrAverage" : {
+            "$ref": "./distanceMeasure.json",
+            "description": "average of 24h rainfall"
+        }
+
+
+    }
+}
