@@ -1,0 +1,11 @@
+{
+    "description": "Product Type",
+    "type": "string",
+    "enum": [
+        "Chemical",
+        "Fertilizer",
+        "Generic",
+        "Mix",
+        "Variety"
+    ]
+}
