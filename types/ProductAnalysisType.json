@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "types/ProductAnalysisType",
+    "type": "object",
+    "properties": {
+        "id" :{
+            "$ref" : "../types/IdentifierType.json"
+        },
+        "name": {
+            "type": "string",
+            "description": "Human readable description of the test result"
+        },
+        "percent": {
+            "type": "number"
+        }
+        
+    }
+
+}
