@@ -58,10 +58,10 @@
             "description": "ISO UTC DateTime"
         },
         "holding": {
-            "$ref": "../types/featureReferenceType.json"
+            "$ref": "../types/FeatureReferenceType.json"
         },
         "feature": {
-            "$ref": "../types/featureReferenceType.json"
+            "$ref": "../types/FeatureReferenceType.json"
         },
         "responsible": {
             "type": "string",
