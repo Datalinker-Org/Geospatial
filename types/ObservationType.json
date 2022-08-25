@@ -8,7 +8,7 @@
     ],
     "allOf": [
         {
-            "$ref": "../types/ResourceTyoe.json"
+            "$ref": "../types/ResourceType.json"
         },
         {
             "not": {
