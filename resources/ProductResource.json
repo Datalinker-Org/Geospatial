@@ -42,7 +42,7 @@
             "type":"array",
             "description":"array of active ingredients in the product",
             "items":{
-                "$ref": "./ProductIngredientType.json"
+                "$ref": "../types/ProductIngredientType.json"
             }      
         },
         "withdrawals" :{
