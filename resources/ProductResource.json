@@ -35,7 +35,7 @@
         "analysis":{
             "type":"array",
             "items":{
-                "$ref": "./ProductAnalysisType.json"
+                "$ref": "../types/ProductAnalysisType.json"
             }      
         },
         "activeIngredients":{
