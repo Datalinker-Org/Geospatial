@@ -1,5 +1,17 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "/types/QuantityMeasurementType",
-    "description": "todo"
+    "description": "Quantity measures",
+
+    "type" : "object",
+   
+     "properties" : {
+        "value" : {
+            "type" : "number"
+        },
+        "unit" : {
+            "type" :"string"
+        }
+    }
+
 }

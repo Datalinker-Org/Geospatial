@@ -1,5 +1,16 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "/types/ClimateyMeasurementType",
-    "description": "todo"
+    "description": "Climate Measurements",
+    "type" : "object",
+   
+     "properties" : {
+        "value" : {
+            "type" : "number"
+        },
+        "unit" : {
+            "type" :"string"
+        }
+    }
+
 }
