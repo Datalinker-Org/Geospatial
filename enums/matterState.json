@@ -1,7 +1,9 @@
 {
-    "description": "MATTER STATE TODO",
+    "description": "Matter States",
     "type": "string",
     "enum": [
-        "TODO"
+        "Solid",
+        "Liquid",
+        "Gas"
     ]
 }
