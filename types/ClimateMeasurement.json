@@ -4,13 +4,17 @@
     "description": "Climate Measurements",
     "type" : "object",
    
-     "properties" : {
+    "properties" : {
         "value" : {
             "type" : "number"
         },
         "unit" : {
+            "description" : "UNCEFACT unit",
             "type" :"string"
+        },
+        "resolution" : {
+            
+            "type" :"number"
         }
     }
-
 }
