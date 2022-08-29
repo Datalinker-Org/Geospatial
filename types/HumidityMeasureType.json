@@ -10,12 +10,7 @@
             "description": "Humidity measurement"
         },
         "unit": {
-            "type": "string",
-            "enum": [
-                "A93",
-                "P1",
-                "H64"
-            ],
+            "$ref": "../enums/uncefactHumidityUnits.json",
             "nullable": true,
             "default": "P1",
             "description": "UNCefact units for humidity - Absolute (A93 = g/m³), Relative (percent), Specific (mg/g = g/kg)"
