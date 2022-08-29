@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "types/distanceMeasure",
+    "$id": "types/DistanceMeasureType",
     "description": "Specifies a distance, including units (default is metre).",
     "type": "object",
     "required": [],
@@ -9,11 +9,15 @@
             "type": "number",
             "description": "The distance measurement"
         },
-        "unit": {
+        "units": {
             "$ref": "../enums/uncefactLengthUnits.json",
             "nullable": true,
             "default": "MTR",
             "description": "Defines the unit of measure for the length of a spatial resource. Prefered units are MTR (UN-CEFACT for metre)."
+        },
+        "resolution": {
+            "type": "number",
+            "description": "The smallest measurement difference (in units) that can be discriminated given the current device settings."
         }
     }
 }
