@@ -1,5 +1,5 @@
 {
-    "description": "A subset of units for velocity from UN/CEFACT trade facilitation recommendation 20. In order: metre per second, knot, kilometre per hour, foot per second, mile per hour (statue mile)",
+    "description": "A subset of units for velocity from UN/CEFACT trade facilitation recommendation 20. In order: metre per second, knot, kilometre per hour, foot per second, mile per hour (statute mile)",
     "type": "string",
     "enum": [
         "MTS",
