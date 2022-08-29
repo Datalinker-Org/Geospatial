@@ -4,31 +4,34 @@
     "type": "object",
     "properties": {
         "windSpeed": {
-            "$ref": "./velocityMeasure.json",
+            "$ref": "./VelocityMeasureType.json",
             "description": "Wind speed (velocity)"
         },
         "windDirectionCompass": {
-            "description": "Wind direction. Need to think about handling degrees.",
-            "type": "string",
-            "$ref" : "../enums/windDirection.json"
+            "description": "Wind direction in compass points.",
+            "$ref" : "../enums/WindDirectionType.json"
+        },
+        "windDirectionDegrees": {
+            "description": "Wind direction in decimal degrees",
+            "type": "number",
         },
         "airTemperature": {
-            "$ref": "./temperatureMeasure.json",
+            "$ref": "./TemperatureMeasureType.json",
             "description": "Air temperature"
         },
         "humidity": {
-            "$ref": "./humidityMeasure.json",
+            "$ref": "./HumidityMeasureType.json",
             "description": "Humidity"
         },
         "soilTemperature": {
-            "$ref": "./temperatureMeasure.json",
+            "$ref": "./TemperatureMeasureType.json",
             "description": "Soil temperature"
         },
         "solarRadiation24hrAverage" :{
             "$ref": "./ClimateMeasurement.json"
         },
         "rainfall24hrAverage" : {
-            "$ref": "./distanceMeasure.json",
+            "$ref": "./DistanceMeasureType.json",
             "description": "average of 24h rainfall"
         }
 
