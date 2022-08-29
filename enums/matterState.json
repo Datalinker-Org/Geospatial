@@ -2,6 +2,7 @@
     "description": "Matter States",
     "type": "string",
     "enum": [
+        "Unknown",
         "Solid",
         "Liquid",
         "Gas"
