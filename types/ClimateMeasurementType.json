@@ -8,12 +8,11 @@
         "value" : {
             "type" : "number"
         },
-        "unit" : {
+        "units" : {
             "description" : "UNCEFACT unit",
             "type" :"string"
         },
-        "resolution" : {
-            
+        "resolution" : {            
             "type" : "number",
             "description": "The smallest measurement difference (in the units) that can be discriminated given the current device settings."
         }
