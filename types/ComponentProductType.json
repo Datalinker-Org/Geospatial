@@ -11,7 +11,8 @@
             "type":  "number"
         },
         "percent":{
-            "type":"number"
+            "type": "number",
+            "description": "The proportion that this product composes of the mix. Can be calculated from Wt/Vol or other measures."
         },
         "product":{
             "$ref":  "../resources/ProductResource.json"
