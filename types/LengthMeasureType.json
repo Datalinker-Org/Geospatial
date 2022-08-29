@@ -1,18 +1,22 @@
 {
     "description": "Specifies an length or perimeter, including units (default is metre - MTR).",
     
-    "type": "object",
-
-    "properties": {
-        "measurement": {
-            "type": "number",
-            "description": "The length or perimeter of the spatial resouce (in the specified units)."
+    "allOf": [
+        {
+            "$ref": "../types/QuantityMeasurementType.json"
         },
-        "units": {
-            "$ref": "../enums/uncefactLengthUnits.json",
-            "nullable": true,
-            "default": "MTR",
-            "description": "Defines the unit of measure for the length. Prefered units are MTR (UN-CEFACT metre)."
-        }
-    }
+        {    
+            "type": "object",
+
+            "properties": {
+                "units": {
+                    "$ref": "../enums/uncefactLengthUnits.json",
+                    "nullable": true,
+                    "default": "MTR",
+                    "description": "Defines the unit of measure for the length. Prefered units are MTR (UN-CEFACT metre)."
+                }
+            }            
+        }    
+    ]
+
 }
