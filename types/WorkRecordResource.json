@@ -18,11 +18,11 @@
             "description":"Constant value in any concrete class for the operation type"
         },
         "status":{
-            "$ref":"../enums/workItemStatus.json"
+            "$ref":"../enums/WorkItemStatusType.json"
         },
         "priority":
         {
-            "$ref":"../enums/workItemPriority.json"
+            "$ref":"../enums/WorkItemPriorityType.json"
         },
         "area": {
             "$ref": "../types/AreaMeasureType.json",
