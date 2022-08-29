@@ -1,10 +1,18 @@
 {
-    "description": "Product Form",
+    "description": "Product physical form",
     "type": "string",
     "enum": [
-        "Gas",
-        "Liquid",
-        "Solid",
-        "Unknown"
+            "Unknown",
+            "WettablePowder",
+            "WaterSolublePowder",
+            "WaterDispersableGranules",
+            "Granules",
+            "OrganicSolid",
+            "SuspensionConcentrate",
+            "SolubleConcentrate",
+            "EmulsifiableConcentrate",
+            "OrganicSuspension",
+            "Vapour",
+            "Gas"
     ]
 }
