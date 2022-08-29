@@ -21,12 +21,12 @@
         },
         "summaryGeometry":{
             "$ref": "https://geojson.org/schema/Feature.json",
-            "description":"The geojson feature, with its geometry"
+            "description":"The geojson feature (with its geometry) that summarises the operation activity."
         },
         "loggedGeometry":{
 
             "$ref": "https://geojson.org/schema/Feature.json",
-            "description":"The geojson feature, with its geometry"
+            "description":"The geojson feature (with its geometry) that covers the logged track or activity record in detail."
         },
         "products":
         {
