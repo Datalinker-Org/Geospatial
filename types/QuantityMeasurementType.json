@@ -9,12 +9,12 @@
         "value" : {
             "type" : "number"
         },
-        "unit" : {
+        "units" : {
             "description" : "UNCEFACT unit",
             "type" :"string"
         },
         "resolution" : {
-            
+            "description": "The smallest measurement difference (in units) that can be discriminated given the current device settings.",
             "type" :"number"
         }
     }
