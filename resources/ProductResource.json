@@ -1,0 +1,75 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/resources/ProductResource",
+    "type": "object",
+    "allOf": [
+        {"$ref": "../types/RelationType.json"}
+    ],
+    "properties": {
+        "type": {
+            "$ref": "../enums/ProductTypeType.json"            
+        },
+        "manufacturer": {
+            "type": "string"
+        },
+        "brand": {
+            "type": "string"
+        },
+        "form": {
+            "$ref": "../enums/ProductPhysicalForm.json"            
+        },
+        "uri": {
+            "type": "string",
+            "format": "uri-reference",
+            "description": "URL to the product."
+          },
+        "crop" : {
+            "$ref": "../types/CropType.json"
+        },
+        "specificGravity": {
+            "type": "number",
+            "description": "Relative density. The ratio of the density (mass of a unit volume) of a substance to the density of a given reference material. For liquids this is typically water at 4 degrees celcius"
+        },
+        "matterState": {
+            "$ref": "../enums/MatterStateType.json"            
+        },
+        "analysis":{
+            "type":"array",
+            "items":{
+                "$ref": "../types/ProductAnalysisType.json"
+            }      
+        },
+        "activeIngredients":{
+            "type":"array",
+            "description":"array of active ingredients in the product",
+            "items":{
+                "$ref": "../types/ProductIngredientType.json"
+            }      
+        },
+        "withdrawals" :{
+            "type":"array",
+            "description":"The withdrawal period of the product ",
+            "items":{
+                "$ref":"../types/WithdrawalPeriodType.json"
+            }
+        },
+        "claims" :{
+            "type":"array",
+            "items":{
+                "$ref":"../types/RegistrationType.json"
+            }
+        },
+        "registrations" :{
+            "type":"array",
+            "items":{
+                "$ref":"../types/RegistrationType.json"
+            }
+        }
+    }
+}
+
+
+
+
+
+

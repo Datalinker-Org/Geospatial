@@ -1,0 +1,40 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/types/WorkRecordResource",
+    "description": "Abstract class that represents a work record - an activity that has been carried out.",
+    "type": "object",
+    "required": [
+        "operation",
+        "status"
+    ],
+    "allOf": [
+        {
+            "$ref": "../types/ObservationType.json"
+        }
+    ],
+    "properties": {
+        "operation":{
+            "type":"string",
+            "description":"Constant value in any concrete class for the operation type"
+        },
+        "status":{
+            "$ref":"../enums/WorkItemStatusType.json"
+        },
+        "priority":
+        {
+            "$ref":"../enums/WorkItemPriorityType.json"
+        },
+        "area": {
+            "$ref": "../types/AreaMeasureType.json",
+            "description": "Area of the operation"
+        },        
+        "loggedOperations":{
+            "description" : "array of operations completed in this work record",
+            "type":"array",
+            "items":{
+                "$ref": "../types/OperationRecordResource.json"
+            }
+
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "types/RegistrationType",
+    "type": "object",
+    "description": "The RegistrationType is a special case of an identifier type where scheme is the registration scheme, and id is a registered identifier.",
+    "allOf": [
+        {"$ref": "../types/IdentifierType.json"}
+    ]
+}
+
+

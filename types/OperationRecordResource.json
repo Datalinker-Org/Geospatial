@@ -1,0 +1,45 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/types/OperationRecordResource",
+    "description": "Abstract class that represents an operation record - operations that form the activity that has been carried out.",
+    "type": "object",
+    "required": [
+        "operation"
+    ],
+    "allOf": [
+        {
+            "$ref": "../types/ObservationType.json"
+        }
+    ],
+    "properties": {
+        "operation":{
+            "type":"string",
+            "description":" Encoding of the field operation ",
+        },
+        "operationName":{
+            "type":"string"
+        },
+        "summaryGeometry":{
+            "$ref": "https://geojson.org/schema/Feature.json",
+            "description":"The geojson feature (with its geometry) that summarises the operation activity."
+        },
+        "loggedGeometry":{
+
+            "$ref": "https://geojson.org/schema/Feature.json",
+            "description":"The geojson feature (with its geometry) that covers the logged track or activity record in detail."
+        },
+        "products":
+        {
+            "type":"array",
+            "items": {
+                "$ref": "./OperationProductType.json"
+            },
+            "description":" Products applied in the operation "
+        },
+        "environment":
+        {
+            "$ref": "../types/OperationEnvironmentType.json",
+            "description":"Environmental Data"
+        }
+    }
+}

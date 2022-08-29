@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/types/QuantityMeasurementType",
+    "description": "Quantity measures",
+
+    "type" : "object",
+   
+     "properties" : {
+        "value" : {
+            "type" : "number"
+        },
+        "units" : {
+            "description" : "UNCEFACT unit",
+            "type" :"string"
+        },
+        "resolution" : {
+            "description": "The smallest measurement difference (in units) that can be discriminated given the current device settings.",
+            "type" :"number"
+        }
+    }
+}

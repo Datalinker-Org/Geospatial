@@ -1,0 +1,22 @@
+{
+    "description": "Defines types of product that can be used in field activities.",
+    "type": "string",
+    "enum": [
+        "Unknown",
+        "Irrigation",
+        "Seed",
+        "Plant",
+        "Bulb",
+        "Tuber",
+        "Fertiliser",
+        "Pesticide",
+        "Fungicide",
+        "Herbicide",
+        "Adjuvant",
+        "Effluent",
+        "Biocontrol",
+        "Organic",
+        "HarvestedProduct",
+        "Mix"
+    ]
+}

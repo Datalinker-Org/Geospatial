@@ -1,0 +1,40 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "types/environment",
+    "type": "object",
+    "properties": {
+        "windSpeed": {
+            "$ref": "./VelocityMeasureType.json",
+            "description": "Wind speed (velocity)"
+        },
+        "windDirectionCompass": {
+            "description": "Wind direction in compass points.",
+            "$ref" : "../enums/WindDirectionType.json"
+        },
+        "windDirectionDegrees": {
+            "description": "Wind direction in decimal degrees",
+            "type": "number",
+        },
+        "airTemperature": {
+            "$ref": "./TemperatureMeasureType.json",
+            "description": "Air temperature"
+        },
+        "humidity": {
+            "$ref": "./HumidityMeasureType.json",
+            "description": "Humidity"
+        },
+        "soilTemperature": {
+            "$ref": "./TemperatureMeasureType.json",
+            "description": "Soil temperature"
+        },
+        "solarRadiation24hrAverage" :{
+            "$ref": "./ClimateMeasurement.json"
+        },
+        "rainfall24hrAverage" : {
+            "$ref": "./DistanceMeasureType.json",
+            "description": "average of 24h rainfall"
+        }
+
+
+    }
+}

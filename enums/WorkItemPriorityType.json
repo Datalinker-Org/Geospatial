@@ -1,0 +1,12 @@
+{
+    "description": "Allowable priorities of a work item",
+    "type": "string",
+    "enum": [
+        "Immediately",
+        "SoonAsPossible",
+        "High",
+        "Medium",
+        "Low",
+        null
+    ]
+}
