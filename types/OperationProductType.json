@@ -11,7 +11,8 @@
             "$ref":  "./QuantityMeasurementType.json"
         },
         "spatialMetric":{
-            "$ref":  "./QuantityMeasurementType.json"
+            "$ref":  "./QuantityMeasurementType.json",
+            "description": "The spatial metric to which the application rate applies e.g., [per] linear metre (MTR) or square metre (MTK)"
         },
         "applicationTotal":{
             "$ref":  "./QuantityMeasurementType.json"
