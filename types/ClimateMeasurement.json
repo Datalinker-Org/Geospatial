@@ -14,7 +14,8 @@
         },
         "resolution" : {
             
-            "type" :"number"
+            "type" : "number",
+            "description": "The smallest measurement difference (in the units) that can be discriminated given the current device settings."
         }
     }
 }
