@@ -51,6 +51,7 @@
         },
         "phenomenonStartTime": {
             "type": "string",
+            "format": "date-time",
             "description": "ISO UTC DateTime"
         },        
         "phenomenonEndTime": {
