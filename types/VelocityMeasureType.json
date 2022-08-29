@@ -6,7 +6,7 @@
 
     "allOf": [
         {
-            "$ref": "../types/QuantityMeasurementType.json"
+            "$ref": "../types/MeasurementType.json" 
         },
         {    
             "type": "object",
