@@ -1,5 +1,5 @@
 {
-    "description": "Units for area from UN/CEFACT trade facilitation recommendation 20. In order: km, m, cm, mm, statute mile, yard, foot, inch",
+    "description": "Units for area from UN/CEFACT trade facilitation recommendation 20. In order: km, m, cm, mm, statute mile, yard, foot, inch, linear yard",
   
     "type": "string",
   
@@ -11,6 +11,7 @@
       "SMI",
       "YRD", 
       "FOT",
-      "INH"
+      "INH",
+      "LY"
     ]
   }
