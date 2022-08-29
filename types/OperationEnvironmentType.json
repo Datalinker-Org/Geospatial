@@ -7,7 +7,7 @@
             "$ref": "./velocityMeasure.json",
             "description": "Wind speed (velocity)"
         },
-        "windDirection": {
+        "windDirectionCompass": {
             "description": "Wind direction. Need to think about handling degrees.",
             "type": "string",
             "$ref" : "../enums/windDirection.json"
