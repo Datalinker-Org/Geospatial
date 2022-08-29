@@ -13,7 +13,7 @@
             "type": "string",
             "enum": [
                 "A93",
-                "PER",
+                "P1",
                 "H64"
             ],
             "nullable": true,
