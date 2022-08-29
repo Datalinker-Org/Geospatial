@@ -1,19 +1,23 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "types/temperatureMeasure",
-    "description": "Specifies a temperature including units (default is degrees celcius).",
+    "description": "Specifies a temperature including UN/CEFACT units (default is degrees celcius - CEL).",
     "type": "object",
     "required": [],
     "properties": {
         "measurement": {
             "type": "number",
-            "description": "temperature measurement"
+            "description": "Temperature measurement"
         },
-        "unit": {
+        "units": {
             "$ref": "../enums/uncefactTemperatureUnits.json",
             "nullable": true,
             "default": "CEL",
             "description": "Defines the unit of measure for temperatue. Prefered units are CEL (UN-CEFACT for degrees celcius)."
-        }
+        },
+        "resolution": {
+            "type": "number",
+            "description": "The smallest measurement difference (in units) that can be discriminated given the current device settings"
+        }        
     }
 }
