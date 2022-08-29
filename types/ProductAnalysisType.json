@@ -2,6 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "types/ProductAnalysisType",
     "type": "object",
+    "required": [ "name", "percent" ],
     "properties": {
         "id" :{
             "$ref" : "../types/IdentifierType.json"
