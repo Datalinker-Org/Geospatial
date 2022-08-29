@@ -55,6 +55,7 @@
         },        
         "phenomenonEndTime": {
             "type": "string",
+            "format": "date-time",
             "description": "ISO UTC DateTime"
         },
         "holding": {
