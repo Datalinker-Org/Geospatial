@@ -32,7 +32,7 @@
         {
             "type":"array",
             "items": {
-                "$ref": "./OperationProductType.json"
+                "$ref": "../types/OperationProductType.json"
             },
             "description":" Products applied in the operation "
         },
