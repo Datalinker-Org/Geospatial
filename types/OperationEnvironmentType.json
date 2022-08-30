@@ -13,7 +13,7 @@
         },
         "windDirectionDegrees": {
             "description": "Wind direction in decimal degrees",
-            "type": "number",
+            "type": "number"
         },
         "airTemperature": {
             "$ref": "./TemperatureMeasureType.json",
@@ -28,7 +28,7 @@
             "description": "Soil temperature"
         },
         "solarRadiation24hrAverage" :{
-            "$ref": "./ClimateMeasurement.json"
+            "$ref": "./ClimateMeasurementType.json"
         },
         "rainfall24hrAverage" : {
             "$ref": "./DistanceMeasureType.json",
