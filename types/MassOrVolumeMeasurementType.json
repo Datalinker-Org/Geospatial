@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "types/MassOrVolumeMeasurementType",
+    "description": "Specifies product quantity that may be weight- or volume-based, including units (there is no default).",
+
+    "allOf": [
+        {
+            "$ref": "../types/MeasurementType.json" 
+        },
+        {    
+            "type": "object",
+            "properties": {
+                "anyOf": [
+                    {
+                        "units": {
+                            "$ref": "../enums/uncefactMassUnits.json", 
+                            "nullable": true,
+                            "description": "Defines the unit of measure for weight quantities"
+                        }
+                    },
+                    {
+                        "units": {
+                            "$ref": "../enums/uncefactVolumeUnits.json", 
+                            "nullable": true,
+                            "description": "Defines the unit of measure for volume quantities."
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
