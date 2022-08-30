@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "types/IrradianceMeasureType",
+    "description": "Specifies a surface irradiance measure including units (default is Watts / m2).",
+
+    "allOf": [
+        {
+            "$ref": "../types/MeasurementType.json"
+        },
+        {
+            "type": "object",
+            "required": [],
+            "properties": {
+                "unit": {
+                    "$ref": "../enums/uncefactIrradianceUnits.json",
+                    "nullable": true,
+                    "default": "D54",
+                    "description": "UNCefact units for irradiance (D54 - w/m2 is the default)."
+                }
+            }
+        
+        }
+    ]
+}

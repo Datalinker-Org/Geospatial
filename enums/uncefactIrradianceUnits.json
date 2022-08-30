@@ -1,0 +1,8 @@
+{
+    "description": "UN/CEFACT surface irradiance measurement units. In order: Watts w/m2, lumens/m2 (lux).",
+    "type": "string",
+    "enum": [
+        "D54",
+        "B60"
+    ]
+}
