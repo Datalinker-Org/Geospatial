@@ -8,17 +8,17 @@
 
         "applicationRate":{
             "description":"the rate at which the product is applied",
-            "$ref":  "./MassOrVolumeMeasurementType.json"
+            "$ref":  "../types/MassOrVolumeMeasurementType.json"
         },
         "spatialMetric":{
-            "$ref":  "./SpatialMeasurementType.json",
+            "$ref":  "../types/SpatialMeasureType.json",
             "description": "The spatial metric to which the application rate applies e.g., [per] linear metre (MTR) or square metre (MTK)"
         },
         "applicationTotal":{
-            "$ref":  "./MassOrVolumeMeasurementType.json"
+            "$ref":  "../types/MassOrVolumeMeasurementType.json"
         },
         "waterVolume":{
-            "$ref":  "./VolumeMeasurementType.json"
+            "$ref":  "../types/VolumeMeasureType.json"
         },
         "components":{
             "description" : "array of components in this product mix (can be one)",
