@@ -14,7 +14,7 @@
     "properties": {
         "operation":{
             "type":"string",
-            "description":" Encoding of the field operation ",
+            "description":" Encoding of the field operation "
         },
         "operationName":{
             "type":"string"
