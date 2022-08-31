@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/types/AreaMeasureType",
+    "$id": "/types/MeasurementType",
     "description": "Defines a base type for quantity measurements. Developers should extend this and add appropriate units.",
 
     "type" : "object",
