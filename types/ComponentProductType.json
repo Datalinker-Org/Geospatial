@@ -1,6 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/types/ComponentProductType",
     "description": "Abstract class that represents a mix of products or single product.",
     "type": "object",
 

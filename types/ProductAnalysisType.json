@@ -1,6 +1,6 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "types/ProductAnalysisType",
+    "description": "Used to specify analysis of a product (for example, nutrient or energy).",
+
     "type": "object",
     "required": [ "name", "percent" ],
     "properties": {

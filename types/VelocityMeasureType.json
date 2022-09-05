@@ -1,6 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "types/VelocityMeasureType",
     "description": "Specifies a velocity, including units (default is metre per second - MTS).",
 
 

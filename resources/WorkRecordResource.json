@@ -1,6 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/resources/WorkRecordResource",
     "description": "Abstract class that represents a work record - an activity that has been carried out.",
     "type": "object",
     "required": [
@@ -24,9 +22,13 @@
         {
             "$ref":"../enums/WorkItemPriorityType.json"
         },
-        "area": {
+        "workedArea": {
             "$ref": "../types/AreaMeasureType.json",
-            "description": "Area of the operation"
+            "description": "Area worked by the operation"
+        },        
+        "nonOverlapArea": {
+            "$ref": "../types/AreaMeasureType.json",
+            "description": "Area worked by the operation, excluding overlaps"
         },        
         "loggedOperations":{
             "description" : "array of operations completed in this work record",

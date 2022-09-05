@@ -1,6 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/types/OperationProductType",
     "description": "Abstract class that represents an operation product - a product that has been applied.",
     "type": "object",
 

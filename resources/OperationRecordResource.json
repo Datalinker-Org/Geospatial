@@ -1,6 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/resources/OperationRecordResource",
     "description": "Abstract class that represents an operation record - operations that form the activity that has been carried out.",
     "type": "object",
     "required": [

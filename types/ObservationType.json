@@ -1,6 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/types/ObservationType",
     "description": "Abstract class that supports any observation or activity on a geospatial feature or crop",
     "allOf": [
         {

@@ -1,6 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "types/DistanceMeasureType",
     "description": "Specifies a distance, including units (default is metre).",
 
     "allOf": [

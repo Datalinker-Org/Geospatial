@@ -1,6 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "types/IrradianceMeasureType",
     "description": "Specifies a surface irradiance measure including units (default is Watts / m2).",
 
     "allOf": [

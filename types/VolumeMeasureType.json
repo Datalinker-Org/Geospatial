@@ -1,6 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "types/VolumeMeasureType",
     "description": "Specifies product quantity that may be weight- or volume-based, including units (default is litre - LTR).",
 
     "allOf": [

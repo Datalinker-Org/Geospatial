@@ -1,6 +1,5 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/resources/ProductResource", 
+    "description": "This schema represents a product type - a plant variety, agrochemical, fertiliser, effluent, or harvested product.",
 
     "allOf": [
         {

@@ -1,6 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "types/HumidityMeasureType",
     "description": "Specifies a humidity measure including units (default is relative percent - P1).",
 
     "allOf": [

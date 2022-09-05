@@ -1,6 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "types/TemperatureMeasureType",
     "description": "Specifies a temperature including UN/CEFACT units (default is degrees celcius - CEL).",
 
     "allOf": [
