@@ -1,6 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/types/OperationProductType",
     "description": "Abstract class that represents an operation product - a product that has been applied.",
     "type": "object",
 
@@ -8,20 +6,17 @@
 
         "applicationRate":{
             "description":"the rate at which the product is applied",
-            "$ref":  "./QuantityMeasurementType.json"
+            "$ref":  "../types/MassOrVolumeMeasurementType.json"
         },
         "spatialMetric":{
-            "$ref":  "./QuantityMeasurementType.json",
+            "$ref":  "../types/SpatialMeasureType.json",
             "description": "The spatial metric to which the application rate applies e.g., [per] linear metre (MTR) or square metre (MTK)"
         },
         "applicationTotal":{
-            "$ref":  "./QuantityMeasurementType.json"
+            "$ref":  "../types/MassOrVolumeMeasurementType.json"
         },
         "waterVolume":{
-            "$ref":  "./QuantityMeasurementType.json"
-        },
-        "totalApplied":{
-            "$ref":  "./QuantityMeasurementType.json"
+            "$ref":  "../types/VolumeMeasureType.json"
         },
         "components":{
             "description" : "array of components in this product mix (can be one)",

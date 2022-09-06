@@ -1,23 +1,22 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "types/humidityMeasure",
     "description": "Specifies a humidity measure including units (default is relative percent - P1).",
-    "type": "object",
-    "required": [],
-    "properties": {
-        "measurement": {
-            "type": "number",
-            "description": "Humidity measurement"
+
+    "allOf": [
+        {
+            "$ref": "../types/MeasurementType.json"
         },
-        "unit": {
-            "$ref": "../enums/uncefactHumidityUnits.json",
-            "nullable": true,
-            "default": "P1",
-            "description": "UNCefact units for humidity - Absolute (A93 = g/m³), Relative (percent), Specific (mg/g = g/kg)"
-        },
-        "resolution": {
-            "type": "number",
-            "description": "The smallest measurement difference (in units) that can be discriminated given the current device settings."        
+        {
+            "type": "object",
+            "required": [],
+            "properties": {
+                "unit": {
+                    "$ref": "../enums/uncefactHumidityUnits.json",
+                    "nullable": true,
+                    "default": "P1",
+                    "description": "UNCefact units for humidity - Absolute (A93 = g/m³), Relative (percent), Specific (mg/g = g/kg)"
+                }
+            }
+        
         }
-    }
+    ]
 }

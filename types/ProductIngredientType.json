@@ -1,6 +1,5 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "types/ProductIngredientType",
+    "description": "Describes an ingredient of a product (for example, an active ingredient).",
     "type": "object",
     "required": [ "name" ],
     "properties": {

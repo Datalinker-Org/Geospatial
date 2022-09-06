@@ -1,0 +1,21 @@
+{
+    "description": "Units for spatial area and distance denominators from UN/CEFACT. In order: km, m, cm, mm, statute mile, yard, foot, inch, linear yard, square metre, square yard, hectare, acre",
+  
+    "type": "string",
+  
+    "enum": [
+      "KMT", 
+      "MTR",
+      "CMT",
+      "MMT", 
+      "SMI",
+      "YRD", 
+      "FOT",
+      "INH",
+      "LY",
+      "MTK",
+      "YDK",
+      "HAR",
+      "ACR"
+    ]
+  }

@@ -1,6 +1,5 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "types/environment",
+    "description": "Provides environmental information about the conditions at the location.",
     "type": "object",
     "properties": {
         "windSpeed": {
@@ -8,33 +7,32 @@
             "description": "Wind speed (velocity)"
         },
         "windDirectionCompass": {
-            "description": "Wind direction in compass points.",
+            "description": "Wind direction in compass points at the time of activity.",
             "$ref" : "../enums/WindDirectionType.json"
         },
         "windDirectionDegrees": {
-            "description": "Wind direction in decimal degrees",
-            "type": "number",
+            "description": "Wind direction in decimal degrees at the time of activity.",
+            "type": "number"
         },
         "airTemperature": {
             "$ref": "./TemperatureMeasureType.json",
-            "description": "Air temperature"
+            "description": "Air temperature at the time of activity."
         },
         "humidity": {
             "$ref": "./HumidityMeasureType.json",
-            "description": "Humidity"
+            "description": "Humidity at the time of activity."
         },
         "soilTemperature": {
             "$ref": "./TemperatureMeasureType.json",
-            "description": "Soil temperature"
+            "description": "Soil temperature at or near the time of activity."
         },
-        "solarRadiation24hrAverage" :{
-            "$ref": "./ClimateMeasurement.json"
+        "solarRadiation24hr" :{
+            "$ref": "./IrradianceMeasureType.json",
+            "description": "Cumulative solar radiation over 24 hour period."
         },
-        "rainfall24hrAverage" : {
+        "rainfall24hr" : {
             "$ref": "./DistanceMeasureType.json",
-            "description": "average of 24h rainfall"
+            "description": "Cumulative rainfall over 24 hour period."
         }
-
-
     }
 }

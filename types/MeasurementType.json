@@ -1,17 +1,11 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/types/QuantityMeasurementType",
-    "description": "Quantity measures",
+    "description": "Defines a base type for quantity measurements. Developers should extend this and add appropriate units.",
 
     "type" : "object",
    
      "properties" : {
-        "value" : {
+        "measurement" : {
             "type" : "number"
-        },
-        "units" : {
-            "description" : "UNCEFACT unit",
-            "type" :"string"
         },
         "resolution" : {
             "description": "The smallest measurement difference (in units) that can be discriminated given the current device settings.",

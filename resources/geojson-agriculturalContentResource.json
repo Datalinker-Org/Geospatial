@@ -16,6 +16,15 @@
                 },
                 {
                     "$ref": "../resources/SiteResource.json"
+                },
+                {
+                    "$ref": "../resources/PlotZoneResource.json"
+                },
+                {
+                    "$ref": "../resources/PlaceResource.json"
+                },
+                {
+                    "$ref": "../resources/LandCoverResource.json"
                 }
             ]
         }

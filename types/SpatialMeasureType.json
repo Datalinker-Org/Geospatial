@@ -1,16 +1,16 @@
 {
-    "description": "Specifies an area, including units (default is m2). Express 1 hectare as 10,000 m2.",
+    "description": "Specifies a spatial measurement such as area or length, including units (default is m2). Express 1 hectare as 10,000 m2.",
 
     "allOf": [
         {
-            "$ref": "../types/MeasurementType.json" 
+            "$ref": "../types/MeasurementType.json"
         },
         {    
             "type": "object",
 
             "properties": {
                 "units": {
-                    "$ref": "../enums/uncefactAreaUnits.json",
+                    "$ref": "../enums/uncefactSpatialUnits.json",
                     "nullable": true,
                     "default": "MTK",
                     "description": "Defines the unit of measure for the area. Prefered units are MTK (UN-CEFACT for square metre)."

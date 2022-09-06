@@ -1,0 +1,17 @@
+{
+    "description": "Mass units for weight from UN/CEFACT trade facilitation recommendation 20. In order kg, g, Pound, Metric Tonne, Long (UK/US) Ton, Microgram, Miligram, Ounce, Pound net.",
+  
+    "type": "string",
+  
+    "enum": [
+      "KGM",
+      "GRM",
+      "LBR",
+      "TNE",
+      "LTN",
+      "MC",
+      "MGM",
+      "ONZ",
+      "PN"
+    ]
+  }

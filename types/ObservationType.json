@@ -1,79 +1,46 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/typesObservationType",
     "description": "Abstract class that supports any observation or activity on a geospatial feature or crop",
-    "type": "object",
-    "required": [
-        "observationDate"
-    ],
     "allOf": [
         {
             "$ref": "../types/ResourceType.json"
         },
         {
-            "not": {
-                "allOf": [
-                    {
-                        "required": [
-                            "feature"
-                        ]
-                    },
-                    {
-                        "required": [
-                            "featureId"
-                        ]
-                    }
-                ]
-            }
-        },
-        {
-            "not": {
-                "allOf": [
-                    {
-                        "required": [
-                            "holding"
-                        ]
-                    },
-                    {
-                        "required": [
-                            "holdingId"
-                        ]
-                    }
-                ]
+            "type": "object",
+            "required": [ "observationDate", "feature" ],
+
+            "properties": {
+                "observationDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "UTC Date (required) and time (optional) the sample was taken"
+                },
+                "phenomenonStartTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "ISO UTC DateTime"
+                },        
+                "phenomenonEndTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "ISO UTC DateTime"
+                },
+                "holding": {
+                    "$ref": "../types/FeatureReferenceType.json"
+                },
+                "feature": {
+                    "$ref": "../types/FeatureReferenceType.json"
+                },
+                "responsible": {
+                    "type": "string",
+                    "description": "Identifier of the person responsible for the observation"
+                },
+                "remark": {
+                    "type": "string",
+                    "description": "Notes or remarks field"
+                }
             }
         }
     ],
-    "properties": {
-        "observationDate": {
-            "type": "string",
-            "format": "date-time",
-            "description": "UTC Date (required) and time (optional) the sample was taken"
-        },
-        "phenomenonStartTime": {
-            "type": "string",
-            "format": "date-time",
-            "description": "ISO UTC DateTime"
-        },        
-        "phenomenonEndTime": {
-            "type": "string",
-            "format": "date-time",
-            "description": "ISO UTC DateTime"
-        },
-        "holding": {
-            "$ref": "../types/FeatureReferenceType.json"
-        },
-        "feature": {
-            "$ref": "../types/FeatureReferenceType.json"
-        },
-        "responsible": {
-            "type": "string",
-            "description": "Identifier of the person responsible for the observation"
-        },
-        "remark": {
-            "type": "string",
-            "description": "Notes or remarks field"
-        }
-    },
     "examples": [
 
         {
