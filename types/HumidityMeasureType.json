@@ -9,7 +9,7 @@
             "type": "object",
             "required": [],
             "properties": {
-                "unit": {
+                "units": {
                     "$ref": "../enums/uncefactHumidityUnits.json",
                     "nullable": true,
                     "default": "P1",
