@@ -3,9 +3,11 @@
     "allOf": [
         {
             "$ref": "../types/MeasurementType.json"
-        },
-        {
-            "anyOf": [
+        }
+    ],
+    "properties":{
+        "units":{
+            "anyOf":[
                 {
                     "$ref": "../enums/uncefactMassUnits.json",
                     "nullable": true,
@@ -18,5 +20,5 @@
                 }
             ]
         }
-    ]
+    }
 }
