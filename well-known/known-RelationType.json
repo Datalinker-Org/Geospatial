@@ -3,5 +3,6 @@
     { "relationship": "Primary Contact", "type": "ContactPoint" },
     { "relationship": "Visitor Reception", "type": "Place" },
     { "relationship": "Fire Alarm Call Point", "type": "Place" },
-    { "relationship": "Holding", "type": "HoldingResource" }
+    { "relationship": "Holding", "type": "HoldingResource" },
+    { "relationship": "WorkRecord", "type": "WorkRecordResource" }
 ]
