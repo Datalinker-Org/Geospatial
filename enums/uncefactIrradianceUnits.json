@@ -1,5 +1,5 @@
 {
-    "description": "UN/CEFACT surface irradiance measurement units. In order: Watts w/m2, lumens/m2 (lux), Joules J/m3.",
+    "description": "UN/CEFACT surface irradiance measurement units. In order: Watts w/m2, lumens/m2 (lux), Joules J/m2.",
     "type": "string",
     "enum": [
         "D54",
