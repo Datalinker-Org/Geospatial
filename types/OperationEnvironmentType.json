@@ -28,7 +28,7 @@
         },
         "solarRadiation24hr" :{
             "$ref": "./IrradianceMeasureType.json",
-            "description": "Cumulative solar radiation over 24 hour period."
+            "description": "Cumulative solar radiation over 24 hour period (units B13 - J/m2)."
         },
         "rainfall24hr" : {
             "$ref": "./DistanceMeasureType.json",
