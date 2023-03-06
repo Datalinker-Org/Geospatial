@@ -1,10 +1,11 @@
 {
-    "description": "Mass units for weight from UN/CEFACT trade facilitation recommendation 20. In order litre, gallon (US), gallon (UK), ounce (US), ounce (UK), Barrel (US), ml water.",
+    "description": "Mass units for weight from UN/CEFACT trade facilitation recommendation 20. In order litre, millilitre, gallon (US), gallon (UK), ounce (US), ounce (UK), Barrel (US), ml water.",
   
     "type": "string",
   
     "enum": [
       "LTR",
+      "MLT",
       "GLL",
       "GLI",
       "OZA",
