@@ -1,0 +1,15 @@
+{
+    "description": "Defines the unit of measure for weight or volume quantities",
+    "anyOf":[
+       {
+          "$ref": "https://raw.githubusercontent.com/Pure-Farming/DataLinker-Geospatial/master/enums/uncefactMassUnits.json",
+          "nullable": true,
+          "description": "Defines the unit of measure for weight quantities"
+       },
+       {
+          "$ref": "https://raw.githubusercontent.com/Pure-Farming/DataLinker-Geospatial/master/enums/uncefactVolumeUnits.json",
+          "nullable": true,
+          "description": "Defines the unit of measure for volume quantities."
+       }
+    ]
+}
