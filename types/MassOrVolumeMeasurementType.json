@@ -7,18 +7,7 @@
     ],
     "properties":{
         "units":{
-            "anyOf":[
-                {
-                    "$ref": "../enums/uncefactMassUnits.json",
-                    "nullable": true,
-                    "description": "Defines the unit of measure for weight quantities"
-                },
-                {
-                    "$ref": "../enums/uncefactVolumeUnits.json",
-                    "nullable": true,
-                    "description": "Defines the unit of measure for volume quantities."
-                }
-            ]
+            "$ref": "../enums/uncefactMassOrVolumeUnits.json"
         }
     }
 }
