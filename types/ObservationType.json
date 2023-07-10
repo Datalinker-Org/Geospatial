@@ -1,12 +1,12 @@
 {
-    "description": "Abstract class that supports any observation or activity on a geospatial feature or crop",
+    "description": "Abstract class that supports any observation or activity on a geospatial feature or crop.  Note feature and features are alternatives.",
     "allOf": [
         {
             "$ref": "../types/ResourceType.json"
         },
         {
             "type": "object",
-            "required": [ "observationDate", "feature" ],
+            "required": [ "observationDate" ],
 
             "properties": {
                 "observationDate": {
@@ -29,6 +29,13 @@
                 },
                 "feature": {
                     "$ref": "../types/FeatureReferenceType.json"
+                },
+                "features": {
+                    "description": "Array of features to which this observation applies. Alternative to feature.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "../types/FeatureReferenceType.json"
+                    }
                 },
                 "responsible": {
                     "type": "string",
