@@ -1,5 +1,5 @@
 {
-    "description": "Units for area from UN/CEFACT trade facilitation recommendation 20. In order: m2, km2, hectare, square foot, square yard, square mile, acre.",
+    "description": "Units for area from UN/CEFACT trade facilitation recommendation 20. In order: m2 = MTK, km2 = KMTK, hectare = HAR, square foot = FTK, square yard = YDK, square mile = MIK, acre = ACR.",
   
     "type": "string",
   
