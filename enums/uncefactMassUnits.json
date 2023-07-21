@@ -1,5 +1,5 @@
 {
-    "description": "Mass units for weight from UN/CEFACT trade facilitation recommendation 20. In order kg, g, Pound, Metric Tonne, Long (UK/US) Ton, Microgram, Miligram, Ounce, Pound net.",
+    "description": "Mass units for weight from UN/CEFACT trade facilitation recommendation 20. https://github.com/Datalinker-Org/Geospatial/wiki/UN-CEFACT-Measurement-enum-descriptions#mass-units",
   
     "type": "string",
   
