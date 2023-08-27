@@ -1,0 +1,20 @@
+{
+    "description": "Specifies a mass, including units (default is kilogram).",
+
+    "allOf": [
+        {
+            "$ref": "../types/MeasurementType.json" 
+        },
+        {    
+            "type": "object",
+            "properties": {
+                "units": {
+                    "$ref": "../enums/uncefactMassUnits.json",
+                    "nullable": true,
+                    "default": "KGM",
+                    "description": "UN/CEFACT units for mass (KGM is the default)."
+                }
+            }
+        }
+    ]
+}
