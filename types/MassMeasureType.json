@@ -12,7 +12,7 @@
                     "$ref": "../enums/uncefactMassUnits.json",
                     "nullable": true,
                     "default": "KGM",
-                    "description": "UNCefact units for mass (KGM is the default)."
+                    "description": "UN/CEFACT units for mass (KGM is the default)."
                 }
             }
         }
