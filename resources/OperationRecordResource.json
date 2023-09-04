@@ -12,10 +12,14 @@
     "properties": {
         "operation":{
             "type":"string",
-            "description":" Encoding of the field operation "
+            "description": "Encoding of the field operation. See well-known/operations-and-methods.md"
         },
         "operationName":{
             "type":"string"
+        },
+        "method": {
+            "type": "string",
+            "description": "Where an operation may be achieved by multiple methods, specifies the method (e.g., method of application or cultivation).  See well-known/operations-and-methods.md"
         },
         "summaryGeometry":{
             "$ref": "https://geojson.org/schema/Feature.json",
