@@ -1,11 +1,11 @@
 {
-    "description": "Abstract class that represents a mix of products or single product.",
+    "description": "Class that represents a mix of products or single product.",
     "type": "object",
 
     "properties": {
 
         "mixSequence":{
-            "description":"the order of this product in the mix",
+            "description":"The order of this product in the mix",
             "type":  "number"
         },
         "percent":{
@@ -13,7 +13,12 @@
             "description": "The proportion that this product composes of the mix. Can be calculated from Wt/Vol or other measures."
         },
         "product":{
-            "$ref":  "../resources/ProductResource.json"
+            "$ref":  "../resources/ProductResource.json",
+            "description": "Defines a product that is a component of the mix."
+        },
+        "quantity": {
+            "$ref": "../types/MassOrVolumeMeasurementType.json",
+            "description": "The quantity of this product which is included in the mix. You should additionally calculate percent if feasible."
         }
     }
 }
