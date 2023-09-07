@@ -2,6 +2,8 @@
 	 - **Type:** `string`
  - <b id="#/properties/operationName">operationName</b>
 	 - **Type:** `string`
+ - <b id="#/properties/method">method</b>
+	 - **Type:** `string`
  - <b id="#/properties/summaryGeometry">summaryGeometry</b>
 	 - &#36;ref: [https://geojson.org/schema/Feature.json](https://geojson.org/schema/Feature.json)
  - <b id="#/properties/loggedGeometry">loggedGeometry</b>
