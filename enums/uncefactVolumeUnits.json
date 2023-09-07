@@ -1,5 +1,5 @@
 {
-    "description": "Mass units for weight from UN/CEFACT trade facilitation recommendation 20. In order litre, millilitre, gallon (US), gallon (UK), ounce (US), ounce (UK), Barrel (US), ml water.",
+    "description": "Mass units for volume from UN/CEFACT trade facilitation recommendation 20. In order litre, millilitre, gallon (US), gallon (UK), ounce (US), ounce (UK), Barrel (US), ml water, cubic metre.",
   
     "type": "string",
   
@@ -11,6 +11,7 @@
       "OZA",
       "OZI",
       "B4",
-      "WW"
+      "WW",
+      "MTQ"
     ]
   }
