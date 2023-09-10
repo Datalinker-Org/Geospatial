@@ -1,0 +1,20 @@
+{
+    "description": "Extends MeasurementType to add a denominator. Concrete classes need to define both `units` and denominatorUnits`.",
+
+    "allOf": [
+        {
+            "$ref": "../types/MeasurementType.json" 
+        },
+        {    
+            "type": "object",
+
+            "properties": {
+                "denominator": {
+                    "type": "number",
+                    "default": 1,
+                    "description": "Defines a denominator for a measurement in the form `measurement per denominator`."
+                }
+            }
+        }    
+    ]
+}

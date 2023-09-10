@@ -33,6 +33,10 @@
                     "type": "number",
                     "description": "Relative density. The ratio of the density (mass of a unit volume) of a substance to the density of a given reference material. For liquids this is typically water at 4 degrees celcius"
                 },
+                "bulkDensity": {
+                    "$ref": "../types/MassPerVolumeMeasurementType.json",
+                    "description": "Bulk Density is a specific measurement of the mass of an item for a known volume (e.g., KGM/MTQ or GRM/LTR)."
+                },
                 "matterState": {
                     "$ref": "../enums/MatterStateType.json"            
                 },
