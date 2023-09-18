@@ -1,5 +1,6 @@
 {
     "type": "object",
+    "description": "Provides a reference to a feature",
     "allOf": [
         {
             "$ref": "../types/RelationType.json"
@@ -10,7 +11,8 @@
             "description": "Identifies the type of feature referenced"
         },
         "identifier": {
-            "$ref": "../types/IdentifierType.json"
+            "$ref": "../types/IdentifierType.json",
+            "description": "Identifies a feature using a scheme and id"
         },
         "name": {
             "type": "string",
