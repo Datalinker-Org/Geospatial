@@ -5,14 +5,16 @@
     "required": [ "name", "percent" ],
     "properties": {
         "id" :{
-            "$ref" : "../types/IdentifierType.json"
+            "$ref" : "../types/IdentifierType.json",
+            "description": "Id of a component or factor (e.g. nutrient or energy) identified in the analysis of a product specified as a scheme and id"
         },
         "name": {
             "type": "string",
             "description": "Human readable description of the test result"
         },
         "percent": {
-            "type": "number"
+            "type": "number",
+            "description": "Percentage of the factor in the product according to the analysis"
         }
         
     }
