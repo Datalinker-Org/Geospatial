@@ -13,10 +13,12 @@
             "description": "The spatial metric to which the application rate applies e.g., [per] linear metre (MTR) or square metre (MTK)"
         },
         "applicationTotal":{
-            "$ref":  "../types/MassOrVolumeMeasurementType.json"
+            "$ref":  "../types/MassOrVolumeMeasurementType.json",
+            "description": "Total quantity (mass or volume depending on the units) of the product applied"
         },
         "waterVolume":{
-            "$ref":  "../types/VolumeMeasureType.json"
+            "$ref":  "../types/VolumeMeasureType.json",
+            "description": "Total volume of water applied (quantity, units and resolution)"
         },
         "components":{
             "description" : "array of components in this product mix (can be one)",
