@@ -11,17 +11,17 @@
         "primary": {
             "type": "string",
             "description": "Primary level of classification under the scheme (e.g., in NZSC this would be the Order).",
-            "nullable": true
+            "type": ["string", "null"]
         },
         "secondary": {
             "type": "string",
             "description": "Secondary level of classification under the scheme (e.g., in NZSC this would be the Group).",
-            "nullable": true
+            "type": ["string", "null"]
         },
         "tertiary": {
             "type": "string",
             "description": "Tertiary level of classification under the scheme (e.g., in NZSC this would be the Subgroup).",
-            "nullable": true
+            "type": ["string", "null"]
         }
     }
 }
