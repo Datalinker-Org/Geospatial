@@ -214,7 +214,7 @@
               "geometry": {
                 "allOf": [
                   {
-                    "nullable": true
+                    "type": ["string", "null"]
                   },
                   {
                     "$ref": "#/components/schemas/Geometry"
@@ -223,7 +223,7 @@
               },
               "properties": {
                 "type": "object",
-                "nullable": true,
+                "type": ["string", "null"],
                 "properties": {
                   "agriculture": {
                     "$ref": "../resources/geojson-agriculturalContentResource.json"
