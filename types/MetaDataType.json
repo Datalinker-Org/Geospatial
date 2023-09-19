@@ -20,22 +20,22 @@
       "created": {
         "$ref": "../types/DateTimeType.json",
         "description": "The date and time at which the object was created. SHOULD be set if known.",
-        "nullable": true
+        "type": ["string", "null"]
       },
       "creator": {
         "type": "string",
         "description": "Person or organisation who created the object",
-        "nullable": true
+        "type": ["string", "null"]
       },
       "validFrom": {
         "$ref": "../types/DateTimeType.json",
         "description": "The earliest date and time from which the object is valid.",
-        "nullable": true
+        "type": ["string", "null"]
       },
       "validTo": {
         "$ref": "../types/DateTimeType.json",
         "description": "The latest date and time to which the object is valid.",
-        "nullable": true
+        "type": ["string", "null"]
       }
     }
   }
