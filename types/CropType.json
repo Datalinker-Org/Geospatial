@@ -10,17 +10,17 @@
         },
         "taxonomicName": {
             "type": "string",
-            "nullable": true,
+            "type": ["string", "null"],
             "description": "Taxonomic name of the species. Developers should check this against official databases or taxonomic registers."
         },
         "variety": {
             "type": "string",
-            "nullable": true,
+            "type": ["string", "null"],
             "description": "Recognised plant variety."
         },
         "identifiers": {
             "type": "array",
-            "nullable": true,
+            "type": ["string", "null"],
             "description": "A list of official identifiers of different sorts, idenfified by scheme and id.",
             "items": {
                 "$ref": "../types/IdentifierType.json"
@@ -28,17 +28,17 @@
         },
         "establishmentDate": {
             "$ref": "../types/DateTimeType.json",
-            "nullable": true, 
+            "type": ["string", "null"],
             "description": "The establishment date of the crop or species if known."
         },
         "maturityDate": {
             "$ref": "../types/DateTimeType.json",
-            "nullable": true, 
+            "type": ["string", "null"],
             "description": "The target or actual maturity date of the crop or species if known."
         },
         "harvestDate": {
             "$ref": "../types/DateTimeType.json",
-            "nullable": true, 
+            "type": ["string", "null"],
             "description": "The target or actual harvest date of the crop or species if known. Most useful for historic reference."
         }
     }
