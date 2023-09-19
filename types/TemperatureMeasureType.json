@@ -11,7 +11,7 @@
             "properties": {
                 "units": {
                     "$ref": "../enums/uncefactTemperatureUnits.json",
-                    "nullable": true,
+                    "type": ["string", "null"],
                     "default": "CEL",
                     "description": "Defines the unit of measure for temperatue. Prefered units are CEL (UN-CEFACT for degrees celcius)."
                 }
