@@ -24,5 +24,19 @@
             "$ref": "../types/AreaMeasureType.json",
             "description": "The area (in square metres) of effective or productive area for this activity."
         }
-    }
+    },
+    "examples": [
+        {
+            "id": {
+                "id": "98765",
+                "scheme": "nz.rural.activities"
+            },
+            "isPrimary": true,
+            "name": "Maize",
+            "productiveArea": {
+                "measurement": 14100,
+                "units": "MTK"
+            }
+        }
+    ]
 }
