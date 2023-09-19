@@ -23,7 +23,7 @@
                         "type": "number"
                     },
                     "description": "Array that is the bounding box coordinates as per GeoJSON",
-                    "nullable": true
+                    "type": ["string", "null"]
                 },
                 "collectionMetadata": {
                      "description": "ISO 19115-2/3 or FGDC compliant meta-data for the collection.",
@@ -37,13 +37,13 @@
                     "type": "string",
                     "format": "uri-reference",
                     "description": "The URL from which to fetch a GeoJSON feature collection.",
-                    "nullable": true
+                    "type": ["string", "null"]
                 },
                 "resourceCollection": {
                     "type": "string",
                     "format": "uri-reference",
                     "description": "The URL from which to fetch a collection or array of non-spatial data items. Null if not supported.",
-                    "nullable": true
+                    "type": ["string", "null"]
                 }
             }
         }
