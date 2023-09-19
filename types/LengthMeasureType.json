@@ -11,7 +11,7 @@
             "properties": {
                 "units": {
                     "$ref": "../enums/uncefactLengthUnits.json",
-                    "nullable": true,
+                    "type": ["string", "null"],
                     "default": "MTR",
                     "description": "Defines the unit of measure for the length. Prefered units are MTR (UN-CEFACT metre)."
                 }
