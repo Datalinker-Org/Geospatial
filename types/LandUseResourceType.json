@@ -11,7 +11,7 @@
           "classifications": {
             "type": "array",
             "description": "A set of hierarchical classifications for the Site.",
-            "nullable": true,
+            "type": ["string", "null"],
             "items": {
                 "$ref": "../types/ClassificationType.json"
             }
@@ -19,7 +19,7 @@
           "activities": {
               "type": "array",
               "description": "A set of land use activities for this Site.",
-              "nullable": true,
+              "type": ["string", "null"],
               "items": {
                   "$ref": "../types/LandUseActivityType.json"
               }
