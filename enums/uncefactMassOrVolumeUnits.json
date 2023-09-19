@@ -3,12 +3,12 @@
     "anyOf":[
        {
           "$ref": "../enums/uncefactMassUnits.json",
-          "nullable": true,
+          "type": ["string", "null"],
           "description": "Defines the unit of measure for weight quantities"
        },
        {
           "$ref": "../enums/uncefactVolumeUnits.json",
-          "nullable": true,
+          "type": ["string", "null"],
           "description": "Defines the unit of measure for volume quantities."
        }
     ]
