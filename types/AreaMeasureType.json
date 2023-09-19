@@ -11,7 +11,7 @@
             "properties": {
                 "units": {
                     "$ref": "../enums/uncefactAreaUnits.json",
-                    "nullable": true,
+                    "type": ["string", "null"],
                     "default": "MTK",
                     "description": "Defines the unit of measure for the area. Prefered units are MTK (UN-CEFACT for square metre)."
                 }
