@@ -1,5 +1,5 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema"
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "Defines a single item used in a feature catalog - a reference to a list of features.",
     "allOf": [
         {
