@@ -47,7 +47,7 @@
       "@self": {
         "type": "string",
         "description": "Uniform resource identifier (URI) of the resource (rel=self).",
-        "nullable": true
+        "type": ["string", "null"]
       }      
     }
   }
