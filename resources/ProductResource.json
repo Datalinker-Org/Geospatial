@@ -10,16 +10,20 @@
 
             "properties": {
                 "type": {
-                    "$ref": "../enums/ProductTypeType.json"            
+                    "$ref": "../enums/ProductTypeType.json",
+                    "description": "The type of product."
                 },
                 "manufacturer": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Manufacturer of the product."
                 },
                 "brand": {
-                    "type": "string"
+                    "type": "string",
+                    "description": "Brand of the product."
                 },
                 "form": {
-                    "$ref": "../enums/ProductPhysicalFormType.json"            
+                    "$ref": "../enums/ProductPhysicalFormType.json",
+                    "description": "Physical form of the product."
                 },
                 "uri": {
                     "type": "string",
@@ -27,7 +31,8 @@
                     "description": "URL to the product."
                   },
                 "crop" : {
-                    "$ref": "../types/CropType.json"
+                    "$ref": "../types/CropType.json",
+                    "description": "Crop on which the product is applied."
                 },
                 "specificGravity": {
                     "type": "number",
@@ -38,17 +43,19 @@
                     "description": "Bulk Density is a specific measurement of the mass of an item for a known volume (e.g., KGM/MTQ or GRM/LTR)."
                 },
                 "matterState": {
-                    "$ref": "../enums/MatterStateType.json"            
+                    "$ref": "../enums/MatterStateType.json",
+                    "description": "Matter state of the product, i.e. solid, liquid, gas or unknown."
                 },
                 "analysis":{
                     "type":"array",
+                    "description": "Array with analysis percentages of factors in the product"
                     "items":{
                         "$ref": "../types/ProductAnalysisType.json"
                     }      
                 },
                 "activeIngredients":{
                     "type":"array",
-                    "description":"array of active ingredients in the product",
+                    "description":"Array of active ingredients in the product",
                     "items":{
                         "$ref": "../types/ProductIngredientType.json"
                     }      
@@ -62,12 +69,14 @@
                 },
                 "claims" :{
                     "type":"array",
+                    "description": "Array of claims for the product, each specified as a scheme and id"
                     "items":{
                         "$ref":"../types/RegistrationType.json"
                     }
                 },
                 "registrations" :{
                     "type":"array",
+                    "description": "Array of registrations for the product, each specified as a scheme and id",
                     "items":{
                         "$ref":"../types/RegistrationType.json"
                     }

@@ -25,10 +25,12 @@
                     "description": "ISO UTC DateTime"
                 },
                 "holding": {
-                    "$ref": "../types/FeatureReferenceType.json"
+                    "$ref": "../types/FeatureReferenceType.json",
+                    "description": "Reference to the holding on which this observation was performed."
                 },
                 "feature": {
-                    "$ref": "../types/FeatureReferenceType.json"
+                    "$ref": "../types/FeatureReferenceType.json",
+                    "description": "Reference to the feature to which this observation applies. Alternative to features[]."
                 },
                 "features": {
                     "description": "Array of features to which this observation applies. Alternative to feature.",

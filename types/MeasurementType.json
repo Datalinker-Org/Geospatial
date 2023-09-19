@@ -5,6 +5,7 @@
    
      "properties" : {
         "measurement" : {
+            "description": "The value (in units) of the quantity observed.",
             "type" : "number"
         },
         "resolution" : {
