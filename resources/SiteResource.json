@@ -1,4 +1,5 @@
 {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "Representation of an land management unit (sometimes called block, though this name can be used elsewhere). A polygon feature in GeoJSON.",
     "allOf": [
       {
