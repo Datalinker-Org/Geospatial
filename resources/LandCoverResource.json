@@ -1,5 +1,5 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema"
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "Representation of a land cover of some sort, from hedges and helipads to forests and swamps.",
     "allOf": [
       {
