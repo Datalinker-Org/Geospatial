@@ -45,9 +45,8 @@
         "description": "This MUST be populated with the name of the concrete type to support inheritance and deserialisation."
       },
       "@self": {
-        "type": "string",
-        "description": "Uniform resource identifier (URI) of the resource (rel=self).",
-        "type": ["string", "null"]
+        "type": ["string", "null"],
+        "description": "Uniform resource identifier (URI) of the resource (rel=self)."
       }      
     }
   }

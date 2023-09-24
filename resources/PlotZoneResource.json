@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "Representation of a zone within a paddock or block that may have different management, varieties, or characteristics.",
   "allOf": [
     {

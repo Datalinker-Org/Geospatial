@@ -212,18 +212,10 @@
             "type": "object",
             "properties": {
               "geometry": {
-                "allOf": [
-                  {
-                    "type": ["string", "null"]
-                  },
-                  {
-                    "$ref": "#/components/schemas/Geometry"
-                  }
-                ]
+                "$ref": "#/components/schemas/Geometry"
               },
               "properties": {
                 "type": "object",
-                "type": ["string", "null"],
                 "properties": {
                   "agriculture": {
                     "$ref": "../resources/geojson-agriculturalContentResource.json"

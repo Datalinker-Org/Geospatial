@@ -1,5 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "Defines a single item used in a feature catalog - a reference to a list of features.",
     "allOf": [
         {
@@ -19,12 +18,11 @@
                     "description": "GeoJSON RFC-7946 geometry type (Point, LineString, Polygon, MultiPoint, etc)."
                 },
                 "bbox": {
-                    "type": "array",
+                    "type": ["array", "null"],
                     "items": {
                         "type": "number"
                     },
-                    "description": "Array that is the bounding box coordinates as per GeoJSON",
-                    "type": ["string", "null"]
+                    "description": "Array that is the bounding box coordinates as per GeoJSON"
                 },
                 "collectionMetadata": {
                      "description": "ISO 19115-2/3 or FGDC compliant meta-data for the collection.",
@@ -35,16 +33,14 @@
                     "description": "Type of the data class accompanying the geographic data (e.g. HoldingResource, SiteResource)."
                 },
                 "featureCollection": {
-                    "type": "string",
+                    "type": ["string", "null"],
                     "format": "uri-reference",
-                    "description": "The URL from which to fetch a GeoJSON feature collection.",
-                    "type": ["string", "null"]
+                    "description": "The URL from which to fetch a GeoJSON feature collection."
                 },
                 "resourceCollection": {
-                    "type": "string",
+                    "type": ["string", "null"],
                     "format": "uri-reference",
-                    "description": "The URL from which to fetch a collection or array of non-spatial data items. Null if not supported.",
-                    "type": ["string", "null"]
+                    "description": "The URL from which to fetch a collection or array of non-spatial data items. Null if not supported."
                 }
             }
         }

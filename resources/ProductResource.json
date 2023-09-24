@@ -1,5 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "This schema represents a product type - a plant variety, agrochemical, fertiliser, effluent, or harvested product.",
 
     "allOf": [
@@ -49,7 +48,7 @@
                 },
                 "analysis":{
                     "type":"array",
-                    "description": "Array with analysis percentages of factors in the product"
+                    "description": "Array with analysis percentages of factors in the product",
                     "items":{
                         "$ref": "../types/ProductAnalysisType.json"
                     }      
@@ -70,7 +69,7 @@
                 },
                 "claims" :{
                     "type":"array",
-                    "description": "Array of claims for the product, each specified as a scheme and id"
+                    "description": "Array of claims for the product, each specified as a scheme and id",
                     "items":{
                         "$ref":"../types/RegistrationType.json"
                     }

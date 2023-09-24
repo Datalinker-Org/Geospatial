@@ -1,5 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "Abstract class that represents a work record - an activity that has been carried out.",
     "type": "object",
     "required": [

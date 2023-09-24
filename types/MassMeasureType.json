@@ -10,7 +10,6 @@
             "properties": {
                 "units": {
                     "$ref": "../enums/uncefactMassUnits.json",
-                    "type": ["string", "null"],
                     "default": "KGM",
                     "description": "UN/CEFACT units for mass (KGM is the default)."
                 }

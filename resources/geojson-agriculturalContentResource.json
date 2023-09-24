@@ -1,5 +1,4 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "Supports embedding any of the agricultural geospatial resources in this repository into the GeoJSON properties object",
     "type": "object",
     "properties": {
