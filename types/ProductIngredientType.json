@@ -4,7 +4,8 @@
     "required": [ "name" ],
     "properties": {
         "id" :{
-            "$ref" : "../types/IdentifierType.json"
+            "$ref" : "../types/IdentifierType.json",
+            "description": "Id of an ingredient of a product specified as a scheme and id."
         },
         "name": {
             "type": "string",
