@@ -9,19 +9,16 @@
             "description": "A URI or reverse domain scheme name for the classification (e.g., nz.nzsc.soil)."
         },
         "primary": {
-            "type": "string",
-            "description": "Primary level of classification under the scheme (e.g., in NZSC this would be the Order).",
-            "nullable": true
+            "type": ["string", "null"],
+            "description": "Primary level of classification under the scheme (e.g., in NZSC this would be the Order)."
         },
         "secondary": {
-            "type": "string",
-            "description": "Secondary level of classification under the scheme (e.g., in NZSC this would be the Group).",
-            "nullable": true
+            "type": ["string", "null"],
+            "description": "Secondary level of classification under the scheme (e.g., in NZSC this would be the Group)."
         },
         "tertiary": {
-            "type": "string",
-            "description": "Tertiary level of classification under the scheme (e.g., in NZSC this would be the Subgroup).",
-            "nullable": true
+            "type": ["string", "null"],
+            "description": "Tertiary level of classification under the scheme (e.g., in NZSC this would be the Subgroup)."
         }
     }
 }

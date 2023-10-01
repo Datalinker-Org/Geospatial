@@ -12,7 +12,6 @@
             "properties": {
                 "units": {
                     "$ref": "../enums/uncefactVelocityUnits.json",
-                    "nullable": true,
                     "default": "MTS",
                     "description": "Defines the unit of measure for velocity. Prefered units are MTS (UN-CEFACT for metre per second)."
                 }

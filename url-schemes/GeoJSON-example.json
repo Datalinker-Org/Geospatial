@@ -1,5 +1,5 @@
 {
-  "openapi": "3.0.0",
+  "openapi": "3.1.0",
   "info": {
     "title": "GeoJSON format",
     "description": "This document defines the GeoJSON format as an OpenAPI. It contains the definitions for 'Feature' object and 'FeatureCollection' objects, as well as the definitions for all 'Geometry' objects. It conforms with the 'RFC-7946' standard from IETF (August 2016 version)\nKudos to @bubbobne and @idkw whose code helped me not start from scratch https://gist.github.com/bubbobne/fe5f2db65acf039be6a9fd92fc9c7233\n",
@@ -212,18 +212,10 @@
             "type": "object",
             "properties": {
               "geometry": {
-                "allOf": [
-                  {
-                    "nullable": true
-                  },
-                  {
-                    "$ref": "#/components/schemas/Geometry"
-                  }
-                ]
+                "$ref": "#/components/schemas/Geometry"
               },
               "properties": {
                 "type": "object",
-                "nullable": true,
                 "properties": {
                   "agriculture": {
                     "$ref": "../resources/geojson-agriculturalContentResource.json"

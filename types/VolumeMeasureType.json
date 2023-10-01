@@ -10,7 +10,6 @@
             "properties": {
                 "units": {
                     "$ref": "../enums/uncefactVolumeUnits.json", 
-                    "nullable": true,
                     "default": "LTR",
                     "description": "Defines the unit of measure for volume quantities (default is litre - LTR)."
                 }

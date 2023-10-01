@@ -1,7 +1,7 @@
 {
     "description": "Units for length from UN/CEFACT trade facilitation recommendation 20. In order: km, m, cm, mm, statute mile, yard, foot, inch, linear yard",
   
-    "type": "string",
+    "type": ["string", "null"],
   
     "enum": [
       "KMT", 

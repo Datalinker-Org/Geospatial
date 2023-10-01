@@ -9,17 +9,15 @@
   
         "properties": {
           "classifications": {
-            "type": "array",
+            "type": ["array", "null"],
             "description": "A set of hierarchical classifications for the Site.",
-            "nullable": true,
             "items": {
                 "$ref": "../types/ClassificationType.json"
             }
           },
           "activities": {
-              "type": "array",
+              "type": ["array", "null"],
               "description": "A set of land use activities for this Site.",
-              "nullable": true,
               "items": {
                   "$ref": "../types/LandUseActivityType.json"
               }
