@@ -35,6 +35,7 @@
       },
       "isDeleted": {
         "type": "boolean",
+        "default": false,
         "description": "Boolean value indicating if this resource has been deleted in the source system.",
         "default": false
       }
