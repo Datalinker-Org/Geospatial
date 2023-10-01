@@ -10,5 +10,8 @@
 	 - &#36;ref: [../types/DateTimeType.json](#..typesdatetimetype.json)
  - <b id="#/properties/validTo">validTo</b>
 	 - &#36;ref: [../types/DateTimeType.json](#..typesdatetimetype.json)
+ - <b id="#/properties/isDeleted">isDeleted</b>
+	 - **Type:** `boolean`
+	 - Default: _false_
 
 _Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_
