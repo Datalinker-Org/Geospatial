@@ -5,7 +5,7 @@
  - <b id="#/properties/created">created</b>
 	 - &#36;ref: [../types/DateTimeType.json](#..typesdatetimetype.json)
  - <b id="#/properties/creator">creator</b>
-	 - **Type:** `string`
+	 - Types: `string`, `null`
  - <b id="#/properties/validFrom">validFrom</b>
 	 - &#36;ref: [../types/DateTimeType.json](#..typesdatetimetype.json)
  - <b id="#/properties/validTo">validTo</b>

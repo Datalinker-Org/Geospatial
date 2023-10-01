@@ -19,27 +19,24 @@
       },
       "created": {
         "$ref": "../types/DateTimeType.json",
-        "description": "The date and time at which the object was created. SHOULD be set if known.",
-        "nullable": true
+        "description": "The date and time at which the object was created. SHOULD be set if known."
       },
       "creator": {
-        "type": "string",
-        "description": "Person or organisation who created the object",
-        "nullable": true
+        "type": ["string", "null"],
+        "description": "Person or organisation who created the object"
       },
       "validFrom": {
         "$ref": "../types/DateTimeType.json",
-        "description": "The earliest date and time from which the object is valid.",
-        "nullable": true
+        "description": "The earliest date and time from which the object is valid."
       },
       "validTo": {
         "$ref": "../types/DateTimeType.json",
-        "description": "The latest date and time to which the object is valid.",
-        "nullable": true
+        "description": "The latest date and time to which the object is valid."
       },
       "isDeleted": {
         "type": "boolean",
-        "description": "Boolean value indicating if this resource has been deleted in the source system."
+        "description": "Boolean value indicating if this resource has been deleted in the source system.",
+        "default": false
       }
     }
   }
