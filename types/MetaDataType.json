@@ -32,6 +32,11 @@
       "validTo": {
         "$ref": "../types/DateTimeType.json",
         "description": "The latest date and time to which the object is valid."
+      },
+      "isDeleted": {
+        "type": "boolean",
+        "description": "Boolean value indicating if this resource has been deleted in the source system.",
+        "default": false
       }
     }
   }
