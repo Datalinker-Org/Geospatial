@@ -1,11 +1,11 @@
  - <b id="#/properties/name">name</b>
 	 - **Type:** `string`
  - <b id="#/properties/taxonomicName">taxonomicName</b>
-	 - **Type:** `string`
+	 - Types: `string`, `null`
  - <b id="#/properties/variety">variety</b>
-	 - **Type:** `string`
+	 - Types: `string`, `null`
  - <b id="#/properties/identifiers">identifiers</b>
-	 - **Type:** `array`
+	 - Types: `array`, `null`
  - <b id="#/properties/establishmentDate">establishmentDate</b>
 	 - &#36;ref: [../types/DateTimeType.json](#..typesdatetimetype.json)
  - <b id="#/properties/maturityDate">maturityDate</b>
