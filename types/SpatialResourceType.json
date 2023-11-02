@@ -19,31 +19,31 @@
     }
   ],
   "examples": [
-  	{
-  		"resourceType": "/core/plot",
-  		"id": "9e1d5ace-3ae3-4e21-8af6-5ca2eb92e32e",
-  		"identifiers": [
-  			{
-  				"scheme": "nz.landco.paddock",
-  				"id": "77345.pdk54"
-  			}
-  		],
-  		"name": "Far flats",
-  		"meta": {
-  			"sourceId": {
-  				"id": "123456789",
-  				"scheme": "someFarmMapSystem"
-  			},
-  			"modified": "2022-11-29T12:30:00.000Z"
-  		},
-  		"totalArea": {
-  			"measurement": 23000,
-  			"units": "MTK"
-  		},
-  		"totalLength": {
-  			"measurement": 630,
-  			"units": "MTR"
-  		},
-  	}
-]
+    {
+      "resourceType": "/core/plot",
+      "id": "9e1d5ace-3ae3-4e21-8af6-5ca2eb92e32e",
+      "identifiers": [
+        {
+          "scheme": "nz.landco.paddock",
+          "id": "77345.pdk54"
+        }
+      ],
+      "name": "Far flats",
+      "meta": {
+        "sourceId": {
+          "id": "123456789",
+          "scheme": "someFarmMapSystem"
+        },
+        "modified": "2022-11-29T12:30:00.000Z"
+      },
+      "totalArea": {
+        "measurement": 23000,
+        "units": "MTK"
+      },
+      "totalLength": {
+        "measurement": 630,
+        "units": "MTR"
+      }
+    }
+  ]
 }
