@@ -15,5 +15,12 @@
                 }
             }
         }
+    ],
+    "examples": [
+        {
+            "measurement": 200,
+            "resolution": 1,
+            "units": "LTR"
+        }
     ]
 }

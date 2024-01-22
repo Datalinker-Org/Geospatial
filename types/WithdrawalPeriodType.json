@@ -8,5 +8,11 @@
         "hours": {
             "type":"number"
         }
-    }
+    },
+    "examples": [
+        {
+            "scheme": "govt.quality.withdrawal",
+            "hours": 72
+        }
+    ]
 }
