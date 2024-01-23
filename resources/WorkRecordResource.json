@@ -122,13 +122,13 @@
                     "form": "WaterSolublePowder",
                     "registrations": [
                       {
-                        "scheme": "nz.govt.nzfsa.eatsafe.acvm.register",
+                        "scheme": "nz.govt.acvm.register",
                         "id": "64092"
                       }
                     ],
                     "withdrawals": [
                       {
-                        "scheme": "nz.govt.nzfsa.eatsafe.acvm.whp",
+                        "scheme": "nz.govt.acvm.whp",
                         "hours": 144
                       }
                     ],
@@ -203,7 +203,7 @@
                 "variety": "XYZ 381",
                 "identifiers": [
                   {
-                    "scheme": "nz.co.abcseeds/maize",
+                    "scheme": "nz.co.abcseeds.maize",
                     "id": "XYZ381"
                   }
                 ],
@@ -256,13 +256,13 @@
               ],
               "withdrawals": [
                 {
-                  "scheme": "nz.govt.nzfsa.eatsafe.acvm.whp",
+                  "scheme": "nz.govt.acvm.whp",
                   "hours": 72
                 }
               ],
               "registrations": [
                 {
-                  "scheme": "nz.govt.nzfsa.eatsafe.acvm.register",
+                  "scheme": "nz.govt.acvm.register",
                   "id": "93091"
                 }
               ]
