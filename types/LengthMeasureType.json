@@ -1,13 +1,11 @@
 {
     "description": "Specifies an length or perimeter, including units (default is metre - MTR).",
-    
     "allOf": [
         {
-            "$ref": "../types/MeasurementType.json" 
+            "$ref": "../types/MeasurementType.json"
         },
-        {    
+        {
             "type": "object",
-
             "properties": {
                 "units": {
                     "$ref": "../enums/uncefactLengthUnits.json",

@@ -19,9 +19,108 @@
           "description": "Used where a record of historic crops must be kept for compliance purposes.",
           "items": {
             "$ref": "../types/CropType.json"
-          }          
+          }
         }
       }
+    }
+  ],
+  "examples": [
+    {
+      "resourceType": "/core/plot",
+      "id": "9e1d5ace-3ae3-4e21-8af6-5ca2eb92e32e",
+      "identifiers": [
+        {
+          "scheme": "nz.landco.paddock",
+          "id": "77345.pdk54"
+        }
+      ],
+      "name": "Far flats",
+      "meta": {
+        "sourceId": {
+          "id": "123456789",
+          "scheme": "someFarmMapSystem"
+        },
+        "modified": "2023-03-29T12:30:00.000Z"
+      },
+      "totalArea": {
+        "measurement": 23000,
+        "units": "MTK"
+      },
+      "totalLength": {
+        "measurement": 630,
+        "units": "MTR"
+      },
+      "classifications": [
+        {
+          "scheme": "nz.rural.classification",
+          "primary": "rural",
+          "secondary": "cropping"
+        },
+        {
+          "scheme": "nz.rural.classification",
+          "primary": "rural",
+          "secondary": "grazing"
+        }
+      ],
+      "activities": [
+        {
+          "id": {
+            "id": "98765",
+            "scheme": "nz.rural.activities"
+          },
+          "isPrimary": true,
+          "name": "Maize",
+          "productiveArea": {
+            "measurement": 14100,
+            "units": "MTK"
+          }
+        }
+      ],
+      "crops": [
+        {
+          "name": "Maize",
+          "taxonomicName": "Zea mays",
+          "variety": "Jason J4956",
+          "identifiers": [
+            {
+              "id": "J4956",
+              "scheme": "nz.jason.maize"
+            }
+          ],
+          "establishmentDate": "2022-08-03T00:00:00.000Z",
+          "maturityDate": "2023-03-03T00:00:00.000Z",
+          "harvestDate": "2023-03-14T00:00:00.000Z"
+        }
+      ],
+      "historicCrops": [
+        {
+          "name": "Rapeseed",
+          "taxonomicName": "Brassica napus",
+          "variety": "Trent",
+          "identifiers": [
+            {
+              "id": "J9766",
+              "scheme": "nz.jason.rapeseed"
+            }
+          ],
+          "establishmentDate": "2021-10-20T00:00:00.000Z",
+          "maturityDate": "2022-01-19T00:00:00.000Z"
+        },
+        {
+          "name": "Maize",
+          "taxonomicName": "Zea mays",
+          "variety": "Jason J3140",
+          "identifiers": [
+            {
+              "id": "J3140",
+              "scheme": "nz.jason.maize"
+            }
+          ],
+          "establishmentDate": "2020-08-08T00:00:00.000Z",
+          "maturityDate": "2021-03-01T00:00:00.000Z",
+          "harvestDate": "2021-03-06T00:00:00.000Z"
+        }
+      ]
     }
   ]
 }
