@@ -1,3 +1,6 @@
+Example values: 
+
+ 1. `[object Object]`
  - <b id="#/properties/applicationRate">applicationRate</b>
 	 - &#36;ref: [../types/MassOrVolumeMeasurementType.json](#..typesmassorvolumemeasurementtype.json)
  - <b id="#/properties/spatialMetric">spatialMetric</b>

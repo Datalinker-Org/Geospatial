@@ -1,3 +1,6 @@
+Example values: 
+
+ 1. `[object Object]`
  - <b id="#/properties/windSpeed">windSpeed</b>
 	 - &#36;ref: [./VelocityMeasureType.json](#.velocitymeasuretype.json)
  - <b id="#/properties/windDirectionCompass">windDirectionCompass</b>
