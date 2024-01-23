@@ -47,7 +47,7 @@
             "operation": "Fertiliser Application",
             "operationName": "Urea + Selenium Block 4",
             "observationDate": "2022-11-01T00:00:00.000Z",
-            "resourceType": "/crop/operation-record",
+            "resourceType": "OperationRecordResource,
             "id": "b4683e10-7f91-44ae-8722-214796378a34",
             "meta": {
                 "sourceId": {
@@ -59,7 +59,7 @@
             "feature": {
                 "contentType": "plot",
                 "identifier": {
-                    "scheme": "purefarming.plotId",
+                    "scheme": "com.purefarming.plotId",
                     "id": "3fabfd52-dc02-4109-9bb7-be4f592898f8"
                 }
             },
