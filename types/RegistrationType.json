@@ -8,7 +8,7 @@
     ],
     "examples": [
         {
-            "scheme": "govt.quality.productregistration",
+            "scheme": "nz.govt.nzfsa.eatsafe.acvm.register",
             "id": "93091"
         }
     ]
