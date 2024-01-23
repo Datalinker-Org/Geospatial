@@ -1,32 +1,109 @@
 {
-    "description": "Representation of a land cover of some sort, from hedges and helipads to forests and swamps.",
-    "allOf": [
-      {
-        "$ref": "../types/LandUseResourceType.json"
-      },
-      {
-        "type": "object",
-
-        "properties": {
-          "landCoverClass": {
-            "description": "Defines the class of land cover object (e.g., scheme: 'nz.lcdb.5.classes', primary: 'helipad_pnt').",
-            "$ref" : "../types/ClassificationType.json"
-          },
-
-          "speciesPresent": {
-            "description": "An array of species that have been observed at this feature (this is a summary, not individual observations).",
-
-            "type": "array",
-            "items": {
-              "$ref": "../types/SpeciesPresenceType.json"
-            }
-          },
-
-          "eligibility": {
-            "description": "Classification under a compliance or funding programme.",
-            "$ref": "../types/ComplianceEligibilityType.json"
+  "description": "Representation of a land cover of some sort, from hedges and helipads to forests and swamps.",
+  "allOf": [
+    {
+      "$ref": "../types/LandUseResourceType.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "landCoverClass": {
+          "description": "Defines the class of land cover object (e.g., scheme: 'nz.lcdb.5.classes', primary: 'helipad_pnt').",
+          "$ref": "../types/ClassificationType.json"
+        },
+        "speciesPresent": {
+          "description": "An array of species that have been observed at this feature (this is a summary, not individual observations).",
+          "type": "array",
+          "items": {
+            "$ref": "../types/SpeciesPresenceType.json"
           }
+        },
+        "eligibility": {
+          "description": "Classification under a compliance or funding programme.",
+          "$ref": "../types/ComplianceEligibilityType.json"
         }
       }
-    ]
-  }
+    }
+  ],
+  "examples": [
+    {
+      "resourceType": "pfLandCoverResource",
+      "id": "0e952cd8-dffd-4fb5-b4fa-8a245c06c6d9",
+      "name": "Bayer Hill Farm, Bakkers Block land cover 21/03/2024",
+      "meta": {
+        "sourceId": {
+          "scheme": "com.farmapp.cover",
+          "id": "BHF4739"
+        },
+        "modified": "2024-03-24T08:00:00Z"
+      },
+      "totalArea": {
+        "measurement": 23000,
+        "units": "MTK"
+      },
+      "classifications": [
+        {
+          "scheme": "nz.rural.classification",
+          "primary": "rural",
+          "secondary": "cropping"
+        },
+        {
+          "scheme": "nz.rural.classification",
+          "primary": "rural",
+          "secondary": "grazing"
+        }
+      ],
+      "activities": [
+        {
+          "id": {
+            "id": "98765",
+            "scheme": "nz.rural.activities"
+          },
+          "isPrimary": true,
+          "name": "Maize",
+          "productiveArea": {
+            "measurement": 14100,
+            "units": "MTK"
+          }
+        },
+        {
+          "id": {
+            "id": "75492",
+            "scheme": "nz.rural.activities"
+          },
+          "isPrimary": false,
+          "name": "Grazing",
+          "productiveArea": {
+            "measurement": 8300,
+            "units": "MTK"
+          }
+        }
+      ],
+      "eligibility": {
+        "scheme": "nz.regcouncil.compliance",
+        "eligible": "Partial"
+      },
+      "landCoverClass": {
+        "scheme": "nz.xxxxxx.landcover",
+        "primary": "Cultivated and Managed Terrestrial Areas"
+      },
+      "speciesPresent": [
+        {
+          "name": "Maize X4783",
+          "taxonomicName": "Zea mays",
+          "abundance": "Dominant"
+        },
+        {
+          "name": "Perennial ryegrass",
+          "taxonomicName": "Lolium perenne",
+          "abundance": "Dominant"
+        },
+        {
+          "name": "White clover",
+          "taxonomicName": "Trifolium repens",
+          "abundance": "Abundant"
+        }
+      ]
+    }
+  ]
+}

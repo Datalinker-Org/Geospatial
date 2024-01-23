@@ -20,5 +20,17 @@
             "type": ["string", "null"],
             "description": "Tertiary level of classification under the scheme (e.g., in NZSC this would be the Subgroup)."
         }
-    }
+    },
+    "examples": [
+        {
+            "scheme": "nz.rural.classification",
+            "primary": "rural",
+            "secondary": "cropping"
+        },
+        {
+            "scheme": "nz.rural.classification",
+            "primary": "rural",
+            "secondary": "grazing"
+        }
+    ]
 }
