@@ -41,7 +41,7 @@
   },
   "examples": [
     {
-      "resourceType": "/crop/work-record",
+      "resourceType": "WorkRecordResource",
       "operation": "Spraying Product and Spreading Fertiliser",
       "status": "Complete",
       "id": "ae08267d-7fa2-4abb-8ae1-c84b1eb19348",
@@ -56,7 +56,7 @@
       "feature": {
         "contentType": "plot",
         "identifier": {
-          "scheme": "purefarming.plotId",
+          "scheme": "com.purefarming.plotId",
           "id": "af8a3f52-8bd4-47dd-aba4-850d8a884703"
         }
       },
@@ -64,7 +64,7 @@
       "holding": {
         "contentType": "holding",
         "identifier": {
-          "scheme": "purefarming.holdingId",
+          "scheme": "com.purefarming.holdingId",
           "id": "bf35ccbc-621f-4c2d-9035-318c504686d6"
         }
       },
@@ -84,7 +84,7 @@
       "responsible": "Dave Peterson",
       "loggedOperations": [
         {
-          "resourceType": "/crop/operation-record",
+          "resourceType": "OperationRecordResource",
           "operation": "Spraying",
           "id": "1dd25755-692a-480e-b8fd-8d63ef20f004",
           "meta": {
@@ -98,7 +98,7 @@
           "feature": {
             "contentType": "plot",
             "identifier": {
-              "scheme": "purefarming.plotId",
+              "scheme": "com.purefarming.plotId",
               "id": "af8a3f52-8bd4-47dd-aba4-850d8a884703"
             }
           },
@@ -106,7 +106,7 @@
           "holding": {
             "contentType": "holding",
             "identifier": {
-              "scheme": "purefarming.holdingId",
+              "scheme": "com.purefarming.holdingId",
               "id": "bf35ccbc-621f-4c2d-9035-318c504686d6"
             }
           },
@@ -122,13 +122,13 @@
                     "form": "WaterSolublePowder",
                     "registrations": [
                       {
-                        "scheme": "govt.quality.productregistration",
+                        "scheme": "nz.govt.nzfsa.eatsafe.acvm.register",
                         "id": "64092"
                       }
                     ],
                     "withdrawals": [
                       {
-                        "scheme": "govt.quality.withdrawal",
+                        "scheme": "nz.govt.nzfsa.eatsafe.acvm.whp",
                         "hours": 144
                       }
                     ],
@@ -168,7 +168,7 @@
           "name": "Spraying operation"
         },
         {
-          "resourceType": "operationRecord",
+          "resourceType": "OperationRecordResource",
           "operation": "Fertiliser Spreading",
           "id": "52bb8cb5-90d9-4308-bb0f-6f050ba93bc2",
           "meta": {
@@ -182,7 +182,7 @@
           "feature": {
             "contentType": "plot",
             "identifier": {
-              "scheme": "purefarming.plotId",
+              "scheme": "com.purefarming.plotId",
               "id": "af8a3f52-8bd4-47dd-aba4-850d8a884703"
             }
           },
@@ -256,13 +256,13 @@
               ],
               "withdrawals": [
                 {
-                  "scheme": "govt.quality.withdrawal",
+                  "scheme": "nz.govt.nzfsa.eatsafe.acvm.whp",
                   "hours": 72
                 }
               ],
               "registrations": [
                 {
-                  "scheme": "govt.quality.productregistration",
+                  "scheme": "nz.govt.nzfsa.eatsafe.acvm.register",
                   "id": "93091"
                 }
               ]
@@ -310,7 +310,7 @@
           "holding": {
             "contentType": "holding",
             "identifier": {
-              "scheme": "purefarming.holdingId",
+              "scheme": "com.purefarming.holdingId",
               "id": "bf35ccbc-621f-4c2d-9035-318c504686d6"
             }
           },
