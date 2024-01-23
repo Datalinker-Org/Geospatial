@@ -11,5 +11,14 @@
             "type": "string",
             "description": "Human readable description of the ingredient"
         }        
-    }
+    },
+    "examples": [
+        {
+            "id": {
+                "scheme": "com.fertco.product",
+                "id": "4000"
+            },
+            "name": "Granular Ammonium Sulphate Bulk"
+        }
+    ]
 }

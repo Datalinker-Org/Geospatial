@@ -1,44 +1,353 @@
 {
-    "description": "Abstract class that represents a work record - an activity that has been carried out.",
-    "type": "object",
-    "required": [
-        "operation",
-        "status"
-    ],
-    "allOf": [
-        {
-            "$ref": "../types/ObservationType.json"
-        }
-    ],
-    "properties": {
-        "operation":{
-            "type":"string",
-            "description":"Constant value in any concrete class for the operation type"
-        },
-        "status":{
-            "$ref":"../enums/WorkItemStatusType.json",
-            "description": "The status of the work record."
-        },
-        "priority":
-        {
-            "$ref":"../enums/WorkItemPriorityType.json",
-            "description": "The priority of the work record."
-        },
-        "workedArea": {
-            "$ref": "../types/AreaMeasureType.json",
-            "description": "Area worked by the operation"
-        },        
-        "nonOverlapWorkedArea": {
-            "$ref": "../types/AreaMeasureType.json",
-            "description": "Area worked by the operation, excluding overlaps"
-        },        
-        "loggedOperations":{
-            "description" : "array of operations completed in this work record",
-            "type":"array",
-            "items":{
-                "$ref": "../resources/OperationRecordResource.json"
-            }
-
-        }
+  "description": "Abstract class that represents a work record - an activity that has been carried out.",
+  "type": "object",
+  "required": [
+    "operation",
+    "status"
+  ],
+  "allOf": [
+    {
+      "$ref": "../types/ObservationType.json"
     }
+  ],
+  "properties": {
+    "operation": {
+      "type": "string",
+      "description": "Constant value in any concrete class for the operation type"
+    },
+    "status": {
+      "$ref": "../enums/WorkItemStatusType.json",
+      "description": "The status of the work record."
+    },
+    "priority": {
+      "$ref": "../enums/WorkItemPriorityType.json",
+      "description": "The priority of the work record."
+    },
+    "workedArea": {
+      "$ref": "../types/AreaMeasureType.json",
+      "description": "Area worked by the operation"
+    },
+    "nonOverlapWorkedArea": {
+      "$ref": "../types/AreaMeasureType.json",
+      "description": "Area worked by the operation, excluding overlaps"
+    },
+    "loggedOperations": {
+      "description": "array of operations completed in this work record",
+      "type": "array",
+      "items": {
+        "$ref": "../resources/OperationRecordResource.json"
+      }
+    }
+  },
+  "examples": [
+    {
+      "resourceType": "WorkRecordResource",
+      "operation": "Spraying Product and Spreading Fertiliser",
+      "status": "Complete",
+      "id": "ae08267d-7fa2-4abb-8ae1-c84b1eb19348",
+      "meta": {
+        "sourceId": {
+          "scheme": "com.spreadingco.operation",
+          "id": "7239888c-ad3c-49bb-a045-bd309fcfb5c3"
+        },
+        "modified": "2022-08-16T12:30:00.000Z"
+      },
+      "observationDate": "2022-07-16T10:18:02.000Z",
+      "feature": {
+        "contentType": "plot",
+        "identifier": {
+          "scheme": "com.purefarming.plotId",
+          "id": "af8a3f52-8bd4-47dd-aba4-850d8a884703"
+        }
+      },
+      "priority": "Low",
+      "holding": {
+        "contentType": "holding",
+        "identifier": {
+          "scheme": "com.purefarming.holdingId",
+          "id": "bf35ccbc-621f-4c2d-9035-318c504686d6"
+        }
+      },
+      "nonOverlapWorkedArea": {
+        "measurement": 864,
+        "resolution": 1,
+        "units": "MTK"
+      },
+      "phenomenonStartTime": "2022-07-16T08:28:00.000Z",
+      "remark": "Spraying pesticide and spreading fertiliser on river field",
+      "phenomenonEndTime": "2022-07-16T18:06:00.000Z",
+      "workedArea": {
+        "measurement": 864,
+        "resolution": 1,
+        "units": "MTK"
+      },
+      "responsible": "Dave Peterson",
+      "loggedOperations": [
+        {
+          "resourceType": "OperationRecordResource",
+          "operation": "Spraying",
+          "id": "1dd25755-692a-480e-b8fd-8d63ef20f004",
+          "meta": {
+            "sourceId": {
+              "scheme": "com.spreadingco.operation",
+              "id": "7239888c-ad3c-49bb-a045-bd309fcfb5c3"
+            },
+            "modified": "2022-08-16T12:30:00.000Z"
+          },
+          "observationDate": "2022-07-16T10:18:02.000Z",
+          "feature": {
+            "contentType": "plot",
+            "identifier": {
+              "scheme": "com.purefarming.plotId",
+              "id": "af8a3f52-8bd4-47dd-aba4-850d8a884703"
+            }
+          },
+          "phenomenonStartTime": "2022-07-16T08:28:00.000Z",
+          "holding": {
+            "contentType": "holding",
+            "identifier": {
+              "scheme": "com.purefarming.holdingId",
+              "id": "bf35ccbc-621f-4c2d-9035-318c504686d6"
+            }
+          },
+          "remark": "Spray wheat crop 16 July 2022",
+          "products": [
+            {
+              "components": [
+                {
+                  "product": {
+                    "specificGravity": 1.1,
+                    "manufacturer": "Valley Agrichem International",
+                    "type": "Pesticide",
+                    "form": "WaterSolublePowder",
+                    "registrations": [
+                      {
+                        "scheme": "nz.govt.nzfsa.eatsafe.acvm.register",
+                        "id": "64092"
+                      }
+                    ],
+                    "withdrawals": [
+                      {
+                        "scheme": "nz.govt.nzfsa.eatsafe.acvm.whp",
+                        "hours": 144
+                      }
+                    ],
+                    "crop": {
+                      "establishmentDate": "2022-03-14T00:00:00.000Z",
+                      "maturityDate": "2022-08-10T00:00:00.000Z",
+                      "taxonomicName": "Triticum aestivum",
+                      "name": "Wheat",
+                      "variety": "Extase"
+                    }
+                  },
+                  "mixSequence": 1,
+                  "percent": 100
+                }
+              ],
+              "spatialMetric": {
+                "measurement": 14,
+                "units": "KMT",
+                "resolution": 0.5
+              },
+              "waterVolume": {
+                "units": "LTR",
+                "measurement": 100
+              },
+              "applicationRate": {
+                "units": "LTR",
+                "measurement": 10
+              },
+              "applicationTotal": {
+                "units": "LTR",
+                "measurement": 50,
+                "resolution": 1
+              }
+            }
+          ],
+          "responsible": "Daniel Peterson",
+          "name": "Spraying operation"
+        },
+        {
+          "resourceType": "OperationRecordResource",
+          "operation": "Fertiliser Spreading",
+          "id": "52bb8cb5-90d9-4308-bb0f-6f050ba93bc2",
+          "meta": {
+            "sourceId": {
+              "scheme": "com.spreadingco.operation",
+              "id": "7239888c-ad3c-49bb-a045-bd309fcfb5c3"
+            },
+            "modified": "2022-08-16T10:18:00.000Z"
+          },
+          "observationDate": "2022-07-16T10:18:02.000Z",
+          "feature": {
+            "contentType": "plot",
+            "identifier": {
+              "scheme": "com.purefarming.plotId",
+              "id": "af8a3f52-8bd4-47dd-aba4-850d8a884703"
+            }
+          },
+          "phenomenonStartTime": "2022-07-16T10:18:02.000Z",
+          "products": [
+            {
+              "relationship": "Product Safety Information",
+              "contentType": "MSDS",
+              "related": "https://fertco.com/msds/753",
+              "type": "Fertiliser",
+              "manufacturer": "Fertco Agri Nutrients Pty",
+              "brand": "Maximix 500",
+              "form": "Granules",
+              "uri": "https://fertco.com/products/7932",
+              "crop": {
+                "name": "Maize silage",
+                "taxonomicName": "Zea mays",
+                "variety": "XYZ 381",
+                "identifiers": [
+                  {
+                    "scheme": "nz.co.abcseeds/maize",
+                    "id": "XYZ381"
+                  }
+                ],
+                "establishmentDate": "2022-04-15T00:00:00Z"
+              },
+              "specificGravity": 1.77,
+              "bulkDensity": 875,
+              "matterState": "Solid",
+              "analysis": [
+                {
+                  "id": {
+                    "scheme": "com.testinglab.test",
+                    "id": "WP"
+                  },
+                  "name": "Water Soluble Phosphorus",
+                  "percent": 26
+                },
+                {
+                  "id": {
+                    "scheme": "com.testinglab.test",
+                    "id": "S"
+                  },
+                  "name": "Sulphur",
+                  "percent": 21
+                },
+                {
+                  "id": {
+                    "scheme": "com.testinglab.test",
+                    "id": "Ca"
+                  },
+                  "name": "Calcium",
+                  "percent": 43
+                }
+              ],
+              "activeIngredients": [
+                {
+                  "id": {
+                    "scheme": "com.fertco.product",
+                    "id": "7810"
+                  },
+                  "name": "Calcium phosphate"
+                },
+                {
+                  "id": {
+                    "scheme": "com.fertco.product",
+                    "id": "4375"
+                  },
+                  "name": "Calcium sulphate"
+                }
+              ],
+              "withdrawals": [
+                {
+                  "scheme": "nz.govt.nzfsa.eatsafe.acvm.whp",
+                  "hours": 72
+                }
+              ],
+              "registrations": [
+                {
+                  "scheme": "nz.govt.nzfsa.eatsafe.acvm.register",
+                  "id": "93091"
+                }
+              ]
+            }
+          ],
+          "loggedGeometry": {
+            "type": "Feature",
+            "properties": null,
+            "crs": {
+              "type": "name",
+              "properties": {
+                "name": "urn:ogc:def:crs:EPSG::7405"
+              }
+            },
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [
+                    175.3059575024784,
+                    -37.779497288615744
+                  ],
+                  [
+                    175.3059575024784,
+                    -37.77961300783813
+                  ],
+                  [
+                    175.31101680818904,
+                    -37.77961300783813
+                  ],
+                  [
+                    175.31101680818904,
+                    -37.779497288615744
+                  ],
+                  [
+                    175.3059575024784,
+                    -37.779497288615744
+                  ]
+                ]
+              ]
+            },
+            "id": 63207589
+          },
+          "phenomenonEndTime": "2022-07-16T18:20:00.000Z",
+          "holding": {
+            "contentType": "holding",
+            "identifier": {
+              "scheme": "com.purefarming.holdingId",
+              "id": "bf35ccbc-621f-4c2d-9035-318c504686d6"
+            }
+          },
+          "operationName": "Fertilising",
+          "environment": {
+            "windSpeed": {
+              "measurement": 7.1,
+              "resolution": 0.1,
+              "units": "MTS"
+            },
+            "windDirectionCompass": "WSW",
+            "windDirectionDegrees": 247.5,
+            "airTemperature": {
+              "measurement": 25.7,
+              "resolution": 0.1,
+              "units": "CEL"
+            },
+            "humidity": {
+              "measurement": 74,
+              "units": "P1"
+            },
+            "soilTemperature": {
+              "measurement": 23.3,
+              "resolution": 0.1,
+              "units": "CEL"
+            },
+            "solarRadiation24hr": {
+              "measurement": 5483,
+              "units": "B13"
+            },
+            "rainfall24hr": {
+              "measurement": 3.4,
+              "units": "MMT"
+            }
+          }
+        }
+      ]
+    }
+  ]
 }

@@ -8,7 +8,7 @@
         },
         "windDirectionCompass": {
             "description": "Wind direction in compass points at the time of activity.",
-            "$ref" : "../enums/WindDirectionType.json"
+            "$ref": "../enums/WindDirectionType.json"
         },
         "windDirectionDegrees": {
             "description": "Wind direction in decimal degrees at the time of activity.",
@@ -26,13 +26,46 @@
             "$ref": "./TemperatureMeasureType.json",
             "description": "Soil temperature at or near the time of activity."
         },
-        "solarRadiation24hr" :{
+        "solarRadiation24hr": {
             "$ref": "./IrradianceMeasureType.json",
             "description": "Cumulative solar radiation over 24 hour period (units B13 - J/m2)."
         },
-        "rainfall24hr" : {
+        "rainfall24hr": {
             "$ref": "./DistanceMeasureType.json",
             "description": "Cumulative rainfall over 24 hour period."
         }
-    }
+    },
+    "examples": [
+        {
+            "windSpeed": {
+                "measurement": 7.1,
+                "resolution": 0.1,
+                "units": "MTS"
+            },
+            "windDirectionCompass": "WSW",
+            "windDirectionDegrees": 247.5,
+            "airTemperature": {
+                "measurement": 25.7,
+                "resolution": 0.1,
+                "units": "CEL"
+            },
+            "humidity": {
+                "measurement": 74,
+                "units": "P1"
+            },
+            "soilTemperature": {
+                "measurement": 23.3,
+                "resolution": 0.1,
+                "units": "CEL"
+            },
+            "solarRadiation24hr": {
+                "measurement": 5483,
+                "units": "B13"
+            },
+            "rainfall24hr": {
+                "measurement": 3.4,
+                "units": "MMT"
+            }
+        }
+    ]
 }

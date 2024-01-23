@@ -84,6 +84,88 @@
             }
         
         }    
+    ],
+    "examples": [
+        {
+            "relationship": "Product Safety Information",
+            "contentType": "MSDS",
+            "related": "https://fertco.com/msds/753",
+            "type": "Fertiliser",
+            "manufacturer": "Fertco Agri Nutrients Pty",
+            "brand": "Maximix 500",
+            "form": "Granules",
+            "uri": "https://fertco.com/products/7932",
+            "crop": {
+                "name": "Maize silage",
+                "taxonomicName": "Zea mays",
+                "variety": "XYZ 381",
+                "identifiers": [
+                    {
+                        "scheme": "nz.co.abcseeds/maize",
+                        "id": "XYZ381" 
+                    }
+                ],
+                "establishmentDate": "2020-10-15T00:00:00Z",
+                "harvestDate": "2021-04-01T00:00:00Z"
+            },
+            "specificGravity": 1.77,
+            "bulkDensity": 875,
+            "matterState": "Solid",
+            "analysis": [
+                {
+                    "id": {
+                        "scheme": "com.testinglab.test",
+                        "id": "WP"
+                    },
+                    "name": "Water Soluble Phosphorus",
+                    "percent": 26
+                },
+                {
+                    "id": {
+                        "scheme": "com.testinglab.test",
+                        "id": "S"
+                    },
+                    "name": "Sulphur",
+                    "percent": 21
+                },
+                {
+                    "id": {
+                        "scheme": "com.testinglab.test",
+                        "id": "Ca"
+                    },
+                    "name": "Calcium",
+                    "percent": 43
+                }
+            ],
+            "activeIngredients": [
+                {
+                    "id": {
+                        "scheme": "com.fertco.product",
+                        "id": "7810"
+                    },
+                    "name": "Calcium phosphate"
+                },
+                {
+                    "id": {
+                        "scheme": "com.fertco.product",
+                        "id": "4375"
+                    },
+                    "name": "Calcium sulphate"
+                }
+            ],
+            "withdrawals": [
+                {
+                    "scheme": "govt.quality.withdrawal",
+                    "hours": 72
+                }
+            ],
+            "registrations": [
+                {
+                    "scheme": "govt.quality.productregistration",
+                    "id": "93091"
+                }
+            ]
+        }
     ]
 }
 

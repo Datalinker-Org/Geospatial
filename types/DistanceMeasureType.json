@@ -15,5 +15,12 @@
                 }
             }
         }
+    ],
+    "examples": [
+        {
+            "measurement": 25.7,
+            "resolution": 0.1,
+            "units": "MTR"
+        }
     ]
 }

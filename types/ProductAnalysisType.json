@@ -1,11 +1,13 @@
 {
     "description": "Used to specify analysis of a product (for example, nutrient or energy).",
-
     "type": "object",
-    "required": [ "name", "percent" ],
+    "required": [
+        "name",
+        "percent"
+    ],
     "properties": {
-        "id" :{
-            "$ref" : "../types/IdentifierType.json",
+        "id": {
+            "$ref": "../types/IdentifierType.json",
             "description": "Id of a component or factor (e.g. nutrient or energy) identified in the analysis of a product specified as a scheme and id"
         },
         "name": {
@@ -16,7 +18,15 @@
             "type": "number",
             "description": "Percentage of the factor in the product according to the analysis"
         }
-        
-    }
-
+    },
+    "examples": [
+        {
+            "id": {
+                "scheme": "com.testinglab.test",
+                "id": "WP"
+            },
+            "name": "Water Soluble Phosphorus",
+            "percent": 26
+        }
+    ]
 }

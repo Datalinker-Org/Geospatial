@@ -5,10 +5,22 @@
             "$ref": "../types/MeasurementType.json"
         }
     ],
-    "properties":{
-        "units":{
+    "properties": {
+        "units": {
             "$ref": "../enums/uncefactMassOrVolumeUnits.json",
             "description": "Defines the mass or volume units of measure depending whether the case is weight or volume based."
         }
-    }
+    },
+    "examples": [
+        {
+            "measurement": 200,
+            "resolution": 1,
+            "units": "LTR"
+        },
+        {
+            "measurement": 378,
+            "resolution": 1,
+            "units": "KGM"
+        }
+    ]
 }

@@ -17,5 +17,17 @@
             }
         
         }
+    ],
+    "examples": [
+        {
+            "measurement": 74,
+            "resolution": 1,
+            "units": "P1"
+        },
+        {
+            "measurement": 15.3,
+            "resolution": 0.1,
+            "units": "A93"
+        }
     ]
 }

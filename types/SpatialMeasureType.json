@@ -16,5 +16,12 @@
                 }
             }
         }    
+    ],
+    "examples": [
+        {
+            "measurement": 5.4,
+            "resolution": 0.1,
+            "units": "HAR"
+        }
     ]
 }
