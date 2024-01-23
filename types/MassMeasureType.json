@@ -21,6 +21,16 @@
             "measurement": 10.7,
             "resolution": 0.1,
             "units": "TNE"
+        },
+        {
+            "measurement": 54.5,
+            "resolution": 0.5,
+            "units": "KGM"
+        },
+        {
+            "measurement": 25.5,
+            "resolution": 0.5,
+            "units": "GRM"
         }
     ]
 }

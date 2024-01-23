@@ -27,5 +27,56 @@
                 "$ref": "../types/ComponentProductType.json"
             }
         }
-    }
+    },
+    "examples": [
+        {
+            "components":   [
+                {
+                    "product": {
+                        "type": "Fertiliser",
+                        "manufacturer": "Fertco Limited",
+                        "brand": "Ammonium X + Se",
+                        "form": "Granules",
+                        "uri": "https://www.fertco.co.nz/products/fertiliser/x-se",
+                        "matterState": "Solid",
+                        "activeIngredients": [
+                            {
+                                "name": "Urea"
+                            },
+                            {
+                                "name": "Ammonium sulphate"
+                            }
+                        ],
+                        "analysis": [
+                            {
+                                "name": "N",
+                                "percent": 30.248
+                            },
+                            {
+                                "name": "S",
+                                "percent": 13.731
+                            }
+                        ],
+                        "crop": {
+                            "name": "Pasture",
+                            "variety": "Ryegrass White Clover",
+                            "establishmentDate": "2020-05-01T00:00:00.000Z"
+                        }
+                    }
+                }
+            ],
+            "applicationRate": {
+                "measurement": 100,
+                "units": "KGM"
+            },
+            "spatialMetric": {
+                "measurement": 1,
+                "units": "HAR"
+            },
+            "applicationTotal": {
+                "measurement": 1030,
+                "units": "KGM"
+            }
+        }
+    ]
 }

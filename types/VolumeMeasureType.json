@@ -21,6 +21,16 @@
             "measurement": 200,
             "resolution": 1,
             "units": "LTR"
+        },
+        {
+            "measurement": 250,
+            "resolution": 1,
+            "units": "MLT"
+        },
+        {
+            "measurement": 10.7,
+            "resolution": 0.1,
+            "units": "MTQ"
         }
     ]
 }
