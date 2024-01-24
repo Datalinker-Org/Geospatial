@@ -1,3 +1,6 @@
+Example values: 
+
+ 1. `[object Object]`
  - <b id="#/properties/mixSequence">mixSequence</b>
 	 - **Type:** `number`
  - <b id="#/properties/percent">percent</b>
