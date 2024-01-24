@@ -45,27 +45,10 @@
         {
           "scheme": "nz.rural.classification",
           "primary": "rural",
-          "secondary": "cropping"
-        },
-        {
-          "scheme": "nz.rural.classification",
-          "primary": "rural",
           "secondary": "grazing"
         }
       ],
       "activities": [
-        {
-          "id": {
-            "id": "98765",
-            "scheme": "nz.rural.activities"
-          },
-          "isPrimary": true,
-          "name": "Maize",
-          "productiveArea": {
-            "measurement": 14100,
-            "units": "MTK"
-          }
-        },
         {
           "id": {
             "id": "75492",
@@ -80,19 +63,17 @@
         }
       ],
       "eligibility": {
-        "scheme": "nz.regcouncil.compliance",
-        "eligible": "Partial"
+        "scheme": "nz.govt.mpi.onebilliontrees",
+        "primary": "Mānuka/Kānuka Planting",
+        "eligible": "Eligible"
       },
       "landCoverClass": {
-        "scheme": "nz.xxxxxx.landcover",
-        "primary": "Cultivated and Managed Terrestrial Areas"
+        "scheme": "nz.org.lawa.landcover",
+        "primary": "Grassland/other herbaceous vegetation",
+        "secondary": "Exotic Grassland",
+        "tertiary": "Low Producing Grassland"
       },
       "speciesPresent": [
-        {
-          "name": "Maize X4783",
-          "taxonomicName": "Zea mays",
-          "abundance": "Dominant"
-        },
         {
           "name": "Perennial ryegrass",
           "taxonomicName": "Lolium perenne",
