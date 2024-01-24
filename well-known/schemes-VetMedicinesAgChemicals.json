@@ -1,0 +1,7 @@
+[
+    { "scheme": "nz.govt.acvm.register", "description": "NZ ACVM register for veterinary medicines, agricultural chemicals" },
+    { "scheme": "nz.govt.acvm.whp", "description": "NZ withholding periods for veterinary medicines, agricultural chemicals" },
+    { "scheme": "au.gov.apvma.register", "description": "Australian Pesticides and Veterinary Medicines Authority register" },
+    { "scheme": "au.gov.apvma.whp", "description": "Australia APVMA withholding periods" },
+    { "scheme": "au.gov.apvma.esi", "description": "Australia APVMA export slaughter interval" }
+]
