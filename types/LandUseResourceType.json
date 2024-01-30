@@ -32,7 +32,7 @@
   ],
   "examples": [
     {
-      "resourceType": "/core/plot",
+      "resourceType": "PlotResource",
       "id": "9e1d5ace-3ae3-4e21-8af6-5ca2eb92e32e",
       "identifiers": [
         {

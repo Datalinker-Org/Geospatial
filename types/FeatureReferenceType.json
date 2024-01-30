@@ -4,7 +4,8 @@
     "allOf": [
         {
             "$ref": "../types/RelationType.json"
-        }],
+        }
+    ],
     "properties": {
         "contentType": {
             "type": "string",
@@ -27,5 +28,18 @@
     "required": [
         "contentType",
         "identifier"
+    ],
+    "examples": [
+        {
+            "contentType": "Block",
+            "identifier": {
+                "scheme": "com.purefarming.blockId",
+                "id": "b6f592db-2e71-4c51-8bb0-e137772aaeef"
+            },
+            "name": "Dairy Block",
+            "uri": "https://farmapp.co.nz/block/dairy",
+            "relationship": "Primary Contact",
+            "related": "mailto:someone@example.com"
+        }
     ]
 }
