@@ -1,5 +1,3 @@
- - <b id="#/properties/contentType">contentType</b> `required`
-	 - **Type:** `string`
  - <b id="#/properties/identifier">identifier</b> `required`
 	 - &#36;ref: [../types/IdentifierType.json](#..typesidentifiertype.json)
  - <b id="#/properties/name">name</b>
