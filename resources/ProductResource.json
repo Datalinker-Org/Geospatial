@@ -1,14 +1,23 @@
 {
     "description": "This schema represents a product type - a plant variety, agrochemical, fertiliser, effluent, or harvested product.",
-
     "allOf": [
         {
             "$ref": "../types/RelationType.json"
         },
         {
             "type": "object",
-
             "properties": {
+                "identifiers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "../types/IdentifierType.json"
+                    },
+                    "description": "Identifiers for the resource (see well-known/schemes... for example identity schemes)."
+                },
+                "name": {
+                    "type": "string",
+                    "description": "A user-readable name for the resource."
+                },
                 "type": {
                     "$ref": "../enums/ProductTypeType.json",
                     "description": "The type of product."
@@ -29,8 +38,8 @@
                     "type": "string",
                     "format": "uri-reference",
                     "description": "URL to the product."
-                  },
-                "crop" : {
+                },
+                "crop": {
                     "$ref": "../types/CropType.json",
                     "description": "Crop on which the product is applied."
                 },
@@ -46,53 +55,59 @@
                     "$ref": "../enums/MatterStateType.json",
                     "description": "Matter state of the product, i.e. solid, liquid, gas or unknown."
                 },
-                "analysis":{
-                    "type":"array",
+                "analysis": {
+                    "type": "array",
                     "description": "Array with analysis percentages of factors in the product",
-                    "items":{
+                    "items": {
                         "$ref": "../types/ProductAnalysisType.json"
-                    }      
+                    }
                 },
-                "activeIngredients":{
-                    "type":"array",
-                    "description":"Array of active ingredients in the product",
-                    "items":{
+                "activeIngredients": {
+                    "type": "array",
+                    "description": "Array of active ingredients in the product",
+                    "items": {
                         "$ref": "../types/ProductIngredientType.json"
-                    }      
-                },
-                "withdrawals" :{
-                    "type":"array",
-                    "description":"The withdrawal period of the product ",
-                    "items":{
-                        "$ref":"../types/WithdrawalPeriodType.json"
                     }
                 },
-                "claims" :{
-                    "type":"array",
+                "withdrawals": {
+                    "type": "array",
+                    "description": "The withdrawal period of the product ",
+                    "items": {
+                        "$ref": "../types/WithdrawalPeriodType.json"
+                    }
+                },
+                "claims": {
+                    "type": "array",
                     "description": "Array of claims for the product, each specified as a scheme and id",
-                    "items":{
-                        "$ref":"../types/RegistrationType.json"
+                    "items": {
+                        "$ref": "../types/RegistrationType.json"
                     }
                 },
-                "registrations" :{
-                    "type":"array",
+                "registrations": {
+                    "type": "array",
                     "description": "Array of registrations for the product, each specified as a scheme and id",
-                    "items":{
-                        "$ref":"../types/RegistrationType.json"
+                    "items": {
+                        "$ref": "../types/RegistrationType.json"
                     }
                 }
             }
-        
-        }    
+        }
     ],
     "examples": [
         {
             "relationship": "Product Safety Information",
             "contentType": "MSDS",
             "related": "https://fertco.com/msds/753",
+            "identifiers": [
+                {
+                    "scheme": "com.fertco.product",
+                    "id": "7932"
+                }
+            ],
+            "name": "Maximix 500",
             "type": "Fertiliser",
             "manufacturer": "Fertco Agri Nutrients Pty",
-            "brand": "Maximix 500",
+            "brand": "Maximix",
             "form": "Granules",
             "uri": "https://fertco.com/products/7932",
             "crop": {
@@ -102,7 +117,7 @@
                 "identifiers": [
                     {
                         "scheme": "nz.co.abcseeds/maize",
-                        "id": "XYZ381" 
+                        "id": "XYZ381"
                     }
                 ],
                 "establishmentDate": "2020-10-15T00:00:00Z",
@@ -168,9 +183,3 @@
         }
     ]
 }
-
-
-
-
-
-
