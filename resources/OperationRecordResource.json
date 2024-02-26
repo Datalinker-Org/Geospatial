@@ -12,7 +12,7 @@
     "properties": {
         "operation": {
             "type": "string",
-            "description": "Encoding of the field operation. See well-known/operations-and-methods.md"
+            "description": "Encoding of the field operation. See https://raw.githubusercontent.com/Datalinker-Org/Geospatial/master/well-known/operations-and-methods.md"
         },
         "operationName": {
             "type": "string",
