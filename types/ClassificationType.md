@@ -2,6 +2,7 @@ Example values:
 
  1. `[object Object]`
  2. `[object Object]`
+ 3. `[object Object]`
  - <b id="#/properties/scheme">scheme</b>
 	 - **Type:** `string`
  - <b id="#/properties/primary">primary</b>
