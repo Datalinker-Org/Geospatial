@@ -1,42 +1,55 @@
 {
-    "description": "Metadata based on a small subset of Dublin Core.",
-  
-    "type": "object",
-  
-    "required": [
-      "sourceId",
-      "modified"
-    ],
-  
-    "properties": {
-      "sourceId": {
-          "$ref": "../types/IdentifierType.json",
-          "description": "To be filled at creation by the source system with its unique identifier."
-      },
-      "modified": {
-        "$ref": "../types/DateTimeType.json",
-        "description": "The date and time at which the object was last modified."
-      },
-      "created": {
-        "$ref": "../types/DateTimeType.json",
-        "description": "The date and time at which the object was created. SHOULD be set if known."
-      },
-      "creator": {
-        "type": ["string", "null"],
-        "description": "Person or organisation who created the object"
-      },
-      "validFrom": {
-        "$ref": "../types/DateTimeType.json",
-        "description": "The earliest date and time from which the object is valid."
-      },
-      "validTo": {
-        "$ref": "../types/DateTimeType.json",
-        "description": "The latest date and time to which the object is valid."
-      },
-      "isDeleted": {
-        "type": "boolean",
-        "description": "Boolean value indicating if this resource has been deleted in the source system.",
-        "default": false
-      }
+  "description": "Metadata based on a small subset of Dublin Core.",
+  "type": "object",
+  "required": [
+    "sourceId",
+    "modified"
+  ],
+  "properties": {
+    "sourceId": {
+      "$ref": "../types/IdentifierType.json",
+      "description": "To be filled at creation by the source system with its unique identifier."
+    },
+    "modified": {
+      "$ref": "../types/DateTimeType.json",
+      "description": "The date and time at which the object was last modified."
+    },
+    "created": {
+      "$ref": "../types/DateTimeType.json",
+      "description": "The date and time at which the object was created. SHOULD be set if known."
+    },
+    "creator": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Person or organisation who created the object"
+    },
+    "validFrom": {
+      "$ref": "../types/DateTimeType.json",
+      "description": "The earliest date and time from which the object is valid."
+    },
+    "validTo": {
+      "$ref": "../types/DateTimeType.json",
+      "description": "The latest date and time to which the object is valid."
+    },
+    "isDeleted": {
+      "type": "boolean",
+      "description": "Boolean value indicating if this resource has been deleted in the source system.",
+      "default": false
     }
-  }
+  },
+  "examples": [
+    {
+      "sourceId": {
+        "scheme": "nz.farm-mgt.pasture",
+        "id": "83de7a5d-c31a-457c-8b51-3cdf75ffdb99"
+      },
+      "modified": "2022-10-03T11:00:00Z",
+      "created": "2022-10-03T11:00:00Z",
+      "creator": "farm-mgt.co.nz",
+      "validFrom": "2022-10-03T11:00:00Z",
+      "validTo": "2023-04-03T11:00:00Z"
+    }
+  ]
+}

@@ -31,6 +31,10 @@
             "scheme": "nz.rural.classification",
             "primary": "rural",
             "secondary": "grazing"
+        },
+        {
+            "scheme": "nz.govt.mpi.onebilliontrees",
+            "primary": "Mānuka/Kānuka Planting"
         }
     ]
 }

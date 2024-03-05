@@ -6,8 +6,9 @@
         },
         {
             "type": "object",
-            "required": [ "observationDate" ],
-
+            "required": [
+                "observationDate"
+            ],
             "properties": {
                 "observationDate": {
                     "type": "string",
@@ -18,7 +19,7 @@
                     "type": "string",
                     "format": "date-time",
                     "description": "ISO UTC DateTime"
-                },        
+                },
                 "phenomenonEndTime": {
                     "type": "string",
                     "format": "date-time",
@@ -51,34 +52,64 @@
         }
     ],
     "examples": [
-
         {
-
-            "description": "my external representation of an observation",
-            "meta": {
-                "sourceId": {
-                    "id": "123456789",
-                    "scheme": "observationIdentifyingScheme"
-                },
-                "modified": "2021-09-15T12:34:56.000Z"
-            },
-            "observationDate": "2021-01-01T00:00:00.000Z",
-            "holding": {
-                "contentType": "vineyard",
-                "identifier": {
-                    "id": "44444444",
-                    "scheme": "holdingIdentifierScheme"
-                },
-                "name": "my holding name"
-            },
+            "observationDate": "2022-10-03T00:00:00Z",
             "feature": {
-                "contentType": "subblock",
+                "contentType": "plot",
                 "identifier": {
-                    "id": "333333333333",
-                    "scheme": "subblockIdentifierSchema"
+                    "scheme": "com.purefarming.plotId",
+                    "id": "677dab5e-f7fc-42c7-b25c-393aafd53c96"
                 },
-                "name": "my feature name"
-            }
+                "name": "Far flats",
+                "uri": "https://fertco.co.nz/plot/K384-24"
+            },
+            "holding": {
+                "contentType": "holding",
+                "identifier": {
+                    "scheme": "com.purefarming.holdingId",
+                    "id": "b06d7284-aeb3-4d07-918f-4ff3afc7ca67"
+                },
+                "name": "Fair View Downs",
+                "uri": "https://fertco.co.nz/farm/K384"
+            },
+            "phenomenonStartTime": "2022-09-03T11:00:00Z",
+            "phenomenonEndTime": "2022-10-03T13:00:00Z",
+            "responsible": "Pete Bell",
+            "remark": "Pasture cover October 22: Far Flats"
+        },
+        {
+            "observationDate": "2022-10-21T11:15:00Z",
+            "features": [
+                {
+                    "contentType": "site",
+                    "identifier": {
+                        "scheme": "nz.co.shape.siteid",
+                        "id": "123456"
+                    },
+                    "name": "Outside Shed Washdown"
+                },
+                {
+                    "contentType": "site",
+                    "identifier": {
+                        "scheme": "nz.co.shape.siteid",
+                        "id": "123478"
+                    },
+                    "name": "Stock Water"
+                }
+            ],
+            "holding": {
+                "contentType": "holding",
+                "identifier": {
+                    "scheme": "com.purefarming.holdingId",
+                    "id": "7b5be125-c96f-4095-89b3-1c267aa2206e"
+                },
+                "name": "Bliss Farm",
+                "uri": "https://landco.co.nz/property/K384"
+            },
+            "phenomenonStartTime": "2022-10-21T11:15:00Z",
+            "phenomenonEndTime": "2022-10-14T01:00:00Z",
+            "responsible": "Aimee Clarke",
+            "remark": "Water use, soil moisture and temperature, 21 October 2022"
         }
     ]
 }
