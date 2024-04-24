@@ -1,3 +1,5 @@
+Types: `string`, `null`
+
 The value is restricted to the following: 
 
  1. _"MTK"_

@@ -1,6 +1,6 @@
 {
     "description": "UN/CEFACT humidity measurement units. In order: absolute (g/m3), relative humidity %, specific (g/kg-1)",
-    "type": "string",
+    "type": ["string", "null"],
     "enum": [
         "A93",
         "P1",

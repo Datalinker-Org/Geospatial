@@ -11,11 +11,22 @@
             "properties": {
                 "units": {
                     "$ref": "../enums/uncefactTemperatureUnits.json",
-                    "nullable": true,
                     "default": "CEL",
                     "description": "Defines the unit of measure for temperatue. Prefered units are CEL (UN-CEFACT for degrees celcius)."
                 }
             }        
+        }
+    ],
+    "examples": [
+        {
+            "measurement": 19.7,
+            "resolution": 0.1,
+            "units": "CEL"
+        },
+        {
+            "measurement": 70.5,
+            "resolution": 0.5,
+            "units": "FAH"
         }
     ]
 }

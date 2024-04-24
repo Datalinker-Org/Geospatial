@@ -1,3 +1,6 @@
+Example values: 
+
+ 1. `[object Object]`
  - <b id="#/properties/id">id</b> `required`
 	 - **Type:** `string`
  - <b id="#/properties/identifiers">identifiers</b>
@@ -11,6 +14,6 @@
  - <b id="#/properties/resourceType">resourceType</b> `required`
 	 - **Type:** `string`
  - <b id="#/properties/@self">@self</b>
-	 - **Type:** `string`
+	 - Types: `string`, `null`
 
 _Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

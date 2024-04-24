@@ -15,5 +15,35 @@
         }
       }
     }
+  ],
+
+  "examples": [
+    {
+      "resourceType": "HoldingResource",
+      "id": "fe8939c0-da94-4c92-b016-cd51cd744076",
+      "identifiers": [
+        {
+          "scheme": "nz.nait.pica-location",
+          "id": "12345678"
+        },
+        {
+          "scheme": "nz.govt.farmsonline",
+          "id": "XX-1234-1234"
+        }
+      ],
+      "name": "Windy Farm",
+      "meta": {
+        "sourceId": {
+          "id": "12345678",
+          "scheme": "https://farmapp.com/wf123"
+        },
+        "modified": "2022-11-29T12:30:00.000Z"
+      },
+      "totalArea": {
+        "measurement": 1000,
+        "units": "HAR"
+      },
+      "featureCatalog": "https://farmapp.com/spatial-plots/wf123"
+    }
   ]
 }

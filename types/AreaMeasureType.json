@@ -11,11 +11,17 @@
             "properties": {
                 "units": {
                     "$ref": "../enums/uncefactAreaUnits.json",
-                    "nullable": true,
                     "default": "MTK",
                     "description": "Defines the unit of measure for the area. Prefered units are MTK (UN-CEFACT for square metre)."
                 }
             }
         }    
+    ],
+    "examples": [
+        {
+            "measurement": 1.4,
+            "resolution": 0.1,
+            "units": "HAR"
+        }
     ]
 }

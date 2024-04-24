@@ -1,5 +1,8 @@
 # PostalAddress
 
+Example values: 
+
+ 1. `[object Object]`
  - <b id="#/properties/addressCountry">addressCountry</b>
 	 - **Type:** `string`
  - <b id="#/properties/addressLocality">addressLocality</b>

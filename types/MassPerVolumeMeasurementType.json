@@ -11,13 +11,11 @@
             "properties": {
                 "units": {
                     "$ref": "../enums/uncefactMassUnits.json",
-                    "nullable": true,
                     "default": "KGM",
                     "description": "UN/CEFACT units for mass (KGM is the default)."
                 },
                 "denominatorUnits": {
                     "$ref": "../enums/uncefactVolumeUnits.json",
-                    "nullable": true,
                     "default": "LTR",
                     "description": "UN/CEFACT units for volume (LTR is the default)."
                 }

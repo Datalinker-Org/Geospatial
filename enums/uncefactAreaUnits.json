@@ -1,7 +1,7 @@
 {
     "description": "Units for area from UN/CEFACT trade facilitation recommendation 20. https://github.com/Datalinker-Org/Geospatial/wiki/UN-CEFACT-Measurement-enum-descriptions#area-units ",
   
-    "type": "string",
+    "type": ["string", "null"],
   
     "enum": [
       "MTK",

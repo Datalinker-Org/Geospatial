@@ -1,22 +1,35 @@
 {
     "description": "Specifies an length or perimeter, including units (default is metre - MTR).",
-    
     "allOf": [
         {
-            "$ref": "../types/MeasurementType.json" 
+            "$ref": "../types/MeasurementType.json"
         },
-        {    
+        {
             "type": "object",
-
             "properties": {
                 "units": {
                     "$ref": "../enums/uncefactLengthUnits.json",
-                    "nullable": true,
                     "default": "MTR",
                     "description": "Defines the unit of measure for the length. Prefered units are MTR (UN-CEFACT metre)."
                 }
             }            
         }    
+    ],
+    "examples": [
+        {
+            "measurement": 400,
+            "resolution": 1,
+            "units": "MTR"
+        },
+        {
+            "measurement": 6.5,
+            "resolution": 0.5,
+            "units": "MMT"
+        },
+        {
+            "measurement": 0.7,
+            "resolution": 0.1,
+            "units": "CMT"
+        }
     ]
-
 }

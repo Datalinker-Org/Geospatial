@@ -1,3 +1,6 @@
+Example values: 
+
+ 1. `[object Object]`
  - <b id="#/properties/id">id</b>
 	 - &#36;ref: [../types/IdentifierType.json](#..typesidentifiertype.json)
  - <b id="#/properties/name">name</b> `required`

@@ -10,39 +10,153 @@
         }
     ],
     "properties": {
-        "operation":{
-            "type":"string",
-            "description": "Encoding of the field operation. See well-known/operations-and-methods.md"
+        "operation": {
+            "type": "string",
+            "description": "Encoding of the field operation. See https://raw.githubusercontent.com/Datalinker-Org/Geospatial/master/well-known/operations-and-methods.md"
         },
-        "operationName":{
-            "type":"string",
+        "operationName": {
+            "type": "string",
             "description": "The name of the operation."
         },
         "method": {
             "type": "string",
             "description": "Where an operation may be achieved by multiple methods, specifies the method (e.g., method of application or cultivation).  See well-known/operations-and-methods.md"
         },
-        "summaryGeometry":{
+        "summaryGeometry": {
             "$ref": "https://geojson.org/schema/Feature.json",
-            "description":"The geojson feature (with its geometry) that summarises the operation activity."
+            "description": "The geojson feature (with its geometry) that summarises the operation activity."
         },
-        "loggedGeometry":{
-
+        "loggedGeometry": {
             "$ref": "https://geojson.org/schema/Feature.json",
-            "description":"The geojson feature (with its geometry) that covers the logged track or activity record in detail."
+            "description": "The geojson feature (with its geometry) that covers the logged track or activity record in detail."
         },
-        "products":
-        {
-            "type":"array",
+        "products": {
+            "type": "array",
             "items": {
                 "$ref": "../types/OperationProductType.json"
             },
-            "description":" Products applied in the operation "
+            "description": " Products applied in the operation "
         },
-        "environment":
-        {
+        "environment": {
             "$ref": "../types/OperationEnvironmentType.json",
-            "description":"Environmental Data"
+            "description": "Environmental Data"
         }
-    }
+    },
+    "examples": [
+        {
+            "operation": "Fertiliser Application",
+            "operationName": "Urea + Selenium Block 4",
+            "observationDate": "2022-11-01T00:00:00.000Z",
+            "resourceType": "OperationRecordResource",
+            "id": "b4683e10-7f91-44ae-8722-214796378a34",
+            "meta": {
+                "sourceId": {
+                    "id": "335884",
+                    "scheme": "nz.observationIdentifyingScheme"
+                },
+                "modified": "2022-12-05T12:30:00.000Z"
+            },
+            "feature": {
+                "contentType": "plot",
+                "identifier": {
+                    "scheme": "com.purefarming.plotId",
+                    "id": "3fabfd52-dc02-4109-9bb7-be4f592898f8"
+                }
+            },
+            "phenomenonStartTime": "2022-11-01T08:28:02.000Z",
+            "summaryGeometry": {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                175.36789819531776,
+                                -37.74521332738721
+                            ],
+                            [
+                                175.36432165382598,
+                                -37.74747616457623
+                            ],
+                            [
+                                175.36847864019472,
+                                -37.75157825727582
+                            ],
+                            [
+                                175.37224789227093,
+                                -37.74920317795343
+                            ],
+                            [
+                                175.36789819531776,
+                                -37.74521332738721
+                            ]
+                        ]
+                    ]
+                }
+            },
+            "products": [
+                {
+                    "components": [
+                        {
+                            "product": {
+                                "type": "Fertiliser",
+                                "manufacturer": "Fertco Limited",
+                                "brand": "Ammonium X + Se",
+                                "form": "Granules",
+                                "uri": "https://www.fertco.co.nz/products/fertiliser/x-se",
+                                "matterState": "Solid",
+                                "activeIngredients": [
+                                    {
+                                        "name": "Urea"
+                                    },
+                                    {
+                                        "name": "Ammonium sulphate"
+                                    }
+                                ],
+                                "analysis": [
+                                    {
+                                        "name": "N",
+                                        "percent": 30.248
+                                    },
+                                    {
+                                        "name": "S",
+                                        "percent": 13.731
+                                    }
+                                ],
+                                "crop": {
+                                    "name": "Pasture",
+                                    "variety": "Ryegrass White Clover",
+                                    "establishmentDate": "2020-05-01T00:00:00.000Z"
+                                }
+                            }
+                        }
+                    ],
+                    "applicationRate": {
+                        "measurement": 100,
+                        "units": "KGM"
+                    },
+                    "spatialMetric": {
+                        "measurement": 1,
+                        "units": "HAR"
+                    },
+                    "applicationTotal": {
+                        "measurement": 1030,
+                        "units": "KGM"
+                    }
+                }
+            ],
+            "environment": {
+                "windDirectionCompass": "SSW",
+                "windSpeed": {
+                    "measurement": 15,
+                    "units": "KMH"
+                },
+                "soilTemperature": {
+                    "measurement": 14,
+                    "units": "CEL"
+                }
+            }
+        }
+    ]
 }

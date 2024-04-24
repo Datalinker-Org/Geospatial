@@ -1,3 +1,6 @@
+Example values: 
+
+ 1. `[object Object]`
  - <b id="#/properties/operation">operation</b> `required`
 	 - **Type:** `string`
  - <b id="#/properties/operationName">operationName</b>

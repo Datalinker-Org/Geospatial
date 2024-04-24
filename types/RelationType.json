@@ -17,5 +17,12 @@
       "format": "uri-reference",
       "description": "A URL that may be used to retrieve the related resource."
     }
-  }
+  },
+  "examples": [
+    {
+      "relationship": "Product Safety Information",
+      "contentType": "MSDS",
+      "related": "https://fertco.com/msds/753"
+    }
+  ]
 }

@@ -1,53 +1,76 @@
 {
-    "description": "Base class for a resource (such as a feature). Resources should use AllOf to incorporate this class.",
-  
-    "type": "object",
-  
-    "discriminator": {
-      "propertyName": "resourceType"
+  "description": "Base class for a resource (such as a feature). Resources should use AllOf to incorporate this class.",
+  "type": "object",
+  "discriminator": {
+    "propertyName": "resourceType"
+  },
+  "required": [
+    "resourceType",
+    "id",
+    "meta"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier (UUID) used within the current server to identify the resource."
     },
-
-    "required": [
-      "resourceType", 
-      "id",
-      "meta"
-    ],
-  
-    "properties": {
-      "id": {
-        "type": "string",
-        "description": "Unique identifier (UUID) used within the current server to identify the resource."
+    "identifiers": {
+      "type": "array",
+      "items": {
+        "$ref": "../types/IdentifierType.json"
       },
-      "identifiers": {
-        "type": "array",
-        "items": {
-          "$ref": "../types/IdentifierType.json"
-        },
-        "description": "Identifiers for the resource (see well-known/schemes... for example identity schemes)."
+      "description": "Identifiers for the resource (see well-known/schemes... for example identity schemes)."
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "$ref": "../types/RelationType.json"
       },
-      "links": {
-        "type": "array",
-        "items": {
-          "$ref": "../types/RelationType.json"
-        },
-        "description": "Linked resources that are related to the current resource."
-      },
-      "meta": {
-        "$ref": "../types/MetaDataType.json",
-        "description": "Meta-data for the resource. Mandatory if you wish to support synchronisation."
-      },
-      "name": {
-        "type": "string",
-        "description": "A user-readable name for the resource."
-      },
-      "resourceType": {
-        "type": "string",
-        "description": "This MUST be populated with the name of the concrete type to support inheritance and deserialisation."
-      },
-      "@self": {
-        "type": "string",
-        "description": "Uniform resource identifier (URI) of the resource (rel=self).",
-        "nullable": true
-      }      
+      "description": "Linked resources that are related to the current resource."
+    },
+    "meta": {
+      "$ref": "../types/MetaDataType.json",
+      "description": "Meta-data for the resource. Mandatory if you wish to support synchronisation."
+    },
+    "name": {
+      "type": "string",
+      "description": "A user-readable name for the resource."
+    },
+    "resourceType": {
+      "type": "string",
+      "description": "This MUST be populated with the name of the concrete type to support inheritance and deserialisation."
+    },
+    "@self": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Uniform resource identifier (URI) of the resource (rel=self)."
     }
-  }
+  },
+  "examples": [
+    {
+      "id": "4f07320b-0b37-41b0-9803-6b1c1f2dece0",
+      "identifiers": [
+        {
+          "scheme": "agrinet.ie.paddock",
+          "id": "P1-14-2022-01-14"
+        }
+      ],
+      "meta": {
+        "sourceId": {
+          "scheme": "agrinet.ie.paddockmeasurement",
+          "id": "123456-P1-14"
+        },
+        "modified": "2022-01-15T11:00:00Z",
+        "created": "2022-01-15T11:00:00Z",
+        "creator": "agrinet.ie",
+        "validFrom": "2022-01-15T11:00:00Z",
+        "validTo": "2023-04-15T11:00:00Z"
+      },
+      "name": "Pasture N. Donne: paddock 14, Jan 2022",
+      "resourceType": "pfPastureCoverEvent",
+      "@self": "https://api.purefarming.com/data/crops/pasture-cover/4f07320b-0b37-41b0-9803-6b1c1f2dece0"
+    }
+  ]
+}

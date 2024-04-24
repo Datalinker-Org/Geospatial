@@ -1,3 +1,6 @@
+Example values: 
+
+ 1. `[object Object]`
  - <b id="#/properties/relationship">relationship</b>
 	 - **Type:** `string`
  - <b id="#/properties/contentType">contentType</b>

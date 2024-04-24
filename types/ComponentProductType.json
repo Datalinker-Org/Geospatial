@@ -20,5 +20,46 @@
             "$ref": "../types/MassOrVolumeMeasurementType.json",
             "description": "The quantity of this product which is included in the mix. You should additionally calculate percent if feasible."
         }
-    }
+    },
+    "examples": [
+        {
+            "mixSequence": 2,
+            "percent": 80,
+            "product": {
+                "type": "Fertiliser",
+                "manufacturer": "Fertco Limited",
+                "brand": "Ammonium X + Se",
+                "form": "Granules",
+                "uri": "https://www.fertco.co.nz/products/fertiliser/x-se",
+                "matterState": "Solid",
+                "activeIngredients": [
+                    {
+                        "name": "Urea"
+                    },
+                    {
+                        "name": "Ammonium sulphate"
+                    }
+                ],
+                "analysis": [
+                    {
+                        "name": "N",
+                        "percent": 30.248
+                    },
+                    {
+                        "name": "S",
+                        "percent": 13.731
+                    }
+                ],
+                "crop": {
+                    "name": "Pasture",
+                    "variety": "Ryegrass White Clover",
+                    "establishmentDate": "2020-05-01T00:00:00.000Z"
+                }
+            },
+            "quantity": {
+                "measurement": 1.3,
+                "units": "TNE"
+            }
+        }
+    ]
 }

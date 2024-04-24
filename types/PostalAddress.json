@@ -28,5 +28,15 @@
       "description": "The street address. For example, 1600 Amphitheatre Pkwy.",
       "type": "string"
     }
-  }
+  },
+  "examples": [
+    {
+      "addressCountry": "New Zealand",
+      "addressLocality": "Te Miro",
+      "addressRegion": "Waikato",
+      "postOfficeBoxNumber": "12-789",
+      "postalCode": "3434",
+      "streetAddress": "750 Long Road"
+    }
+  ]
 }

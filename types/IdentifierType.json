@@ -1,13 +1,10 @@
 {
     "description": "A compound identifier that can uniquely identify resources or other items.",
-    
     "type": "object",
-
     "required": [
         "scheme",
         "id"
     ],
-
     "properties": {
         "scheme": {
             "type": "string",
@@ -17,5 +14,15 @@
             "type": "string",
             "description": "A unique identification for the resource issued under the auspices of the scheme."
         }
-    }
+    },
+    "examples": [
+        {
+            "scheme": "nz.co.shape.siteid",
+            "id": "123478"
+        },
+        {
+            "scheme": "com.beeflambnz.ghg",
+            "id": "5bf7e42b-a587-4695-af1e-de5c111b4be6"
+        }
+    ]
 }

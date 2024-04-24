@@ -10,11 +10,17 @@
             "properties": {
                 "units": {
                     "$ref": "../enums/uncefactLengthUnits.json",
-                    "nullable": true,
                     "default": "MTR",
                     "description": "Defines the unit of measure for the length of a spatial resource. Prefered units are MTR (UN-CEFACT for metre)."
                 }
             }
+        }
+    ],
+    "examples": [
+        {
+            "measurement": 25.7,
+            "resolution": 0.1,
+            "units": "MTR"
         }
     ]
 }
