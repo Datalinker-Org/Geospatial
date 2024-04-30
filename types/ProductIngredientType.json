@@ -9,20 +9,9 @@
             "$ref": "../types/IdentifierType.json",
             "description": "Id of an ingredient of a product specified as a scheme and id."
         },
-        "identifiers": {
-            "type": ["array", "null"],
-            "description": "Identifiers of an ingredient of a product specified as a scheme and id.",
-            "items": {
-                "$ref": "../types/IdentifierType.json"
-            }
-        },
         "name": {
             "type": "string",
             "description": "Human readable description of the ingredient"
-        },
-        "percent": {
-            "type": "number",
-            "description": "Percentage of the ingredient in the product"
         }
     },
     "examples": [
@@ -31,14 +20,7 @@
                 "scheme": "com.fertco.product",
                 "id": "4000017"
             },
-            "identifiers": [
-                {
-                    "scheme": "com.fertco.other-id",
-                    "id": "4000000"
-                }
-            ],
-            "name": "Granular Ammonium Sulphate",
-            "percent": 47.6
+            "name": "Granular Ammonium Sulphate"
         }
     ]
 }
