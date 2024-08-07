@@ -14,21 +14,25 @@
         "totalLength": {
           "$ref": "../types/LengthMeasureType.json",
           "description": "If the feature is linear, the total length. If a polygon, the perimeter (default is in metres - MTR)"
+        },
+        "parentFeature": {
+          "$ref": "../types/FeatureReferenceType.json",
+          "description": "Identifies the parent of this spatial resource by name, identifier and uri."
         }
       }
     }
   ],
   "examples": [
     {
-      "resourceType": "/core/plot",
-      "id": "9e1d5ace-3ae3-4e21-8af6-5ca2eb92e32e",
+      "resourceType": "PlotZoneResource",
+      "id": "87866d1c-e291-434f-8cca-20a17c6e35a7",
       "identifiers": [
         {
-          "scheme": "nz.landco.paddock",
-          "id": "77345.pdk54"
+          "scheme": "nz.landco.paddockzone",
+          "id": "77345.101.A"
         }
       ],
-      "name": "Far flats",
+      "name": "Fodder Beet",
       "meta": {
         "sourceId": {
           "id": "123456789",
@@ -43,6 +47,13 @@
       "totalLength": {
         "measurement": 630,
         "units": "MTR"
+      },
+      "parentFeature": {
+        "name": "Long Close",
+        "identifier": {
+          "id": "77345.101",
+          "scheme": "nz.landco.paddock"
+        }
       }
     }
   ]
