@@ -1,0 +1,22 @@
+{
+    "description": "Units for energy from UN/CEFACT trade facilitation recommendation 20. In order watt, kilowatt, megawatt, gigawatt, terawatt, milliwatt, joule per second, joule per minute, joule per hour, joule per day, kilojoule per second, kilojoule per minute, kilojoule per hour, kilojoule per day  ",
+  
+    "type": ["string", "null"],
+  
+    "enum": [
+      "WTT",
+      "KWT",
+      "MAW",
+      "A90",
+      "D31",
+      "C31",
+      "P14",
+      "P15",
+      "P16", 
+      "P17",
+      "P18",
+      "P19"    ,
+      "P20",
+      "P21"
+    ]
+  }
